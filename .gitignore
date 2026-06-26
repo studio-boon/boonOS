@@ -1,0 +1,60 @@
+# OS
+.DS_Store
+**/.DS_Store
+Thumbs.db
+
+# Arquivos binários grandes
+*.ai
+*.psd
+*.psb
+*.indd
+
+# Imagens (geralmente grandes demais para git)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.bmp
+*.tif
+*.tiff
+*.heic
+*.raw
+
+# Video e áudio
+*.mp4
+*.mov
+*.avi
+*.wav
+*.mp3
+
+# Documentos binários
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+*.key
+*.pages
+
+# Arquivos compactados
+*.zip
+*.rar
+*.7z
+
+# Node / build
+node_modules/
+.next/
+dist/
+build/
+.cache/
+
+# Env / secrets
+.env
+.env.local
+.env*.local
+*.pem
+**/client_secret*.json
+**/auth.json
+**/credentials.json
+
+# SVG mantido (vetorial leve)
