@@ -116,9 +116,9 @@ Apresente o roteiro para aprovação antes de finalizar.
 - Indicador de progresso discreto (número ou ponto), sem competir com a mensagem
 - Quebrar o grid é permitido quando a quebra marca tensão, erro ou virada
 
-### 5. Revisão de voz e clareza
+### 5. Aplicar o writing-filter
 
-Antes de finalizar qualquer copy, revisar contra a voz do usuário:
+Antes de finalizar qualquer copy, aplicar `/writing-filter`:
 
 - Se existir `CLAUDE.md` personalizado ou `_02. MEMORIA/voz-e-estilo.md`, respeitar essas regras.
 - Se a voz ainda não estiver definida, usar tom claro, direto e específico.

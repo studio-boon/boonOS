@@ -2,7 +2,7 @@
 
 Perfil: sistema pessoal starter.
 
-Este pacote traz skills suficientes para iniciar o uso, organizar contexto, criar novas skills e produzir conteúdo social simples. Ele não tenta prever todos os usos da pessoa.
+Este pacote traz skills suficientes para iniciar o uso, organizar contexto, criar novas skills, produzir conteúdo social e apoiar trabalho de design. Ele não tenta prever todos os usos da pessoa.
 
 ## Onde As Skills Vivem
 
@@ -21,13 +21,20 @@ Ao criar ou alterar uma skill, mantenha as duas pastas em paridade quando as dua
 | `/overview` | Panorama de projetos, memória, decisões e próximos passos |
 | `/skill-creator` | Criação e melhoria de novas skills |
 | `/grill-me` | Entrevista crítica para clarear uma ideia, plano ou decisão |
+| `/writing-filter` | Filtro base de escrita, sem voz fixa |
 | `/brand-storytelling` | Narrativa, posicionamento e mensagem de marca |
 | `/content-strategy` | Planejamento de temas, pilares e calendário editorial |
 | `/carrossel` | Roteiro, copy e direção visual para carrosséis |
+| `/post-social` | Post estático, capa, story, thumb ou peça social única |
+| `/design-review` | Revisão de layout, direção visual, grid, tipo, cor e composição |
+| `/site-design` | Planejamento e revisão de sites, landing pages e portfolios |
+| `/interface-polish` | Polimento de UI, estados, microinterações e detalhes de produto |
+| `/portfolio-case-study` | Estrutura e narrativa para estudos de caso de portfolio |
+| `/tagline-creation-strategies` | Criação e teste de taglines, slogans e frases de campanha |
 
 ## Não Incluído
 
-- Filtro de linguagem fixo.
+- Filtro de linguagem da BOON ou de qualquer outra marca.
 - Skills internas da BOON.
 - Memórias, clientes, prospects, financeiro ou histórico operacional.
 - Automações externas.
@@ -36,7 +43,7 @@ Ao criar ou alterar uma skill, mantenha as duas pastas em paridade quando as dua
 
 A voz do sistema deve vir da pessoa que instalou o template.
 
-Caminho recomendado:
+Caminho recomendado, já incluído no template:
 
 ```text
 _02. MEMORIA/voz-e-estilo.md

@@ -92,7 +92,7 @@ Reescrever o arquivo `CLAUDE.md` substituindo os campos `[Rode /init para config
 
 **Foco atual** — a prioridade imediata que a pessoa mencionou. O que o sistema deve ter na cabeça agora.
 
-**Voz e estilo** — preferências de tom, palavras que usa ou evita, referências de escrita e regras de comunicação. Se a pessoa ainda não souber, deixar um convite para criar `_02. MEMORIA/voz-e-estilo.md`.
+**Voz e estilo** — preferências de tom, palavras que usa ou evita, referências de escrita e regras de comunicação. Se a pessoa ainda não souber, orientar o preenchimento de `_02. MEMORIA/voz-e-estilo.md`.
 
 **Como operar** — acrescentar 2–3 regras personalizadas baseadas no que a pessoa disse que não funciona ou quer evitar. Exemplo: "Sempre perguntar antes de criar pasta nova", "Não sugerir ferramentas externas, só o que já existe aqui", "Resumir em tópicos, nunca em texto corrido".
 
@@ -133,5 +133,5 @@ Apresentar como lista numerada, direto.
 - Gerar o CLAUDE.md só depois de ter respondido todas as perguntas — não adiantar
 - Confirmar com a pessoa antes de salvar qualquer arquivo
 - Não inventar projetos ou contexto que a pessoa não mencionou
-- Não aplicar filtro de linguagem fixo. A voz do sistema deve vir das respostas do usuário e da memória de estilo.
+- Não aplicar filtro de linguagem de outra marca. Usar `/writing-filter` apenas como filtro base, deixando a voz vir das respostas do usuário e da memória de estilo.
 - Se a pessoa der respostas curtas, aprofundar com uma pergunta de follow-up antes de avançar

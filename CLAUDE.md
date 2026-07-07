@@ -57,6 +57,13 @@ Quando em dúvida sobre onde algo vai, perguntar antes de criar pasta nova.
 | `/overview` | Panorama do que está rolando no OS |
 | `/skill-creator` | Cria uma nova skill personalizada |
 | `/grill-me` | Stress-testa uma ideia ou plano |
+| `/writing-filter` | Revisa e cria textos com clareza, sem impor voz fixa |
 | `/brand-storytelling` | Ajuda a criar narrativa, posicionamento e mensagem de marca |
 | `/content-strategy` | Planeja temas, pilares e calendário editorial |
 | `/carrossel` | Cria roteiro, copy e direção visual para carrosséis |
+| `/post-social` | Cria card único, capa, story, thumb ou peça social estática |
+| `/design-review` | Revisa direção visual, layout, grid, tipografia e composição |
+| `/site-design` | Planeja ou revisa sites, landing pages e portfolios |
+| `/interface-polish` | Melhora detalhes de UI, estados, espaçamento e microinterações |
+| `/portfolio-case-study` | Organiza cases e páginas de portfolio para designers |
+| `/tagline-creation-strategies` | Cria taglines, slogans e frases memoráveis |

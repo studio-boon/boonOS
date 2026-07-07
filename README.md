@@ -82,6 +82,7 @@ boonOS/
   _01. SISTEMA/      regras, decisões e padrões do seu OS
     SKILLSET.md      manifesto do pacote inicial de skills
   _02. MEMORIA/      contexto vivo que não pode morrer entre conversas
+    voz-e-estilo.md  preferências de linguagem do usuário
   _03. DOCS/         documentos, contratos, briefings e referências
   _99. OLD/          arquivo de versões antigas e projetos encerrados
 ```
@@ -95,6 +96,7 @@ boonOS/
 | `_01. SISTEMA/` | Registrar decisões, regras, padrões e mudanças do sistema |
 | `_01. SISTEMA/SKILLSET.md` | Ver quais skills vêm instaladas e quais não fazem parte do template |
 | `_02. MEMORIA/` | Guardar contexto sobre você, projetos, pessoas, aprendizados e preferências |
+| `_02. MEMORIA/voz-e-estilo.md` | Configurar a voz que o `writing-filter` e as skills de conteúdo devem respeitar |
 | `_03. DOCS/` | Guardar documentos recebidos, materiais de estudo, briefings e referências |
 | `_99. OLD/` | Arquivar o que saiu de uso sem deletar histórico |
 | `.claude/skills/` | Comandos usados pelo Claude Code |
@@ -116,11 +118,18 @@ boonOS/
 | `/overview` | Gera panorama do que existe nas pastas e próximos passos |
 | `/skill-creator` | Cria ou melhora skills personalizadas |
 | `/grill-me` | Questiona uma ideia, plano ou decisão até ficar mais clara |
+| `/writing-filter` | Revisa ou cria textos com clareza, usando a voz do usuário |
 | `/brand-storytelling` | Ajuda a construir narrativa, posicionamento e mensagem de marca |
 | `/content-strategy` | Planeja conteúdo, pilares, temas e calendário editorial |
 | `/carrossel` | Cria estrutura, roteiro, copy e direção visual para carrosséis |
+| `/post-social` | Cria card único, capa, story, thumb ou peça social estática |
+| `/design-review` | Revisa layout, hierarquia, grid, tipografia, cor e composição |
+| `/site-design` | Planeja ou revisa sites, landing pages, portfolios e interfaces web |
+| `/interface-polish` | Ajusta detalhes de UI, estados, microinterações e responsividade |
+| `/portfolio-case-study` | Monta narrativa e estrutura de cases de portfolio |
+| `/tagline-creation-strategies` | Cria taglines, slogans e frases de campanha |
 
-O template não inclui um filtro de linguagem fixo. A voz deve ser definida pelo usuário em `CLAUDE.md` ou em um arquivo como `_02. MEMORIA/voz-e-estilo.md`.
+O `writing-filter` incluído é base e neutro. Ele não carrega a voz da BOON. A voz deve ser definida pelo usuário em `CLAUDE.md` e em `_02. MEMORIA/voz-e-estilo.md`.
 
 ## Como Usar No Dia A Dia
 
@@ -148,7 +157,7 @@ Isso aqui virou uma tarefa recorrente. Cria uma skill para eu repetir esse fluxo
 
 ## Personalização De Voz
 
-Depois do `/init`, crie ou peça para o agente criar:
+Depois do `/init`, preencha:
 
 ```text
 _02. MEMORIA/voz-e-estilo.md
@@ -162,7 +171,7 @@ Inclua:
 - referências de tom;
 - regras para posts, propostas, estudos ou mensagens.
 
-As skills de conteúdo devem respeitar essa memória. Sem esse arquivo, elas usam um tom claro e neutro.
+As skills de conteúdo devem respeitar essa memória. Se o arquivo ainda estiver vazio, elas usam um tom claro e neutro.
 
 ## Criando Seu Próprio Repositório
 
