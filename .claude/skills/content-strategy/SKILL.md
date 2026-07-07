@@ -5,7 +5,9 @@ description: >
   ou descobrir sobre quais tópicos escrever. Use também quando mencionar "estratégia de
   conteúdo", "o que devo escrever", "ideias de conteúdo", "calendário editorial",
   "pilares de conteúdo", "planejamento de conteúdo", "não sei o que criar" ou
-  "content strategy". Para escrever peças individuais, use writing-filter ou carrossel.
+  "content strategy". Para escrever peças individuais, use carrossel quando for sequência
+  social, brand-storytelling quando for narrativa de marca, ou a voz registrada em
+  CLAUDE.md/_02. MEMORIA/voz-e-estilo.md quando for copy solta.
 metadata:
   version: 2.0.0
 ---

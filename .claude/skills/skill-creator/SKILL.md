@@ -43,6 +43,8 @@ description: >
 
 Seguido das instruções em markdown: o que fazer, como fazer, em que ordem, com quais regras.
 
+Se a pasta `.agents/skills/` existir, espelhar a mesma skill em `.agents/skills/[nome-da-skill]/SKILL.md` para manter compatibilidade com outros agentes.
+
 ### 4. Testar
 
 Sugerir 2–3 prompts realistas para testar a skill. Pedir ao usuário para confirmar se fazem sentido.
@@ -63,6 +65,10 @@ Refinar com base no feedback. Repetir até funcionar bem.
     ├── SKILL.md          (obrigatório — instrução e frontmatter)
     └── references/       (opcional — docs, exemplos, templates)
         └── exemplo.md
+
+.agents/skills/
+└── nome-da-skill/
+    └── SKILL.md          (espelho opcional para agentes compatíveis)
 ```
 
 - Manter o `SKILL.md` claro e direto — idealmente abaixo de 300 linhas

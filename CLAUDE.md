@@ -16,6 +16,10 @@
 
 [Rode `/init` para configurar]
 
+## Voz e estilo
+
+[Rode `/init` para configurar ou crie `_02. MEMORIA/voz-e-estilo.md`]
+
 ---
 
 ## Estrutura do sistema
@@ -33,7 +37,7 @@ boonOS/
 
 ## Como operar
 
-Antes de executar qualquer tarefa, verificar se existe uma skill relevante em `.claude/skills/`.
+Antes de executar qualquer tarefa, verificar se existe uma skill relevante em `.claude/skills/` ou `.agents/skills/`.
 
 Criar novas skills com `/skill-creator` sempre que uma tarefa se repetir mais de 3 vezes.
 
@@ -53,3 +57,6 @@ Quando em dúvida sobre onde algo vai, perguntar antes de criar pasta nova.
 | `/overview` | Panorama do que está rolando no OS |
 | `/skill-creator` | Cria uma nova skill personalizada |
 | `/grill-me` | Stress-testa uma ideia ou plano |
+| `/brand-storytelling` | Ajuda a criar narrativa, posicionamento e mensagem de marca |
+| `/content-strategy` | Planeja temas, pilares e calendário editorial |
+| `/carrossel` | Cria roteiro, copy e direção visual para carrosséis |
