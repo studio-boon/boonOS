@@ -1,0 +1,31 @@
+system:
+  name: "{{SYSTEM_NAME}}"
+  slug: "{{SYSTEM_SLUG}}"
+  locale: "{{LOCALE}}"
+  timezone: "{{TIMEZONE}}"
+owner:
+  name: "{{OWNER_NAME}}"
+  work_mode: "{{solo_ou_time}}"
+operation:
+  purpose: "{{PURPOSE}}"
+  source_of_truth:
+    - "{{SOURCE_OF_TRUTH}}"
+  approval_required_for:
+    - "envio externo"
+    - "publicação"
+    - "mudança financeira"
+priorities:
+  - "{{PRIORITY_1}}"
+creative_profile:
+  track: "{{TRACK}}"
+  goals:
+    - "{{CREATIVE_GOAL}}"
+skillset:
+  active:
+    - "init"
+    - "overview"
+    - "router"
+  available: []
+onboarding:
+  status: "active"
+  completed_modules: []

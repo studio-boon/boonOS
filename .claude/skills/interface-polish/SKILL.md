@@ -46,4 +46,4 @@ Depois da tabela, listar no máximo 5 mudanças prioritárias.
 
 ## Regra
 
-Não transformar polimento em redesign. Se a estrutura, navegação ou promessa visual estiverem quebradas, encaminhar para `/site-design` ou `/design-review`.
+Não transformar polimento em redesign. Se a estrutura, navegação ou promessa visual estiverem quebradas, encaminhar para as skills site-design ou design-review.

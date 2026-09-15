@@ -1,54 +1,46 @@
 ---
 name: overview
 description: >
-  Gera um panorama do que está acontecendo no sistema pessoal: projetos ativos,
-  pendências, contexto e próximos passos. Use quando o usuário disser "overview",
-  "/overview", "o que tá rolando", "me dá um resumo", "como tá tudo", "status geral",
-  "o que eu tenho aqui", "me situa".
+  Mostra um panorama curto e baseado em evidências do sistema: projetos em curso,
+  decisões, memória, lacunas e próximo passo. Use quando a pessoa disser "$overview",
+  "me situa", "o que está rolando", "como está meu sistema", "status geral" ou
+  "por onde volto?".
 ---
 
-# /overview — Panorama do sistema
+# overview — visão do todo sem inventar
 
-## Workflow
+## Leitura
 
-### 1. Levantamento
+Leia primeiro:
 
-Ler e listar:
-- `CLAUDE.md` — quem é o usuário, o que está construindo, foco atual
-- `_00. TRABALHO/` — listar o que existe, notar datas de modificação recentes
-- `_01. SISTEMA/` — decisões e regras registradas
-- `_02. MEMORIA/` — contexto vivo atual
+1. 01. SISTEMA/CONTEXTO.md
+2. 01. SISTEMA/PERFIL.yaml
+3. 01. SISTEMA/SKILLSET.md
+4. 01. SISTEMA/ONBOARDING.md
 
-### 2. Montar o panorama
+Depois, faça uma leitura proporcional de 00. TRABALHO, 01. SISTEMA e 02. MEMORIA. Não abra ou resuma documentos privados sem pedido. Se houver muitas pastas, liste os nomes e peça foco em vez de fazer uma varredura profunda.
 
-```
-## boonOS — Overview [data]
+## Saída
 
-### Em andamento
-- [projeto/área] — [status ou última atualização]
+~~~markdown
+## [nome do sistema] — panorama
 
-### Pausado ou esperando
-- [o que está parado e por quê, se houver]
+### Agora
+- [projeto ou frente] — [fato observável]
 
-### Última decisão registrada
-- [última coisa em _01. SISTEMA/, se houver]
+### Decisões e contexto que importam
+- [fato; citar arquivo quando útil]
 
-### O que vem a seguir
-[Derivar do que está mais próximo de avançar, mais próximo de vencer prazo,
-ou do que aparece como próximo passo nos arquivos mais recentes]
-```
+### Atenção
+- [lacuna, bloqueio ou risco; não inventar urgência]
 
-### 3. Sinalizar gaps
-
-Se detectar:
-- `_02. MEMORIA/` vazia — "Você ainda não alimentou a Memória. Sem isso, cada conversa começa do zero. O primeiro arquivo pode ser uma nota sobre você e seus projetos atuais."
-- `CLAUDE.md` ainda com campos `[Rode /init para configurar]` — "O sistema ainda não foi personalizado. Rode `/init` para começar."
-- Nenhuma atividade recente em `_00. TRABALHO/` — "Nada novo em TRABALHO há um tempo. Tem algo rolando que ainda não entrou aqui?"
-- `_01. SISTEMA/` vazia — "Nenhuma decisão registrada ainda. Quando você tomar uma decisão importante, guarda aqui."
+### Próximo passo recomendado
+[uma ação pequena, com motivo]
+~~~
 
 ## Regras
 
-- Basear em evidências das pastas — não inventar
-- Ser direto e curto — é um painel, não um relatório
-- Se o sistema estiver vazio demais, dizer o que falta e o que fazer primeiro
-- Não romantizar o que está vazio — só sinalizar e indicar próximo passo
+- Diferencie arquivo observado, inferência e recomendação.
+- Se o onboarding estiver incompleto, diga isso e ofereça $init.
+- Se o sistema estiver vazio, celebre nada: só mostre a primeira ação que cria utilidade.
+- Seja curto. É um painel, não uma auditoria.

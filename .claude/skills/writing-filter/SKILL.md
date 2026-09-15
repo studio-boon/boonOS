@@ -1,72 +1,59 @@
 ---
 name: writing-filter
 description: >
-  Filtro base de escrita para revisar ou criar textos sem impor uma voz fixa.
-  Use quando o usuário pedir copy, post, site, proposta, roteiro, manifesto,
-  texto de portfolio, mensagem comercial, revisão de tom, "melhora esse texto",
-  "deixa mais claro", "deixa com minha voz" ou "passa um filtro".
+  Revisa ou escreve textos com clareza, especificidade e a voz da pessoa que usa
+  o sistema. Use quando ela pedir "$writing-filter", "melhora esse texto", "deixa
+  com minha voz", "passa um filtro", "deixa mais claro", copy, mensagem, site,
+  proposta, roteiro ou texto de portfolio.
 ---
 
-# writing-filter
+# writing-filter — clareza sem apagar a voz
 
-Filtro neutro de escrita. A função é deixar o texto mais claro, específico e útil sem transformar tudo em uma voz genérica.
+## Onde a voz vive
 
-## Regra central
+Antes de escrever, procure:
 
-A voz vem do usuário, não da skill.
+1. 01. SISTEMA/CONTEXTO.md;
+2. 02. MEMORIA/voz-e-estilo.md;
+3. exemplos enviados pela pessoa;
+4. público, canal e ação desejada.
 
-Antes de escrever ou revisar, procurar:
-
-- preferências em `CLAUDE.md`;
-- `_02. MEMORIA/voz-e-estilo.md`, se existir;
-- exemplos de texto enviados na conversa;
-- contexto do público, canal e objetivo.
-
-Se não houver voz definida, usar tom claro, direto e específico.
+Se não houver voz definida, use uma escrita clara, direta e específica. Não invente uma personalidade de marca.
 
 ## Briefing mínimo
 
-Se não estiver claro, perguntar:
+Quando faltar informação, descubra:
 
-- Quem vai ler?
-- Qual ação ou percepção o texto precisa gerar?
-- Onde o texto será usado?
-- Existe algum exemplo de tom a seguir ou evitar?
+- quem lê;
+- o que precisa entender, sentir ou fazer;
+- onde o texto será usado;
+- o que deve ser preservado ou evitado.
 
-## Passagem de revisão
+## Revisão
 
-Revisar por:
+Revise por:
 
-- clareza: a ideia principal aparece rápido;
-- especificidade: evitar frases que servem para qualquer pessoa ou marca;
-- consequência: trocar ênfase abstrata por efeito concreto;
-- ritmo: cortar repetição, enchimento e sequência automática de três ideias;
-- voz: preservar palavras, cadência e ponto de vista do usuário;
-- canal: adequar densidade para post, site, proposta, e-mail, roteiro ou deck.
+- clareza: a ideia principal aparece cedo;
+- especificidade: o texto não poderia servir a qualquer pessoa;
+- evidência: promessas têm prova ou são apresentadas como intenção;
+- ritmo: menos enchimento, repetição e sequência automática;
+- voz: palavras e cadência do usuário sobrevivem;
+- canal: tamanho e densidade cabem no formato.
 
-## Cortes padrão
+Remova adjetivo sem prova, abertura que demora a chegar, CTA genérico e metáfora que só enfeita.
 
-Remover ou reescrever:
+## Saída
 
-- adjetivo sem prova;
-- promessa vaga;
-- frase de autoridade vazia;
-- empatia performática;
-- abertura longa antes do ponto;
-- CTA genérico;
-- metáfora decorativa que não ajuda a entender.
+~~~markdown
+## Versão revisada
 
-## Formato de saída
-
-Quando revisar, entregar:
-
-```text
-Versão revisada:
 [texto]
 
-O que mudou:
-- [mudança importante]
-- [mudança importante]
-```
+## O que mudou
 
-Quando criar do zero, entregar a versão final e, se fizer sentido, 2 ou 3 alternativas de tom.
+- ...
+
+## Ponto a validar
+
+- ...
+~~~

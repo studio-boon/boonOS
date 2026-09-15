@@ -1,0 +1,30 @@
+# Perfil seguro para leitura das skills. Preencha pelo $init ou manualmente.
+# Não coloque senhas, tokens, dados bancários ou documentos fiscais aqui.
+system:
+  name: "Meu Sistema"
+  slug: "meu-sistema"
+  locale: "pt-BR"
+  timezone: ""
+owner:
+  name: ""
+  work_mode: "solo"
+operation:
+  purpose: ""
+  source_of_truth: []
+  approval_required_for:
+    - "envio externo"
+    - "publicação"
+    - "mudança financeira"
+priorities: []
+creative_profile:
+  track: "a_definir"
+  goals: []
+skillset:
+  active:
+    - "init"
+    - "overview"
+    - "router"
+  available: []
+onboarding:
+  status: "not_started"
+  completed_modules: []

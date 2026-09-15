@@ -1,94 +1,70 @@
 ---
 name: skill-creator
 description: >
-  Cria novas skills, modifica e melhora skills existentes. Use quando o usuário
-  quiser criar um comando personalizado ("quero um skill que...", "/skill-creator",
-  "cria uma skill para X", "como crio um comando pra isso?", "isso deveria virar
-  uma skill", ou quando uma tarefa se repetir mais de 3 vezes e valer automatizar).
+  Cria, revisa e testa uma skill pessoal para um fluxo que se repete. Use quando
+  a pessoa disser "$skill-creator", "isso devia virar uma skill", "quero um comando
+  para isso", "cria uma skill" ou quando um processo recorrente precisar de um
+  checklist e uma saída consistente.
 ---
 
-# /skill-creator
+# skill-creator — transforme repetição em um bom processo
 
-Uma skill para criar skills — e melhorá-las com o tempo.
+Uma skill não é um atalho para pensar menos. É uma forma de preservar um raciocínio que já funcionou.
 
----
+## Antes de criar
 
-## Processo
+Confirme que há:
 
-### 1. Capturar a intenção
+- uma tarefa repetida ou um critério que precisa persistir;
+- um gatilho reconhecível;
+- uma saída desejada;
+- um caso real para testar.
 
-Entender o que o usuário quer. A conversa atual pode já conter um fluxo que ele quer capturar. Se sim, extrair dali: as etapas, o que funcionou, o formato de saída.
+Se for uma tarefa única, use uma skill existente ou faça o trabalho sem criar estrutura permanente.
 
-Perguntar:
-1. O que esse skill deve permitir fazer?
-2. Quando ele deve ser acionado? (quais frases ou contextos)
-3. Qual o formato de saída esperado?
+## Entrevista curta
 
-### 2. Entrevistar e pesquisar
+Pergunte:
 
-Fazer perguntas sobre casos de borda, exemplos reais, critérios de sucesso. Não começar a escrever antes de entender bem o uso.
+1. Em que situação essa skill deve entrar?
+2. Quais informações ela precisa antes de agir?
+3. Qual saída prova que ela funcionou?
+4. O que ela não pode fazer ou assumir?
 
-### 3. Escrever o SKILL.md
+Busque um fluxo pequeno. Se a descrição depender de muitas exceções, proponha um playbook ou uma etapa manual antes.
 
-Criar o arquivo em `.claude/skills/[nome-da-skill]/SKILL.md` com:
+## Implementação
 
-```yaml
+Crie primeiro:
+
+~~~text
+.agents/skills/[nome-da-skill]/SKILL.md
+~~~
+
+O frontmatter mínimo é:
+
+~~~yaml
 ---
 name: nome-da-skill
-description: >
-  O que o skill faz e quando deve ser acionado. Incluir frases típicas que o usuário
-  diria para acionar esse skill. Ser específico — a descrição é o gatilho principal.
+description: O que ela faz e quando deve ser usada.
 ---
-```
+~~~
 
-Seguido das instruções em markdown: o que fazer, como fazer, em que ordem, com quais regras.
+Depois escreva:
 
-Se a pasta `.agents/skills/` existir, espelhar a mesma skill em `.agents/skills/[nome-da-skill]/SKILL.md` para manter compatibilidade com outros agentes.
+1. propósito;
+2. briefing mínimo;
+3. passos na ordem certa;
+4. gates de segurança ou qualidade;
+5. formato de saída;
+6. casos em que deve perguntar ou encaminhar.
 
-### 4. Testar
+Não codifique nomes de clientes, caminhos pessoais, preços, credenciais, voz privada ou fatos que possam mudar.
 
-Sugerir 2–3 prompts realistas para testar a skill. Pedir ao usuário para confirmar se fazem sentido.
+Quando a skill estiver pronta, espelhe a mesma árvore em .claude/skills/[nome-da-skill]/. A versão em .agents é a canônica.
 
-Rodar e avaliar juntos: o resultado foi o esperado? O que ajustar?
+## Teste
 
-### 5. Iterar
+Proponha dois prompts reais: um caso simples e um caso de borda. Rode ou simule os dois, e ajuste a skill somente com evidência do que faltou.
 
-Refinar com base no feedback. Repetir até funcionar bem.
-
----
-
-## Anatomia de uma skill
-
-```
-.claude/skills/
-└── nome-da-skill/
-    ├── SKILL.md          (obrigatório — instrução e frontmatter)
-    └── references/       (opcional — docs, exemplos, templates)
-        └── exemplo.md
-
-.agents/skills/
-└── nome-da-skill/
-    └── SKILL.md          (espelho opcional para agentes compatíveis)
-```
-
-- Manter o `SKILL.md` claro e direto — idealmente abaixo de 300 linhas
-- Usar o frontmatter `description` para descrever quando acionar, não só o que faz
-- Se o skill tiver múltiplas variantes, usar subpastas em `references/`
-
----
-
-## Guia de escrita
-
-- Usar forma imperativa nas instruções: "Perguntar X", "Listar Y", "Gerar Z"
-- Explicar o porquê de regras importantes — não só o que fazer
-- Incluir exemplos de input/output quando ajudar a clareza
-- Evitar instruções genéricas demais — quanto mais específico o contexto, mais útil a skill
-
----
-
-## Regras
-
-- Não criar skill sem entender o caso de uso real
-- Não assumir que o usuário quer evals ou benchmarks — só sugerir se fizer sentido
-- Se o usuário disser "faz rápido, sem testar", criar e entregar — sem enrolação
-- A skill não está pronta até o usuário confirmar que funciona como esperado
+Se scripts/check-skills.sh existir, execute-o depois de mudanças em skills.
