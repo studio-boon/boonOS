@@ -1,13 +1,13 @@
 # Instalar o boonOS 2.1 (beta)
 
-Você precisa de um agente com acesso à pasta local e acesso à sua conta nesse agente. O pacote inclui contratos para Codex e Claude Code. Git é opcional para baixar o pacote. Ferramentas de imagem, apresentações, serviços externos e rotinas recorrentes são opcionais e dependem do ambiente.
+Você precisa de **um agente de IA capaz de ler e trabalhar nos arquivos da pasta**, com acesso à sua conta nesse agente. Pode ser Codex, Claude Code, Gemini CLI ou outro com esse recurso. O boonOS não exige Claude Code nem conta Anthropic. Git é opcional para baixar o pacote. Ferramentas de imagem, apresentações, serviços externos e rotinas recorrentes são opcionais e dependem do ambiente.
 
 ## 1. Escolha a edição certa
 
 **Caminho mais simples, sem terminal:**
 
 1. Se o repositório estiver privado, aceite o convite do GitHub e entre na conta que recebeu acesso.
-2. Abra a [release boonOS 2.1](https://github.com/tchelove/boonOS/releases/tag/v2.1.0-beta.1). Em **Assets**, baixe `boonOS-2.1-beta.zip`.
+2. Abra a [release boonOS 2.1](https://github.com/tchelove/boonOS/releases/tag/v2.1.0-beta.2). Em **Assets**, baixe `boonOS-2.1-beta.zip`.
 3. Extraia o ZIP em uma pasta sua, por exemplo `Documentos/meu-sistema`. Você pode renomear a pasta.
 4. Abra a pasta extraída que contém `AGENTS.md`, `CLAUDE.md` e `boonos.json` — esses arquivos devem estar diretamente dentro dela.
 
@@ -20,7 +20,7 @@ git clone --branch beta/2.1 --single-branch https://github.com/tchelove/boonOS.g
 cd meu-sistema
 ~~~
 
-Clonar sem `--branch beta/2.1` segue a branch padrão do GitHub e pode trazer uma edição posterior. Confira `boonos.json`: esta edição usa a versão `2.1.0-beta.1`.
+Clonar sem `--branch beta/2.1` segue a branch padrão do GitHub e pode trazer uma edição posterior. Confira `boonos.json`: esta edição usa a versão `2.1.0-beta.2`.
 
 ## 2. Abra no seu agente
 
@@ -28,13 +28,16 @@ Se ainda não tiver um agente instalado, escolha **um** caminho e conclua a inst
 
 - **Codex:** [primeiros passos no aplicativo](https://learn.chatgpt.com/docs/quickstart) ou [Codex no terminal](https://learn.chatgpt.com/docs/codex/cli).
 - **Claude Code:** [instalação e primeira sessão](https://code.claude.com/docs/en/quickstart).
+- **Gemini CLI:** [instalação oficial](https://geminicli.com/docs/get-started/installation/).
 
-Não precisa instalar os dois. O boonOS é a pasta de contexto e processos; o agente é o aplicativo que lê e trabalha nela.
+Escolha apenas o agente que pretende usar. O boonOS é a pasta de contexto e processos; o agente é o aplicativo que lê e trabalha nela.
 
 | Agente | Entrada local |
 |---|---|
 | Codex | no aplicativo, use a opção de abrir pasta/projeto e escolha a pasta extraída; no terminal, execute `codex` dentro dela |
 | Claude Code | execute `claude` dentro da pasta ou abra-a na interface que utiliza |
+| Gemini CLI | execute `gemini` dentro da pasta; `GEMINI.md` importa o contrato comum |
+| Outro agente com arquivos locais | abra a pasta e peça a leitura de `AGENTS.md` e `.agents/skills/init/SKILL.md` |
 
 A disponibilidade do aplicativo e seus requisitos dependem da plataforma e da versão instalada. A existência dos contratos neste pacote não declara teste real em cada combinação de Windows/macOS e agente.
 
@@ -42,7 +45,7 @@ Na primeira conversa:
 
 > Use a skill local init deste workspace e me guie na configuração. Quero conhecer as possibilidades criativas e operacionais e começar por uma situação minha.
 
-No Codex, `$init` é uma alternativa para selecionar a skill. No Claude, use o pedido explícito acima: `/init` pode ter outro significado no aplicativo. Não é necessário editar YAML para começar.
+No Codex, `$init` é uma alternativa para selecionar a skill. Nos demais, use o pedido explícito acima: `/init` pode ter outro significado no aplicativo. Não é necessário editar YAML para começar.
 
 ## 3. Escolha o ritmo
 
@@ -57,6 +60,8 @@ Em ambos, o resultado é um sistema com o seu contexto e uma próxima ação cla
 Peça ao agente para informar o nome da versão, citar a prioridade de `01. SISTEMA/CONTEXTO.md` e dizer se existe um checkpoint. Num template vazio, ele deve reconhecer que ainda não há prioridade confirmada.
 
 Se não encontrar a skill, confira se abriu a pasta raiz correta e se o arquivo local da skill está presente. Abra uma nova sessão dentro dessa pasta. Se a instalação do agente não carregar skills locais, peça a leitura do `SKILL.md` pelo caminho; isso é um procedimento manual, não prova descoberta automática.
+
+No Gemini CLI, `/memory show` permite conferir o contexto carregado e `/skills list` lista as skills disponíveis. Versões atuais reconhecem `.agents/skills`; confirme no seu ambiente e siga as solicitações de confiança da pasta e ativação da skill. Consulte a documentação oficial de [contexto](https://geminicli.com/docs/cli/gemini-md/) e [skills](https://geminicli.com/docs/cli/skills/). Esta edição inclui a entrada do Gemini, mas não registra um onboarding executado no aplicativo Gemini CLI. Um chat sem acesso local exige anexar o contexto e salvar as saídas manualmente; não oferece a mesma continuidade da pasta aberta.
 
 Os verificadores do pacote exigem Python 3.10 ou superior. Na raiz:
 

@@ -1,5 +1,12 @@
 # Histórico do boonOS
 
+## 2.1.0-beta.2
+
+- Pré-requisitos explícitos e neutros: qualquer agente com acesso a arquivos locais, incluindo Codex, Claude Code e Gemini CLI.
+- Entrada GEMINI.md e instruções oficiais de contexto/skills, sem criar terceiro espelho.
+- CI ativada com matriz Linux/macOS/Windows e Python 3.10/3.13.
+- ZIP revisado e versionado separadamente da primeira publicação.
+
 ## 2.1.0-beta.1
 
 - Duas áreas visíveis, Criativo e Operacional, conectadas pela mesma base de contexto e memória.

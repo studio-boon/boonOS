@@ -36,7 +36,7 @@ def frontmatter(path):
 
 def validate(root, release=False):
     errors, warnings = [], []
-    required = ['README.md', 'AGENTS.md', 'CLAUDE.md', '00. COMECE-AQUI.md',
+    required = ['README.md', 'AGENTS.md', 'CLAUDE.md', 'GEMINI.md', '00. COMECE-AQUI.md',
                 'boonos.json', '01. SISTEMA/CATALOGO.json', '01. SISTEMA/PERFIL.yaml',
                 '01. SISTEMA/CONTEXTO.md', '01. SISTEMA/ONBOARDING.md',
                 '01. SISTEMA/SKILLSET.md', '06. GUIAS/01. INSTALAÇÃO/INSTALAR.md']

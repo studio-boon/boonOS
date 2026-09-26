@@ -1,10 +1,10 @@
-# Ativar os testes automáticos no GitHub
+# Manter os testes automáticos no GitHub
 
 Esta etapa é de manutenção do template. Não é necessária para instalar ou usar o boonOS.
 
-Os 66 testes desta release foram executados localmente em macOS com Python 3.14.4. A matriz remota de Linux/macOS/Windows e Python 3.10/3.13 está preparada em [check.workflow.yml](check.workflow.yml), mas não está ativa. A credencial usada na publicação não autoriza criar arquivos de workflow.
+O workflow está ativo em `.github/workflows/check.yml` no repositório de origem. As seis combinações de Linux/macOS/Windows com Python 3.10/3.13 passaram na [primeira execução completa](https://github.com/tchelove/boonOS/actions/runs/36204735331). Os 66 testes também passaram localmente em macOS/Python 3.14.4. [check.workflow.yml](check.workflow.yml) mantém uma cópia da configuração para referência.
 
-Com autorização para configurar CI no repositório e uma sessão/permissão apropriada:
+Se sua cópia não tiver o workflow, use estes passos com autorização para configurar CI e uma sessão/permissão apropriada:
 
 1. Use a branch `beta/2.1` ou uma branch de manutenção que contenha esta release completa.
 2. Copie `check.workflow.yml` deste diretório para `.github/workflows/check.yml`, preservando o conteúdo.
