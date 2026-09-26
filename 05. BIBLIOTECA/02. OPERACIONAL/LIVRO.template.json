@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "currency": "",
+  "description": "Modelo incompleto: informar moeda, saldo inicial verificado, data e fonte antes de calcular.",
+  "opening_cash": {"date": "", "amount": "", "source": ""},
+  "obligations": [],
+  "events": []
+}

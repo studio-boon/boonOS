@@ -1,0 +1,619 @@
+{
+  "schema_version": 1,
+  "version": "2.1.0-beta.1",
+  "extensions": "Skills pessoais podem existir além desta lista; o checker não exige total fixo.",
+  "skills": [
+    {
+      "name": "copywriting",
+      "area": "criativo",
+      "label": "Texto",
+      "summary": "Texto: texto completo com premissas e revisão.",
+      "inputs": "Objetivo, público, conteúdo e voz",
+      "output": "Texto completo com premissas e revisão",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/copywriting/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "writing-filter",
+      "area": "criativo",
+      "label": "Revisão de linguagem",
+      "summary": "Revisão de linguagem: texto revisado com fidelidade aos fatos.",
+      "inputs": "Texto e critérios de voz",
+      "output": "Texto revisado com fidelidade aos fatos",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/writing-filter/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "brand-storytelling",
+      "area": "criativo",
+      "label": "Narrativa de marca",
+      "summary": "Narrativa de marca: decisões de narrativa e mensagem.",
+      "inputs": "Público, situação, promessa e provas",
+      "output": "Decisões de narrativa e mensagem",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/brand-storytelling/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "content-strategy",
+      "area": "criativo",
+      "label": "Estratégia de conteúdo",
+      "summary": "Estratégia de conteúdo: linha editorial com função e próximos usos.",
+      "inputs": "Objetivos, oferta, público e capacidade",
+      "output": "Linha editorial com função e próximos usos",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/content-strategy/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "carrossel",
+      "area": "criativo",
+      "label": "Carrossel",
+      "summary": "Carrossel: roteiro e composição de slides.",
+      "inputs": "Mensagem, público, formato e texto",
+      "output": "Roteiro e composição de slides",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Produção/exportação depende de executor compatível disponível na sessão"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/carrossel/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "post-social",
+      "area": "criativo",
+      "label": "Post social",
+      "summary": "Post social: peça ou instrução de produção e legenda.",
+      "inputs": "Intenção, canal e conteúdo",
+      "output": "Peça ou instrução de produção e legenda",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Produção/exportação depende de executor compatível disponível na sessão"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/post-social/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "design",
+      "area": "criativo",
+      "label": "Direção e criação visual",
+      "summary": "Direção e criação visual: direção e artefato quando houver executor.",
+      "inputs": "Briefing, conteúdo, restrições e referências",
+      "output": "Direção e artefato quando houver executor",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Produção/exportação depende de executor compatível disponível na sessão"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/design/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "design-review",
+      "area": "criativo",
+      "label": "Revisão visual",
+      "summary": "Revisão visual: problemas priorizados e correções.",
+      "inputs": "Artefato real e critério de sucesso",
+      "output": "Problemas priorizados e correções",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/design-review/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "taste",
+      "area": "criativo",
+      "label": "Repertório e critério",
+      "summary": "Repertório e critério: critérios visuais aplicáveis.",
+      "inputs": "Referência, contexto e intenção",
+      "output": "Critérios visuais aplicáveis",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/taste/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "image-direction",
+      "area": "criativo",
+      "label": "Direção de imagem",
+      "summary": "Direção de imagem: direção e instrução para executor disponível.",
+      "inputs": "Objetivo, referências e restrições",
+      "output": "Direção e instrução para executor disponível",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Produção/exportação depende de executor compatível disponível na sessão"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/image-direction/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "presentation",
+      "area": "criativo",
+      "label": "Apresentações",
+      "summary": "Apresentações: roteiro, sequência e plano de produção.",
+      "inputs": "Mensagem, audiência e duração",
+      "output": "Roteiro, sequência e plano de produção",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Produção/exportação depende de executor compatível disponível na sessão"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/presentation/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "site-design",
+      "area": "criativo",
+      "label": "Sites e interfaces",
+      "summary": "Sites e interfaces: estrutura e direção de interface.",
+      "inputs": "Objetivo, conteúdo e necessidades de uso",
+      "output": "Estrutura e direção de interface",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Produção/exportação depende de executor compatível disponível na sessão"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/site-design/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "interface-polish",
+      "area": "criativo",
+      "label": "Acabamento de interface",
+      "summary": "Acabamento de interface: melhorias de interação e acabamento.",
+      "inputs": "Interface existente e comportamento esperado",
+      "output": "Melhorias de interação e acabamento",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Produção/exportação depende de executor compatível disponível na sessão"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/interface-polish/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "portfolio-case-study",
+      "area": "criativo",
+      "label": "Case de portfólio",
+      "summary": "Case de portfólio: narrativa honesta e seleção de material.",
+      "inputs": "Papel real, processo e evidências",
+      "output": "Narrativa honesta e seleção de material",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/portfolio-case-study/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-projetos",
+      "area": "operacional",
+      "label": "Projetos",
+      "summary": "Projetos: plano, marcos e impedimentos.",
+      "inputs": "Escopo, pessoas, prazos e critérios",
+      "output": "Plano, marcos e impedimentos",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-projetos/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-rotina",
+      "area": "operacional",
+      "label": "Rotina e prioridades",
+      "summary": "Rotina e prioridades: semana com foco, responsáveis e decisões.",
+      "inputs": "Prioridades e capacidade disponível",
+      "output": "Semana com foco, responsáveis e decisões",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-rotina/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-reunioes",
+      "area": "operacional",
+      "label": "Reuniões e decisões",
+      "summary": "Reuniões e decisões: decisões atribuídas e tarefas.",
+      "inputs": "Transcrição ou notas identificadas",
+      "output": "Decisões atribuídas e tarefas",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-reunioes/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-clientes",
+      "area": "operacional",
+      "label": "Clientes e onboarding",
+      "summary": "Clientes e onboarding: cadastro e passagem preservando histórico.",
+      "inputs": "Aceite, histórico e contexto",
+      "output": "Cadastro e passagem preservando histórico",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-clientes/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-comercial",
+      "area": "operacional",
+      "label": "Comercial",
+      "summary": "Comercial: qualificação, estágio e próximo passo.",
+      "inputs": "Oportunidade e evidências",
+      "output": "Qualificação, estágio e próximo passo",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-comercial/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-propostas",
+      "area": "operacional",
+      "label": "Propostas",
+      "summary": "Propostas: proposta pronta para revisão.",
+      "inputs": "Diagnóstico, escopo e preço",
+      "output": "Proposta pronta para revisão",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-propostas/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-precificar",
+      "area": "operacional",
+      "label": "Precificação",
+      "summary": "Precificação: cenários com premissas e cálculo.",
+      "inputs": "Custos, esforço, capacidade e margem",
+      "output": "Cenários com premissas e cálculo",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-precificar/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-contas",
+      "area": "operacional",
+      "label": "Contas a pagar e receber",
+      "summary": "Contas a pagar e receber: lançamentos rastreáveis e validados.",
+      "inputs": "Contrato, parcelas, eventos e documentos",
+      "output": "Lançamentos rastreáveis e validados",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Python 3.10+ para ferramentas determinísticas"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-contas/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-financeiro",
+      "area": "operacional",
+      "label": "Financeiro",
+      "summary": "Financeiro: caixa, vencimentos e cenários separados.",
+      "inputs": "Registros e data de corte",
+      "output": "Caixa, vencimentos e cenários separados",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Python 3.10+ para ferramentas determinísticas"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-financeiro/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-conciliar",
+      "area": "operacional",
+      "label": "Conciliação",
+      "summary": "Conciliação: correspondências, divergências e pendências.",
+      "inputs": "Lançamentos e extrato fornecido",
+      "output": "Correspondências, divergências e pendências",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Python 3.10+ para ferramentas determinísticas"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-conciliar/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-contabilidade",
+      "area": "operacional",
+      "label": "Preparação contábil",
+      "summary": "Preparação contábil: índice, faltas e pacote para revisão.",
+      "inputs": "Período, checklist e documentos",
+      "output": "Índice, faltas e pacote para revisão",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-contabilidade/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-saude-operacional",
+      "area": "operacional",
+      "label": "Saúde da operação",
+      "summary": "Saúde da operação: riscos, decisões e próximos passos.",
+      "inputs": "Caixa, margem, concentração e capacidade",
+      "output": "Riscos, decisões e próximos passos",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-saude-operacional/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-fornecedores",
+      "area": "operacional",
+      "label": "Fornecedores",
+      "summary": "Fornecedores: comparação e acompanhamento de contratação.",
+      "inputs": "Necessidades, cotações e compromissos",
+      "output": "Comparação e acompanhamento de contratação",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-fornecedores/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-documentos",
+      "area": "operacional",
+      "label": "Documentos e versões",
+      "summary": "Documentos e versões: índice, versão vigente e pendências.",
+      "inputs": "Documentos, fontes e responsáveis",
+      "output": "Índice, versão vigente e pendências",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-documentos/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "init",
+      "area": "sistema",
+      "label": "Instalação guiada",
+      "summary": "Instalação guiada: perfil próprio e primeira missão.",
+      "inputs": "Momento, objetivos e respostas da pessoa",
+      "output": "Perfil próprio e primeira missão",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/init/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "overview",
+      "area": "sistema",
+      "label": "Visão geral",
+      "summary": "Visão geral: panorama com fontes e próxima ação.",
+      "inputs": "Contexto, projetos e registros",
+      "output": "Panorama com fontes e próxima ação",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/overview/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "router",
+      "area": "sistema",
+      "label": "Escolha de caminho",
+      "summary": "Escolha de caminho: rota coerente para executar o trabalho.",
+      "inputs": "Pedido e contexto disponível",
+      "output": "Rota coerente para executar o trabalho",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/router/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "grill-me",
+      "area": "sistema",
+      "label": "Perguntas para decidir",
+      "summary": "Perguntas para decidir: hipóteses, opções e próximo passo.",
+      "inputs": "Ideia, dúvida ou decisão",
+      "output": "Hipóteses, opções e próximo passo",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/grill-me/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "study-playbook",
+      "area": "sistema",
+      "label": "Estudo e prática",
+      "summary": "Estudo e prática: síntese, prática e aprendizado.",
+      "inputs": "Fonte acessível e intenção de estudo",
+      "output": "Síntese, prática e aprendizado",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/study-playbook/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "skill-creator",
+      "area": "sistema",
+      "label": "Criação de skill pessoal",
+      "summary": "Criação de skill pessoal: skill local com testes e referências.",
+      "inputs": "Fluxo recorrente e caso real",
+      "output": "Skill local com testes e referências",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.0, revisada na 2.1",
+      "path": ".agents/skills/skill-creator/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-memoria",
+      "area": "sistema",
+      "label": "Memória e continuidade",
+      "summary": "Memória e continuidade: registro confirmado e atribuído.",
+      "inputs": "Aprendizado, origem, escopo e autoria",
+      "output": "Registro confirmado e atribuído",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-memoria/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-melhorar-sistema",
+      "area": "sistema",
+      "label": "Melhoria do sistema",
+      "summary": "Melhoria do sistema: candidato, aplicação e verificação.",
+      "inputs": "Fricção, evidência e critério",
+      "output": "Candidato, aplicação e verificação",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Python 3.10+ para ferramentas determinísticas"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-melhorar-sistema/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-avaliar-skills",
+      "area": "sistema",
+      "label": "Avaliação de skills",
+      "summary": "Avaliação de skills: comparação e decisão rastreável.",
+      "inputs": "Versões, casos e rubrica",
+      "output": "Comparação e decisão rastreável",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-avaliar-skills/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-gerir-skills",
+      "area": "sistema",
+      "label": "Gestão de skills",
+      "summary": "Gestão de skills: diagnóstico, atualização e paridade.",
+      "inputs": "Catálogo, arquivos e baseline",
+      "output": "Diagnóstico, atualização e paridade",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais",
+        "Python 3.10+ para ferramentas determinísticas"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-gerir-skills/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-integracoes",
+      "area": "sistema",
+      "label": "Integrações",
+      "summary": "Integrações: plano e estado real da conexão.",
+      "inputs": "Necessidade, ferramenta e escopo",
+      "output": "Plano e estado real da conexão",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-integracoes/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "boon-automacoes",
+      "area": "sistema",
+      "label": "Automações",
+      "summary": "Automações: rotina observável ou plano de ativação.",
+      "inputs": "Fluxo validado, executor e permissões",
+      "output": "Rotina observável ou plano de ativação",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/boon-automacoes/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    }
+  ]
+}

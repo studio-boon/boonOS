@@ -116,11 +116,11 @@ Apresente o roteiro para aprovação antes de finalizar.
 - Indicador de progresso discreto (número ou ponto), sem competir com a mensagem
 - Quebrar o grid é permitido quando a quebra marca tensão, erro ou virada
 
-### 5. Aplicar o writing-filter
+### 5. Aplicar a skill writing-filter
 
-Antes de finalizar qualquer copy, aplicar `/writing-filter`:
+Antes de finalizar qualquer copy, aplicar a skill writing-filter:
 
-- Se existir `CLAUDE.md` personalizado ou `_02. MEMORIA/voz-e-estilo.md`, respeitar essas regras.
+- Antes de finalizar a copy, ler 01. SISTEMA/CONTEXTO.md e, se existir, 02. MEMORIA/voz-e-estilo.md. Respeitar essas regras sem inventar uma voz.
 - Se a voz ainda não estiver definida, usar tom claro, direto e específico.
 - Cortar frases genéricas, promessas vagas e chamadas que poderiam servir para qualquer marca.
 - Trocar ênfase abstrata por consequência concreta.

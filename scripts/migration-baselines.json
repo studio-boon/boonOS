@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "versions": {
+    "main": {
+      "brand-storytelling": {
+        "SKILL.md": "bc2b11f75e7f897fe74b5644c42b3e11c22c80ac7c179d4c0432d6003e0424c7",
+        "references/guest-insights.md": "6bcc4d237fa2c2c5ba14349c51a3ecbb7a048de521ae5a0964908a98af4256d6"
+      },
+      "carrossel": {
+        "SKILL.md": "b35d382b6028daa5ad0baa506302949c3fcaf3c5b783216b32aaa2b288ce094f"
+      },
+      "content-strategy": {
+        "SKILL.md": "22aada497b92c8a5051c39067801804897a3f2fd9829247f559d33d0e8c7dde7"
+      },
+      "design-review": {
+        "SKILL.md": "4a77aa42f574acf43021e361c403115d666ff46363c4ecf08760a7165ad99daa"
+      },
+      "grill-me": {
+        "SKILL.md": "6854a485941fa4eafb6c093edbe60ee7822f953c225afdfb2b9c030b1fcfb089"
+      },
+      "init": {
+        "SKILL.md": "f902163126d3109e04f8e28d349993d142e27a26cd6e28fe9fb03739066fdb29"
+      },
+      "interface-polish": {
+        "SKILL.md": "228b28cf8a381333d63a2a777a1e733b4f290075d3e1282653ae3b3a7c53756f"
+      },
+      "overview": {
+        "SKILL.md": "fa4375cf31779cb9316d27ef49172713a55647dd6383703b66dd116ba9a1eacd"
+      },
+      "portfolio-case-study": {
+        "SKILL.md": "7a35081ab8811c9efc7a86434a978515b2cf6951e26fbfa3e871ad7b2d6bf464"
+      },
+      "post-social": {
+        "SKILL.md": "64674bac381be82c755743e850c528345b512b7fb1b0069a6927667f5aedfa40"
+      },
+      "site-design": {
+        "SKILL.md": "e103cdbb17d487e80e152f9574eff1a104f8bcf06c5d0e7ac0aac102d4c22ccd"
+      },
+      "skill-creator": {
+        "SKILL.md": "ec0d105284f0d795acbb6b8466858364e8e2c5b363f06b0e237abeafcfd64d14"
+      },
+      "tagline-creation-strategies": {
+        "SKILL.md": "d4e186171d1c8b35944bbb7208caf3960c5b2572e91e1e6692ee1b3fb5ccac67"
+      },
+      "writing-filter": {
+        "SKILL.md": "cea15ad4a5fefa5c929ab986dd038d45f0c7d8339ea3dc9cf82bcc1d298fc933"
+      }
+    },
+    "beta20": {
+      "brand-storytelling": {
+        "SKILL.md": "55273cb485ee686ec9be922506d5be64cfe1d9d6e09bed25d516cefb1aa60ac3",
+        "references/guest-insights.md": "6bcc4d237fa2c2c5ba14349c51a3ecbb7a048de521ae5a0964908a98af4256d6"
+      },
+      "carrossel": {
+        "SKILL.md": "82f55aa5c5643752466f956e22a048eedb4553f3df4d08ace574d6200ccfa001"
+      },
+      "content-strategy": {
+        "SKILL.md": "588a3bbec3e14a51e5f42e4dd1f16630ca21272c5483044faa0e98eb8c5af86f"
+      },
+      "copywriting": {
+        "SKILL.md": "d970732b9dc25ccf90bb0614fe4e83be034ff2a608df6d90bc36ba246ecd9b9c"
+      },
+      "design-review": {
+        "SKILL.md": "4a77aa42f574acf43021e361c403115d666ff46363c4ecf08760a7165ad99daa"
+      },
+      "design": {
+        "SKILL.md": "066658720761d0f60e74faaab3956fa83305addf54c60980ae03e408a5ab68c4"
+      },
+      "grill-me": {
+        "SKILL.md": "795561d3c06491fdc6802f66b00cab27269086c9218a9e05a3da2aa952e2986e"
+      },
+      "image-direction": {
+        "SKILL.md": "188e2980eb4b9dbcb19b6fa9a68c94f89cefe6990ce2b6d97199b2826d23a645"
+      },
+      "init": {
+        "SKILL.md": "6389e6b5e7ed76fbc1dca88213b31c884c46cc01f9bf2f8fcb826a9ac2b68047"
+      },
+      "interface-polish": {
+        "SKILL.md": "e5f8848123838f903fc760857a322606dc8c7180987f603266f5006d05ad57b4"
+      },
+      "overview": {
+        "SKILL.md": "774b10224274c8c9377c9d48fbd393cff65b3ffa43f52cffdf489ce5987591e5"
+      },
+      "portfolio-case-study": {
+        "SKILL.md": "fb4f978e65ac793e9b53cffa95bca52edc47444da361f9d3b7998cb7fd1bba8e"
+      },
+      "post-social": {
+        "SKILL.md": "5d295e1f00258f4e557c955fc9408b3110e205b472545644a206ea63df5b9a94"
+      },
+      "presentation": {
+        "SKILL.md": "01771e8666d5aa55a24d9084246a4d1e924ea89deec64557488dfba8ac0e1269"
+      },
+      "router": {
+        "SKILL.md": "dbbd6ee5e8c7b66a8b74fc8063798e2a25210796d53755531013296c8c8bbb81"
+      },
+      "site-design": {
+        "SKILL.md": "e103cdbb17d487e80e152f9574eff1a104f8bcf06c5d0e7ac0aac102d4c22ccd"
+      },
+      "skill-creator": {
+        "SKILL.md": "4af850b3ab4ff5d92ce9ad1eb2ae517b1d00d6eea4861a4b1e416d4b4665affc"
+      },
+      "study-playbook": {
+        "SKILL.md": "327dc51939b28fbcad06034b5194ed6664b6dce9e57ea84cb06b312a48106200"
+      },
+      "taste": {
+        "SKILL.md": "4d5cee11abb49f106fff43f9b71674b053e0e35211e8e02f4506e06767ba7202"
+      },
+      "writing-filter": {
+        "SKILL.md": "16d37aa938f2423a3555cd70d3b6fb588dc61af8ef6754c092e31e62e59fc251"
+      }
+    }
+  }
+}

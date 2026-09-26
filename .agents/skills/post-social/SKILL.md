@@ -43,7 +43,7 @@ Direção visual:
 - A imagem ou composição precisa carregar intenção.
 - Cor de destaque deve ter função.
 - Texto dentro da arte deve ser menor que a vontade de explicar.
-- Aplicar `/writing-filter` antes de finalizar a copy.
+- Aplicar a skill writing-filter antes de finalizar a copy.
 
 ## Saída padrão
 

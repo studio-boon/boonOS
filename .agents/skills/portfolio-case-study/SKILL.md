@@ -46,7 +46,7 @@ Coletar:
 - Evitar prometer impacto sem prova.
 - Usar imagens como evidência do raciocínio.
 - Cada seção precisa responder "por que isso importa?".
-- Aplicar `/writing-filter` antes da versão final.
+- Aplicar a skill writing-filter antes da versão final.
 
 ## Saída padrão
 

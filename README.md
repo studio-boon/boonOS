@@ -1,252 +1,76 @@
-# boonOS
+# boonOS 2.1 (beta)
 
-Um template simples para criar um sistema operacional pessoal com IA usando pastas, memória e skills.
+Um sistema pessoal de trabalho com IA: para criar, organizar a operação e aprender com o que você faz.
 
-boonOS não é um app. É uma estrutura de trabalho para usar com Claude Code, Codex ou outro agente compatível com skills locais. Ele dá um lugar claro para projetos, decisões, documentos, contexto e comandos personalizados.
+O boonOS reúne contexto, projetos, memória e skills em uma pasta sua. Você conversa com o agente, traz uma situação real e constrói o sistema a partir dela. Ele pode receber outro nome, acompanhar um profissional independente ou ajudar um pequeno time.
 
-## Para Compartilhar
+## Duas áreas, um contexto
 
-Mande este bloco para alguém instalar:
+| Área | Você pode pedir | O que recebe |
+|---|---|---|
+| **Criativo** | “Preciso apresentar essa ideia”; “me ajuda a melhorar esta peça” | narrativa, texto, direção visual, revisão, conteúdo, sites e cases |
+| **Operacional** | “Minha semana está confusa”; “quero entender o caixa deste projeto” | planos, responsáveis, propostas, cenários de preço, contas, conciliação e organização contábil |
+| **Base compartilhada** | “Me situa”; “quero parar de repetir esse erro” | contexto preservado, caminhos de trabalho, aprendizado e melhorias verificáveis |
 
-```bash
-git clone https://github.com/tchelove/boonOS.git meu-boonos
-cd meu-boonos
-claude
-```
+Um projeto tem o mesmo briefing, responsável e histórico nas duas áreas. O pacote inclui **40 skills: 14 criativas, 14 operacionais e 12 compartilhadas**. Você usa as que ajudam no momento; não precisa decorar comandos.
 
-Dentro do Claude Code, a primeira mensagem deve ser:
+Uma skill orienta um processo. Gerar uma imagem, exportar slides ou conectar um serviço depende das ferramentas disponíveis no seu agente. O núcleo trabalha com conversa e arquivos locais; nenhuma conta externa ou rotina recorrente vem ativada.
 
-```text
-/init
-```
+## Comece pela sua situação
 
-O `/init` entrevista a pessoa, personaliza o `CLAUDE.md` e indica os primeiros passos.
+**Sem terminal:** baixe `boonOS-2.1-beta.zip` na [release 2.1](https://github.com/tchelove/boonOS/releases/tag/v2.1.0-beta.1), extraia e abra a pasta no seu agente. Se o repositório estiver privado, aceite primeiro o convite de acesso. O [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>) acompanha cada passo.
 
-## Pré-Requisitos
-
-- [Claude Code](https://claude.ai/code) instalado
-- Conta Anthropic ativa
-- Git instalado
-- Opcional: VS Code, GitHub Desktop ou GitHub CLI para versionar o próprio sistema
-
-## Instalação
-
-Clone o template:
-
-```bash
-git clone https://github.com/tchelove/boonOS.git meu-boonos
-cd meu-boonos
-```
+**Com Git instalado:** clone esta edição explicitamente:
 
-Abra a pasta no Claude Code:
+~~~bash
+git clone --branch beta/2.1 --single-branch https://github.com/tchelove/boonOS.git meu-sistema
+cd meu-sistema
+~~~
 
-```bash
-claude
-```
+Abra a pasta no agente que você utiliza, com acesso à sua conta: Codex ou Claude Code. Na linha de comando, execute `codex` **ou** `claude` dentro dela. Em um aplicativo que permita abrir uma pasta local, selecione `meu-sistema`.
 
-Se quiser usar outro nome de pasta:
+Comece com esta mensagem:
 
-```bash
-git clone https://github.com/tchelove/boonOS.git nome-do-seu-sistema
-cd nome-do-seu-sistema
-claude
-```
+> Me guia na configuração deste sistema. Quero entender o que ele pode fazer e começar por um problema real meu. Use a skill local init.
 
-## Primeiro Uso
+O onboarding oferece dois ritmos: **resolver uma primeira missão** ou **aprofundar a configuração**. Ele pergunta em blocos curtos, mostra possibilidades criativas e operacionais, confirma o que entendeu e registra apenas o contexto autorizado. Você pode pausar e retomar pelo resumo salvo.
 
-Rode:
+O contrato local usa `AGENTS.md` e `.agents/skills` no Codex; `CLAUDE.md` encaminha para o mesmo contexto e `.claude/skills` no Claude Code. A presença desses arquivos não comprova teste em toda versão ou sistema operacional. O [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>) explica como conferir a leitura no seu ambiente.
 
-```text
-/init
-```
+## Onde cada coisa fica
 
-O agente vai perguntar:
+~~~text
+00. TRABALHO/       projetos e entregas em andamento
+01. SISTEMA/        contexto, perfil, regras e estado do sistema
+02. MEMORIA/        aprendizados e preferências com origem
+03. DOCS/           fontes recebidas e índices de documentos
+04. GESTÃO/         comercial, financeiro, contabilidade, rotina e fornecedores
+05. BIBLIOTECA/     modelos criativos, operacionais e de evolução
+06. GUIAS/          instalação, possibilidades e exemplos
+99. ARQUIVO/        histórico recuperável do que saiu de uso
+~~~
 
-- quem você é;
-- o que você quer organizar;
-- qual é o caos principal agora;
-- o que precisa estar funcionando em 90 dias;
-- como você pretende usar o sistema.
+As pastas organizam o uso. `.agents`, `.claude` e `scripts` guardam os recursos técnicos. Crie projetos e registros quando houver conteúdo para eles; o onboarding não precisa preencher todas as áreas.
 
-No final, ele atualiza `CLAUDE.md`, sugere primeiras skills e aponta três ações práticas.
+## O sistema melhora pelo uso
 
-## Estrutura
+Uma entrega ou dificuldade pode virar um aprendizado, uma proposta de ajuste e um teste. Se o ajuste funciona, ele entra no sistema com origem e histórico. Se piora o resultado, pode ser revertido.
 
-```text
-boonOS/
-  CLAUDE.md          contexto central que o agente lê primeiro
-  README.md          tutorial de instalação e operação
-  .claude/skills/    skills para Claude Code
-  .agents/skills/    espelho das skills para agentes compatíveis
-  _00. TRABALHO/     projetos ativos, entregas, ideias em andamento
-  _01. SISTEMA/      regras, decisões e padrões do seu OS
-    SKILLSET.md      manifesto do pacote inicial de skills
-  _02. MEMORIA/      contexto vivo que não pode morrer entre conversas
-    voz-e-estilo.md  preferências de linguagem do usuário
-  _03. DOCS/         documentos, contratos, briefings e referências
-  _99. OLD/          arquivo de versões antigas e projetos encerrados
-```
+Esse ciclo acontece durante as sessões. Trabalhar entre sessões exige configurar e verificar um executor recorrente. Uma skill de automação ajuda a preparar essa rotina; não a mantém funcionando sozinha.
 
-## Caminhos
+## Seu contexto continua sendo seu
 
-| Caminho | Use para |
-|---|---|
-| `CLAUDE.md` | Explicar quem você é, o que está construindo e como o agente deve operar |
-| `_00. TRABALHO/` | Guardar projetos ativos, notas brutas e entregas em andamento |
-| `_01. SISTEMA/` | Registrar decisões, regras, padrões e mudanças do sistema |
-| `_01. SISTEMA/SKILLSET.md` | Ver quais skills vêm instaladas e quais não fazem parte do template |
-| `_02. MEMORIA/` | Guardar contexto sobre você, projetos, pessoas, aprendizados e preferências |
-| `_02. MEMORIA/voz-e-estilo.md` | Configurar a voz que o `writing-filter` e as skills de conteúdo devem respeitar |
-| `_03. DOCS/` | Guardar documentos recebidos, materiais de estudo, briefings e referências |
-| `_99. OLD/` | Arquivar o que saiu de uso sem deletar histórico |
-| `.claude/skills/` | Comandos usados pelo Claude Code |
-| `.agents/skills/` | Cópia das skills para outros agentes que leem esse padrão |
+Use uma cópia privada se for versionar informações pessoais ou de negócio. Guarde documentos confidenciais em um local com acesso adequado e mantenha aqui apenas as referências necessárias. `98. PRIVADO/` e `01. SISTEMA/PRIVADO.md` são destinos locais previstos nas regras de exclusão; antes de colocar conteúdo neles, confirme que o Git os ignora e que não estão rastreados. Exclusão do Git não é proteção de acesso nem remoção de histórico.
 
-## O Que Fazer Depois Do `/init`
+O agente respeita autorizações já dadas para a tarefa. Preparar uma proposta, uma mensagem ou um controle local não autoriza enviar, publicar, pagar ou conectar uma conta. Essas ações precisam estar explicitamente incluídas no pedido ou em uma autorização vigente.
 
-1. Crie `_02. MEMORIA/sobre-mim.md` com contexto real sobre você.
-2. Coloque um projeto ativo em `_00. TRABALHO/`.
-3. Registre uma decisão importante em `_01. SISTEMA/`.
-4. Rode `/overview` para ver se o sistema entendeu o estado atual.
-5. Quando repetir uma tarefa 3 vezes, crie uma skill com `/skill-creator`.
+## Continue por aqui
 
-## Skills Incluídas
+- [Comece aqui](<00. COMECE-AQUI.md>): da pasta aberta à primeira missão.
+- [O que posso fazer?](<06. GUIAS/02. POSSIBILIDADES/POSSIBILIDADES.md>): quero → trago → recebo.
+- [Mapa das 40 skills](<06. GUIAS/02. POSSIBILIDADES/SKILLS.md>): capacidades, entradas e resultados.
+- [Personalizar](<06. GUIAS/02. POSSIBILIDADES/PERSONALIZAR.md>): voz, operação e prioridades.
+- [Ferramentas e extensões](<06. GUIAS/02. POSSIBILIDADES/MODULOS-FUTUROS.md>): o que depende de configuração.
+- [Atualizar uma instalação](<06. GUIAS/01. INSTALAÇÃO/ATUALIZAR.md>): preservar contexto e personalizações.
 
-| Skill | O que faz |
-|---|---|
-| `/init` | Faz o onboarding e personaliza o sistema |
-| `/overview` | Gera panorama do que existe nas pastas e próximos passos |
-| `/skill-creator` | Cria ou melhora skills personalizadas |
-| `/grill-me` | Questiona uma ideia, plano ou decisão até ficar mais clara |
-| `/writing-filter` | Revisa ou cria textos com clareza, usando a voz do usuário |
-| `/brand-storytelling` | Ajuda a construir narrativa, posicionamento e mensagem de marca |
-| `/content-strategy` | Planeja conteúdo, pilares, temas e calendário editorial |
-| `/carrossel` | Cria estrutura, roteiro, copy e direção visual para carrosséis |
-| `/post-social` | Cria card único, capa, story, thumb ou peça social estática |
-| `/design-review` | Revisa layout, hierarquia, grid, tipografia, cor e composição |
-| `/site-design` | Planeja ou revisa sites, landing pages, portfolios e interfaces web |
-| `/interface-polish` | Ajusta detalhes de UI, estados, microinterações e responsividade |
-| `/portfolio-case-study` | Monta narrativa e estrutura de cases de portfolio |
-| `/tagline-creation-strategies` | Cria taglines, slogans e frases de campanha |
-
-O `writing-filter` incluído é base e neutro. Ele não carrega a voz da BOON. A voz deve ser definida pelo usuário em `CLAUDE.md` e em `_02. MEMORIA/voz-e-estilo.md`.
-
-## Como Usar No Dia A Dia
-
-Use linguagem simples. Exemplos:
-
-```text
-/overview
-```
-
-```text
-Organiza essas notas de reunião dentro de _00. TRABALHO/[nome-do-projeto].
-```
-
-```text
-Registra essa decisão em _01. SISTEMA e guarda o raciocínio.
-```
-
-```text
-Cria um carrossel de 7 slides sobre [tema] para [público].
-```
-
-```text
-Isso aqui virou uma tarefa recorrente. Cria uma skill para eu repetir esse fluxo.
-```
-
-## Personalização De Voz
-
-Depois do `/init`, preencha:
-
-```text
-_02. MEMORIA/voz-e-estilo.md
-```
-
-Inclua:
-
-- como você gosta de escrever;
-- palavras que usa e palavras que evita;
-- exemplos de textos seus;
-- referências de tom;
-- regras para posts, propostas, estudos ou mensagens.
-
-As skills de conteúdo devem respeitar essa memória. Se o arquivo ainda estiver vazio, elas usam um tom claro e neutro.
-
-## Criando Seu Próprio Repositório
-
-Se você quer transformar o template em um repo seu, faça isso depois de clonar:
-
-```bash
-rm -rf .git
-git init
-git add .
-git commit -m "init personal os"
-```
-
-Depois crie um repositório vazio no GitHub e conecte:
-
-```bash
-git remote add origin https://github.com/SEU-USUARIO/SEU-REPO.git
-git branch -M main
-git push -u origin main
-```
-
-Use repositório privado se você vai guardar informações pessoais, clientes, contratos, financeiro ou documentos sensíveis.
-
-## Como Criar Skills
-
-Rode:
-
-```text
-/skill-creator
-```
-
-Boas candidatas a skill:
-
-- tarefa que você já repetiu 3 vezes;
-- formato que sempre precisa sair igual;
-- checklist que você sempre esquece;
-- análise que depende de várias etapas;
-- tipo de conteúdo que você cria com frequência.
-
-Exemplos:
-
-| Skill | Função |
-|---|---|
-| `/reuniao` | Transformar notas de reunião em decisões, tarefas e próximos passos |
-| `/proposta` | Montar proposta a partir de briefing |
-| `/semana` | Organizar prioridades da semana |
-| `/estudo` | Resumir e conectar materiais de estudo |
-| `/review` | Revisar texto com a sua voz |
-
-## Atualizando O Template
-
-Se você ainda estiver usando este repo como clone do template:
-
-```bash
-git pull
-```
-
-Se você já transformou em repo próprio, copie manualmente apenas o que fizer sentido, principalmente novas skills.
-
-## Problemas Comuns
-
-| Problema | Como resolver |
-|---|---|
-| A skill não aparece | Reinicie o Claude Code dentro da pasta e confira se existe `SKILL.md` dentro da pasta da skill |
-| O agente não sabe nada sobre você | Rode `/init` e alimente `_02. MEMORIA/` |
-| Está criando pastas demais | Registre uma regra em `_01. SISTEMA/` dizendo para perguntar antes de criar caminhos novos |
-| A escrita não parece sua | Crie `_02. MEMORIA/voz-e-estilo.md` com exemplos reais |
-| O sistema ficou bagunçado | Rode `/overview`, peça diagnóstico e arquive o que não está ativo em `_99. OLD/` |
-
-## Regra Principal
-
-O sistema só fica útil quando recebe contexto real. Guarde decisões, projetos, notas, documentos e preferências nos caminhos certos. O agente trabalha melhor quando sabe onde procurar.
-
-## Créditos
-
-boonOS nasceu como um sistema interno do estúdio BOON e foi adaptado como template pessoal.
-
-- Site: [boonbrands.com.br](https://boonbrands.com.br)
-- Instagram: [@boon.brands](https://www.instagram.com/boon.brands)
+Para manter o pacote: [publicar uma versão](<06. GUIAS/01. INSTALAÇÃO/PUBLICAR.md>). Esta é a edição **2.1 beta**, identificada como `v2.1.0-beta.1`.

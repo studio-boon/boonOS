@@ -1,60 +1,20 @@
-# OS
-.DS_Store
-**/.DS_Store
-Thumbs.db
-
-# Arquivos binários grandes
-*.ai
-*.psd
-*.psb
-*.indd
-
-# Imagens (geralmente grandes demais para git)
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.webp
-*.bmp
-*.tif
-*.tiff
-*.heic
-*.raw
-
-# Video e áudio
-*.mp4
-*.mov
-*.avi
-*.wav
-*.mp3
-
-# Documentos binários
-*.pdf
-*.pptx
-*.docx
-*.xlsx
-*.key
-*.pages
-
-# Arquivos compactados
-*.zip
-*.rar
-*.7z
-
-# Node / build
-node_modules/
-.next/
-dist/
-build/
-.cache/
-
-# Env / secrets
+# Dados privados por nome; protege também instalações migradas.
+**/98. PRIVADO/
+**/_PRIVADO/
+**/_privado/
+**/PRIVADO.md
+**/*.local.yaml
+**/*.local.json
 .env
-.env.local
-.env*.local
-*.pem
-**/client_secret*.json
-**/auth.json
-**/credentials.json
-
-# SVG mantido (vetorial leve)
+.env.*
+!.env.example
+# Estado de execução local; não é material do template.
+01. SISTEMA/01. EVOLUÇÃO/
+99. ARQUIVO/01. MIGRAÇÃO/
+.boonos-improve.lock
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+# O contexto preenchido exige repositório privado ou exportação pela allowlist.

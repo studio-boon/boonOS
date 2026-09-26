@@ -1,137 +1,84 @@
 ---
 name: init
 description: >
-  Onboarding do boonOS. Faz uma entrevista para entender quem é o usuário, o que
-  ele quer organizar e quais são seus objetivos. Ao final, gera um CLAUDE.md personalizado
-  e indica os primeiros passos reais. Use quando o usuário disser "/init", "configura o sistema",
-  "começa o onboarding", "inicializa", ou quando o CLAUDE.md ainda tiver campos
-  "[Rode `/init` para configurar]".
+  Configura ou retoma o contexto pessoal e operacional do boonOS por uma conversa
+  progressiva. Use ao instalar, pedir configuração, revisar o perfil ou retomar
+  um onboarding. Conecta a entrevista a uma primeira missão criativa ou operacional.
 ---
 
-# /init — Onboarding do boonOS
+# init — um sistema que entende como você trabalha
 
-## Propósito
+## Comece pelo que já existe
 
-Fazer uma entrevista para calibrar o sistema à realidade do usuário. Ao final, gerar um `CLAUDE.md` personalizado e indicar os próximos passos concretos.
+Leia `AGENTS.md`, `01. SISTEMA/CONTEXTO.md`, `PERFIL.yaml`, `SKILLSET.md` e `ONBOARDING.md`. Os últimos quatro estão em `01. SISTEMA`. Leia o banco de perguntas em `05. BIBLIOTECA/03. EVOLUÇÃO/01. ONBOARDING/PERGUNTAS.md` conforme o módulo necessário.
 
-O sistema não serve todo mundo do mesmo jeito. Essa entrevista existe para ele se moldar à pessoa — não o contrário.
+- Perfil existente: preserve informações e autorizações. Retome pelo checkpoint ou revise o trecho solicitado.
+- Instalação vazia: explique que o sistema ajuda tanto na criação quanto na operação e ofereça dois ritmos: primeira missão ou configuração aprofundada.
+- Pedido concreto com informações suficientes: comece o trabalho e registre as lacunas para depois. Não obrigue a pessoa a concluir a entrevista inteira.
+- Não explore contas, pastas pessoais ou fontes externas apenas porque foram mencionadas. Registre a localização; leia quando o pedido e a autorização cobrirem a fonte.
 
-## Princípio
+## Conduza a descoberta
 
-Perguntas abertas. Uma de cada vez. Escuta ativa. Nada de suposições sobre o que a pessoa precisa antes de ouvir.
+Pergunte em blocos de **até três perguntas**, espere a resposta e use-a para escolher o próximo bloco. Evite várias subperguntas escondidas numa só. A cada bloco, resuma o que mudou no entendimento e aprofunde uma decisão relevante.
 
----
+Prefira episódios e evidências: “qual foi o último trabalho que atrasou?” revela mais que “você é organizado?”. Não transforme a entrevista em avaliação da pessoa. Se não souber responder, proponha um exemplo ou deixe a lacuna explícita.
 
-## Fluxo
+| Módulo | O que descobrir |
+|---|---|
+| Identidade | atividade, papel, solo/time, nome do sistema e idioma/fuso quando relevantes |
+| Direção | atrito concreto, objetivo, prioridade e o que precisa mudar |
+| Criativo | público, formatos, referências comentadas, voz e critérios de aprovação |
+| Operacional | oferta, entrada do trabalho, etapas, responsáveis, capacidade, recebimentos e documentos |
+| Fontes e ferramentas | onde vivem registros, qual fonte prevalece e ferramentas que quer manter |
+| Permissões | contexto que pode ser salvo, acesso, ações autorizadas e limites |
+| Primeira missão | material disponível, saída útil e critério observável de conclusão |
 
-### Fase 1 — Identidade e contexto
+O ritmo rápido coleta o mínimo para uma missão e deixa módulos pendentes. O aprofundado percorre os módulos pertinentes, sem exigir valores financeiros ou dados de clientes desnecessários. Uma pessoa pode criar e operar; não force uma persona exclusiva.
 
-Fazer uma pergunta de cada vez. Esperar a resposta antes de continuar.
+## Mostre possibilidades durante a conversa
 
-**Pergunta 1:**
-"Antes de qualquer coisa: quem é você? O que você faz no dia a dia?"
+Depois de entender a atividade e uma dificuldade, apresente poucas possibilidades relacionadas às respostas, cobrindo as duas áreas. Use “você traz → construímos → você confere”. Exemplos completos estão em `06. GUIAS/02. POSSIBILIDADES/POSSIBILIDADES.md`.
 
-Ouvir e anotar: profissão, área, contexto de vida, como trabalha.
+Uma pessoa que vende serviços pode organizar uma proposta e um projeto, melhorar como apresenta o trabalho ou revisar entradas e saídas. Explique o resultado antes do nome da skill. Escolha uma missão prioritária; as outras viram possibilidades para depois.
 
-**Pergunta 2:**
-"O que você quer organizar com esse sistema? Pode ser trabalho, vida pessoal, projetos criativos, estudos, financeiro — qualquer coisa."
+Diferencie o que pode ser feito com arquivos e conversa do que depende de ferramenta ou integração. Um pedido de imagem não prova que há gerador de imagens. Exemplo fictício fica identificado e não alimenta contexto real, clientes ou lançamentos.
 
-Ouvir e anotar: áreas, projetos, tipos de informação que circulam na vida dessa pessoa.
+## Sintetize e salve no escopo autorizado
 
-**Pergunta 3:**
-"Qual é o seu maior caos agora? O que você mais perde, esquece ou nunca consegue manter no lugar?"
+Antes do primeiro registro, mostre uma síntese curta com:
 
-Ouvir e anotar: dores reais, o que não funciona, onde o sistema vai ter mais impacto imediato.
+- pessoa/time, propósito, prioridades e contexto criativo/operacional confirmado;
+- fontes de verdade, limites e ações autorizadas;
+- capacidades prioritárias com motivo;
+- primeira missão, critério de sucesso e lacunas;
+- arquivos que serão criados ou atualizados.
 
----
+Se a pessoa já autorizou salvar a configuração ou checkpoints revisados, prossiga nesse escopo. Não peça um novo “sim” a cada arquivo ou módulo. Se essa autorização ainda não existe, peça uma confirmação específica sobre o resumo e sua gravação. Uma resposta vaga não autoriza persistência.
 
-### Fase 2 — Objetivos
+Use `05. BIBLIOTECA/03. EVOLUÇÃO/01. ONBOARDING/PERFIL.template.yaml` como referência de estrutura. Em perfil existente, acrescente apenas o necessário; não sobrescreva campos customizados. Dados desconhecidos ficam `null` ou em listas vazias, acompanhados de lacunas quando relevante.
 
-**Pergunta 4:**
-"O que muda na sua vida se daqui a 90 dias esse sistema estiver funcionando bem?"
+Atualize:
 
-Ouvir e anotar: objetivo concreto, o que representa "funcionar bem" para essa pessoa.
+- `01. SISTEMA/CONTEXTO.md`: entendimento humano, sem entrevista bruta.
+- `01. SISTEMA/PERFIL.yaml`: campos confirmados, permissões e estado.
+- `01. SISTEMA/SKILLSET.md`: prioridades reais e próximos usos.
+- `01. SISTEMA/ONBOARDING.md`: data, módulos, lacunas, próxima pergunta e primeira missão.
+- `02. MEMORIA/voz-e-estilo.md`: somente se houver exemplos ou preferências atribuídas suficientes.
 
-**Pergunta 5:**
-"Você vai usar isso mais para trabalho, para vida pessoal, ou os dois?"
+Indique origem e escopo das autorizações, sem registrar segredos ou copiar conteúdo confidencial. Ter um repositório privado não autoriza armazenar tudo.
 
-Ouvir e anotar: escopo de uso, frequência esperada.
+## Pausa e retomada
 
-**Pergunta 6:**
-"Tem alguma área específica que você quer resolver primeiro? Um projeto, uma frente, uma parte da vida que tá mais urgente?"
+Quando a pessoa pausar, ofereça ou salve um checkpoint parcial conforme a autorização já recebida. Registre contexto confirmado, módulo atual, pendências, próxima pergunta e o que foi salvo. Marque `paused`; não marque a entrevista completa por conveniência.
 
-Ouvir e anotar: prioridade imediata, onde começar.
+Sem autorização de persistência, entregue o resumo na conversa e explique que outra sessão precisará dele. Não prometa lembrar algo que não foi gravado.
 
----
+Na retomada, leia o checkpoint e continue pelo que falta, aproveitando respostas já dadas. Se o usuário corrigir um fato, atualize o trecho correspondente no escopo autorizado e preserve o histórico de decisões relevantes.
 
-### Fase 3 — Modo de uso
+Estados: `not_started`, `in_progress`, `paused` e `active`. `active` indica contexto suficiente para trabalhar, mesmo com módulos pendentes. Preencha `completed_modules`, `pending_modules`, `unknowns`, `next_question` e a missão de modo coerente.
 
-**Pergunta 7:**
-"Com que frequência você imagina abrir isso? Todo dia, algumas vezes por semana, uma vez por semana?"
+## Faça a primeira missão
 
-Ouvir e anotar: cadência esperada.
+Depois da síntese, use a skill pertinente e conclua uma saída útil com o material disponível. Se faltar algo que realmente impede a execução, peça somente esse dado. Se a pessoa quiser apenas configurar, registre a missão sem executá-la.
 
-**Pergunta 8:**
-"Você já usou algum sistema de organização antes — Notion, Obsidian, papel, planilha, nada? O que funcionou? O que não funcionou?"
-
-Ouvir e anotar: histórico, o que repetir, o que evitar.
-
----
-
-### Fase 4 — Geração
-
-Com base nas 8 respostas, gerar:
-
-#### 1. CLAUDE.md personalizado
-
-Reescrever o arquivo `CLAUDE.md` substituindo os campos `[Rode /init para configurar]` por conteúdo real:
-
-**Quem sou** — síntese em 2–3 parágrafos: identidade, o que faz, como trabalha, o que importa.
-
-**O que estou construindo** — projetos, objetivos de 90 dias, área de foco, o que está tentando chegar.
-
-**Foco atual** — a prioridade imediata que a pessoa mencionou. O que o sistema deve ter na cabeça agora.
-
-**Voz e estilo** — preferências de tom, palavras que usa ou evita, referências de escrita e regras de comunicação. Se a pessoa ainda não souber, orientar o preenchimento de `_02. MEMORIA/voz-e-estilo.md`.
-
-**Como operar** — acrescentar 2–3 regras personalizadas baseadas no que a pessoa disse que não funciona ou quer evitar. Exemplo: "Sempre perguntar antes de criar pasta nova", "Não sugerir ferramentas externas, só o que já existe aqui", "Resumir em tópicos, nunca em texto corrido".
-
-Manter a estrutura de pastas e a lista de skills intactas.
-
-Antes de salvar: mostrar o CLAUDE.md gerado e pedir confirmação.
-
-#### 2. Primeiras 3 skills a criar
-
-Sugerir skills específicas baseadas no uso declarado. Para cada uma: nome, o que ela deve fazer, quando usar.
-
-Exemplos de derivação:
-- Designer freelancer → `/proposta`, `/briefing`, `/projeto`
-- Empreendedor → `/reuniao`, `/pipeline`, `/decisao`
-- Redator / criativo → `/roteiro`, `/ideia`, `/review`
-- Estudante / pesquisador → `/estudo`, `/resumo`, `/conexao`
-- Profissional corporativo → `/semana`, `/reuniao`, `/status`
-
-Perguntar quais dessas fazem sentido e se a pessoa quer criar agora com `/skill-creator`.
-
-#### 3. Próximos 3 passos concretos
-
-Tarefas simples para fazer logo depois do onboarding:
-
-1. Criar o primeiro arquivo em `_02. MEMORIA/` — uma nota sobre quem você é, seus projetos atuais, o que importa saber agora.
-2. Criar a primeira skill indicada.
-3. Colocar algo real em `_00. TRABALHO/` — um projeto em andamento, uma ideia, uma lista de tarefas.
-
-Apresentar como lista numerada, direto.
-
----
-
-## Regras
-
-- Perguntar uma coisa de cada vez — nunca listar várias perguntas juntas
-- Não presumir o que a pessoa precisa antes de ouvir
-- Adaptar o tom à pessoa: mais técnico para devs, mais direto para empresários, mais aberto para criativos
-- Gerar o CLAUDE.md só depois de ter respondido todas as perguntas — não adiantar
-- Confirmar com a pessoa antes de salvar qualquer arquivo
-- Não inventar projetos ou contexto que a pessoa não mencionou
-- Não aplicar filtro de linguagem de outra marca. Usar `/writing-filter` apenas como filtro base, deixando a voz vir das respostas do usuário e da memória de estilo.
-- Se a pessoa der respostas curtas, aprofundar com uma pergunta de follow-up antes de avançar
+No fechamento, mostre resultado, evidência de verificação, o que foi salvo, o que continua aberto e uma próxima ação. Para voltar ao contexto, a pessoa pode dizer “me situa”. Não transforme o fim da entrevista numa lista de comandos para ela executar.

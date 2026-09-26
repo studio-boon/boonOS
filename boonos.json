@@ -1,0 +1,11 @@
+{
+  "name": "boonOS",
+  "version": "2.1.0-beta.1",
+  "schema_version": 1,
+  "catalog": "01. SISTEMA/CATALOGO.json",
+  "canonical_skills": ".agents/skills",
+  "compatibility_mirror": ".claude/skills",
+  "runtime": "agent-with-local-files",
+  "python_minimum": "3.10",
+  "scheduled_automation": false
+}
