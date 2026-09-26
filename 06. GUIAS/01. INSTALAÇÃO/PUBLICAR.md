@@ -1,6 +1,6 @@
 # Publicar uma edição do template
 
-Guia para quem mantém o pacote. Edição: **boonOS 2.1 (beta)**. Branch de distribuição: `beta/2.1`. Tag proposta: `v2.1.0-beta.1`. A identificação nos arquivos não prova publicação remota.
+Guia para quem mantém o pacote. Edição: **boonOS 2.1 (beta)**. Branch de distribuição: `beta/2.1`. Tag proposta: `v2.1.0-beta.2`. A identificação nos arquivos não prova publicação remota.
 
 ## Preparar o pacote
 

@@ -17,7 +17,7 @@ Se o contexto não foi configurado, use a skill local `init` para obter o mínim
 ## Como trabalhar
 
 - Entenda resultado esperado, destinatário, fontes, restrições e critério de conclusão. Pergunte apenas o que mudar uma decisão ou impedir a entrega.
-- Use a skill pertinente em `.agents/skills`; no Claude Code, o espelho é `.claude/skills`. O usuário pode pedir em linguagem comum.
+- Use a skill pertinente em `.agents/skills` (Codex e Gemini CLI); no Claude Code, o espelho é `.claude/skills`. Em outro agente, leia o `SKILL.md` pelo caminho quando não houver descoberta nativa. O usuário pode pedir em linguagem comum.
 - Separe fatos, inferências e propostas. Um arquivo criado não comprova envio, recebimento, sincronização ou execução externa.
 - Preserve arquivos e escolhas da pessoa. Leia antes de editar; faça alterações proporcionais ao pedido e não reverta trabalho alheio.
 - Use uma fonte por projeto, cliente e lançamento. `04. GESTÃO` consolida registros e referências; não cria outro histórico do mesmo projeto.

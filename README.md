@@ -18,7 +18,7 @@ Uma skill orienta um processo. Gerar uma imagem, exportar slides ou conectar um 
 
 ## Comece pela sua situação
 
-**Sem terminal:** baixe `boonOS-2.1-beta.zip` na [release 2.1](https://github.com/tchelove/boonOS/releases/tag/v2.1.0-beta.1), extraia e abra a pasta no seu agente. Se o repositório estiver privado, aceite primeiro o convite de acesso. O [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>) acompanha cada passo.
+**Sem terminal:** baixe `boonOS-2.1-beta.zip` na [release 2.1](https://github.com/tchelove/boonOS/releases/tag/v2.1.0-beta.2), extraia e abra a pasta no seu agente. Se o repositório estiver privado, aceite primeiro o convite de acesso. O [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>) acompanha cada passo.
 
 **Com Git instalado:** clone esta edição explicitamente:
 
@@ -27,7 +27,9 @@ git clone --branch beta/2.1 --single-branch https://github.com/tchelove/boonOS.g
 cd meu-sistema
 ~~~
 
-Abra a pasta no agente que você utiliza, com acesso à sua conta: Codex ou Claude Code. Na linha de comando, execute `codex` **ou** `claude` dentro dela. Em um aplicativo que permita abrir uma pasta local, selecione `meu-sistema`.
+O requisito é **um agente de IA capaz de ler e trabalhar nos arquivos da pasta**, com acesso à sua conta nesse agente. Pode ser Codex, Claude Code, Gemini CLI ou outro agente com esse recurso. Você não precisa de uma conta Anthropic para usar o boonOS com outro fornecedor.
+
+Na linha de comando, execute `codex`, `claude` **ou** `gemini` dentro da pasta, conforme o agente instalado. Em um aplicativo que permita abrir uma pasta local, selecione `meu-sistema`. Um chat sem acesso à pasta exige fornecer os arquivos e salvar as saídas manualmente.
 
 Comece com esta mensagem:
 
@@ -35,7 +37,7 @@ Comece com esta mensagem:
 
 O onboarding oferece dois ritmos: **resolver uma primeira missão** ou **aprofundar a configuração**. Ele pergunta em blocos curtos, mostra possibilidades criativas e operacionais, confirma o que entendeu e registra apenas o contexto autorizado. Você pode pausar e retomar pelo resumo salvo.
 
-O contrato local usa `AGENTS.md` e `.agents/skills` no Codex; `CLAUDE.md` encaminha para o mesmo contexto e `.claude/skills` no Claude Code. A presença desses arquivos não comprova teste em toda versão ou sistema operacional. O [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>) explica como conferir a leitura no seu ambiente.
+O contrato comum é `AGENTS.md`. Codex usa `.agents/skills`; Claude Code entra por `CLAUDE.md` e usa o espelho `.claude/skills`; Gemini CLI entra por `GEMINI.md` e pode descobrir a mesma árvore `.agents/skills`. Em outro agente, peça a leitura do contrato e da skill pelo caminho. A presença desses arquivos não comprova teste em toda versão ou sistema operacional. O [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>) explica como conferir a leitura no seu ambiente.
 
 ## Onde cada coisa fica
 
@@ -73,4 +75,4 @@ O agente respeita autorizações já dadas para a tarefa. Preparar uma proposta,
 - [Ferramentas e extensões](<06. GUIAS/02. POSSIBILIDADES/MODULOS-FUTUROS.md>): o que depende de configuração.
 - [Atualizar uma instalação](<06. GUIAS/01. INSTALAÇÃO/ATUALIZAR.md>): preservar contexto e personalizações.
 
-Para manter o pacote: [publicar uma versão](<06. GUIAS/01. INSTALAÇÃO/PUBLICAR.md>). Esta é a edição **2.1 beta**, identificada como `v2.1.0-beta.1`.
+Para manter o pacote: [publicar uma versão](<06. GUIAS/01. INSTALAÇÃO/PUBLICAR.md>). Esta é a edição **2.1 beta**, identificada como `v2.1.0-beta.2`.

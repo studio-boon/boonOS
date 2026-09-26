@@ -31,9 +31,9 @@ A contagem vigente de testes está na saída do comando e no GitHub Actions. Os 
 
 ## Compatibilidade e integração
 
-A configuração [check.workflow.yml](<06. GUIAS/01. INSTALAÇÃO/check.workflow.yml>) está preparada para Linux, macOS e Windows com Python 3.10 e 3.13. **Ela não está ativa e a matriz não foi executada nesta release.** A credencial de publicação não tem o escopo `workflow`; a ativação depende de uma sessão/permissão apropriada. Os resultados verificados nesta edição são os testes locais descritos acima. Consulte [ativar CI](<06. GUIAS/01. INSTALAÇÃO/ATIVAR-CI.md>) para o passo pendente.
+O workflow `.github/workflows/check.yml` está ativo. A primeira execução completa, no commit `36fb9cc`, passou nas seis combinações de Linux, macOS e Windows com Python 3.10 e 3.13: [resultado da matriz](https://github.com/tchelove/boonOS/actions/runs/36204735331). Cada combinação executou estrutura/hashes, suíte de testes, exemplo financeiro e exportação. Para a revisão que você estiver usando, confira também o commit exato em [GitHub Actions](https://github.com/tchelove/boonOS/actions). Consulte [manter CI](<06. GUIAS/01. INSTALAÇÃO/ATIVAR-CI.md>) ao configurar outra cópia.
 
-Os contratos de entrada para Codex e Claude Code e seus mirrors estão incluídos. Descoberta de skills, autenticação, geração de mídia e experiência do aplicativo dependem da versão e dos recursos instalados. Um teste do núcleo Python no Windows não comprova um onboarding completo no aplicativo Windows.
+Os contratos de entrada para Codex, Claude Code e Gemini CLI estão incluídos. Gemini importa o contrato comum e usa a mesma árvore .agents/skills, conforme a documentação oficial; não foi executado um onboarding no aplicativo Gemini CLI nesta avaliação. Descoberta de skills, autenticação, geração de mídia e experiência do aplicativo dependem da versão e dos recursos instalados. Um teste do núcleo Python no Windows não comprova um onboarding completo no aplicativo Windows.
 
 O roteiro de [onboarding](<06. GUIAS/03. EXEMPLOS/ONBOARDING.md>) permite testar conversa, checkpoint e retomada. O exemplo de [criação](<06. GUIAS/03. EXEMPLOS/CRIACAO.md>) separa direção, artefato e aprovação. Testes simulados com agentes não substituem a observação de alguém instalando pela primeira vez.
 
