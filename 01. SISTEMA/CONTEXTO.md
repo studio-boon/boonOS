@@ -1,34 +1,42 @@
 # Contexto do sistema
 
-> Este arquivo será personalizado pelo $init. Nada abaixo é uma verdade sobre quem instalou o template.
+Estado: ainda não personalizado. Os campos abaixo são perguntas em aberto, não fatos sobre quem instalou o template.
 
-## Identidade
+## Identidade e direção
 
-- Nome do sistema: [a definir]
-- Pessoa ou time: [a definir]
-- Idioma e fuso: [a definir]
+- Nome do sistema, pessoa ou time: a definir.
+- Atividade, papel e modo de trabalho: a definir.
+- Idioma e fuso: a definir.
+- O que este sistema precisa ajudar a fazer: a definir.
+- Prioridade atual e resultado esperado: a definir.
 
-## Para que este sistema existe
+## Criativo
 
-[a definir]
+- Público, formatos e objetivos: a definir.
+- Referências e o que importa nelas: a definir.
+- Voz, critérios de qualidade e restrições: a definir.
+- Exemplos de escrita, se disponíveis: `02. MEMORIA/voz-e-estilo.md`.
 
-## Momento atual e prioridades
+## Operacional
 
-1. [a definir]
-2. [a definir]
-3. [a definir]
+- O que oferece, para quem e como entra um trabalho: a definir.
+- Etapas, responsabilidades e decisões: a definir.
+- Projetos, prazos e capacidade: a definir.
+- Forma de registrar contas, caixa e documentos: a definir.
+- Gargalo observado e exemplo concreto: a definir.
 
-## Como trabalhar bem aqui
+## Fontes e autorização
 
-- Fonte de verdade: [a definir]
-- O que precisa de aprovação humana: [a definir]
-- Limites de privacidade: [a definir]
-- Padrões e restrições importantes: [a definir]
-
-## Direção de voz e criação
-
-[a definir; detalhes podem viver em 02. MEMORIA/voz-e-estilo.md]
+- Onde ficam as fontes de verdade: a definir.
+- Ferramentas que já usa e quer manter: a definir.
+- Escopo autorizado para trabalho local: a definir.
+- Ações externas autorizadas e limites: nenhuma registrada.
+- Local de documentos confidenciais: a definir; não copiar documentos para preencher o perfil.
 
 ## Primeira missão
 
-[a definir]
+Objetivo, material disponível e critério de sucesso: a definir.
+
+## Lacunas para retomar
+
+As lacunas e o checkpoint ficam em `ONBOARDING.md`. Um campo desconhecido não impede trabalhar em outra frente com contexto suficiente.

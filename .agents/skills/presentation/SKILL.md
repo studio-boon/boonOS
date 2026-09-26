@@ -25,7 +25,7 @@ Defina:
 - tempo de fala, canal e formato;
 - identidade ou restrições visuais.
 
-Use templates/criacao/ESTRUTURA-DECK.md quando quiser registrar a arquitetura.
+Use 05. BIBLIOTECA/01. CRIATIVO/ESTRUTURA-DECK.md quando quiser registrar a arquitetura.
 
 ## Estruture antes de desenhar
 

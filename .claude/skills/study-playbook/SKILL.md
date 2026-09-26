@@ -5,7 +5,7 @@ description: >
   aprendizado aplicável: síntese, princípios, prática e playbook pessoal. Use
   quando a pessoa disser "$study-playbook", "quero estudar isso", "resume e me
   ensina", "transforma em exercício", "o que tiro dessa referência?" ou trouxer
-  uma fonte para aprender design, criação ou processo.
+  uma fonte para aprender criação, operação ou processo.
 ---
 
 # study-playbook — estudar para conseguir fazer
@@ -32,7 +32,7 @@ Não invente o conteúdo de uma fonte que não foi fornecida ou que você não c
 3. **Extraia princípios.** Escreva de três a cinco regras em linguagem simples, sem copiar estilo ou fórmula.
 4. **Compare.** Relacione com uma referência que a pessoa já conhece, quando isso ajudar.
 5. **Desenhe a prática.** Proponha um exercício pequeno, com limite de tempo e critério de avaliação.
-6. **Registre.** Use templates/criacao/PLAYBOOK-DE-ESTUDO.md se a pessoa quiser guardar a síntese.
+6. **Registre.** Use 05. BIBLIOTECA/01. CRIATIVO/PLAYBOOK-DE-ESTUDO.md se a pessoa quiser guardar a síntese.
 
 ## Saída
 
@@ -56,4 +56,4 @@ Não invente o conteúdo de uma fonte que não foi fornecida ou que você não c
 ...
 ~~~
 
-Se a prática gerar um método repetível, encaminhe para $skill-creator. Se gerar uma peça, encaminhe para $design ou $design-review.
+Se a prática gerar um aprendizado útil, registre origem e escopo com `boon-memoria`. Se indicar mudança no sistema, passe por `boon-melhorar-sistema` antes de criar um novo comando. Se gerar uma peça, siga para `design`; se gerar uma mudança operacional, use a capacidade correspondente no catálogo.

@@ -27,7 +27,7 @@ Colete ou declare premissas:
 - restrições de marca, produção, prazo e acessibilidade;
 - referências e o que exatamente elas ensinam.
 
-Use templates/criacao/BRIEF-CREATIVO.md quando for útil registrar.
+Use 05. BIBLIOTECA/01. CRIATIVO/BRIEF-CREATIVO.md quando for útil registrar.
 
 ## Processo
 
@@ -66,4 +66,4 @@ Não copie a assinatura de uma referência. Extraia o princípio que funciona e 
 - ...
 ~~~
 
-Se a pessoa pedir produção de arquivo, adapte o plano às ferramentas realmente disponíveis e confirme formato/entrega antes de criar.
+Se a pessoa pedir produção de arquivo, execute com as ferramentas disponíveis dentro do escopo autorizado. Esclareça apenas formato ou decisão que realmente estiver faltando. Verifique o arquivo produzido no tamanho de leitura: texto literal, fonte carregada, hierarquia, contraste, margens e ausência de cortes. Uma direção escrita não comprova que a peça foi produzida.

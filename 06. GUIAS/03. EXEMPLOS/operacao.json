@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "currency": "BRL",
+  "description": "DEMONSTRAÇÃO FICTÍCIA. Projeto P-001 e pessoas inventadas; nenhum pagamento real.",
+  "opening_cash": {"date": "2026-09-01", "amount": "1000.00", "source": "demo:saldo-inicial"},
+  "obligations": [
+    {"id": "R-001", "kind": "receivable", "state": "committed", "issued_on": "2026-09-10", "committed_on": "2026-09-10", "due_on": "2026-09-20", "amount": "2000.00", "description": "Parcela do projeto fictício", "project_id": "P-001", "party_id": "C-001", "source": "demo:acordo-001:parcela-1"},
+    {"id": "R-002", "kind": "receivable", "state": "committed", "issued_on": "2026-09-10", "committed_on": "2026-09-10", "due_on": "2026-10-01", "amount": "400.00", "description": "Saldo do mesmo projeto", "project_id": "P-001", "party_id": "C-001", "source": "demo:acordo-001:parcela-2"},
+    {"id": "P-001", "kind": "payable", "state": "committed", "issued_on": "2026-09-10", "committed_on": "2026-09-10", "due_on": "2026-09-24", "amount": "700.00", "description": "Serviço de fornecedor fictício", "project_id": "P-001", "party_id": "F-001", "source": "demo:cotacao-aceita-001"},
+    {"id": "P-002", "kind": "payable", "state": "committed", "issued_on": "2026-09-12", "committed_on": "2026-09-12", "due_on": "2026-10-05", "amount": "100.00", "description": "Despesa operacional fictícia", "source": "demo:assinatura-001"},
+    {"id": "PR-001", "kind": "receivable", "state": "forecast", "issued_on": "2026-09-12", "due_on": "2026-10-15", "amount": "900.00", "description": "Oportunidade sem aceite", "source": "demo:oportunidade-002"},
+    {"id": "PP-001", "kind": "payable", "state": "forecast", "issued_on": "2026-09-12", "due_on": "2026-10-20", "amount": "200.00", "description": "Compra ainda em avaliação", "source": "demo:cotacao-nao-aceita-002"},
+    {"id": "RC-001", "kind": "receivable", "state": "committed", "issued_on": "2026-09-10", "committed_on": "2026-09-10", "due_on": "2026-09-18", "amount": "500.00", "cancelled_on": "2026-09-19", "description": "Adicional cancelado após devolução integral", "project_id": "P-001", "source": "demo:cancelamento-001"}
+  ],
+  "events": [
+    {"id": "E-001", "obligation_id": "R-001", "date": "2026-09-15", "kind": "settlement", "amount": "1200.00", "source": "demo:comprovante-001"},
+    {"id": "E-002", "obligation_id": "P-001", "date": "2026-09-16", "kind": "settlement", "amount": "400.00", "source": "demo:comprovante-002"},
+    {"id": "E-003", "obligation_id": "RC-001", "date": "2026-09-17", "kind": "settlement", "amount": "500.00", "source": "demo:comprovante-003"},
+    {"id": "E-004", "obligation_id": "RC-001", "date": "2026-09-18", "kind": "reversal", "amount": "500.00", "reverses": "E-003", "source": "demo:devolucao-003"},
+    {"id": "E-005", "obligation_id": "R-001", "date": "2026-09-22", "kind": "reversal", "amount": "200.00", "reverses": "E-001", "source": "demo:devolucao-001"},
+    {"id": "E-006", "obligation_id": "P-001", "date": "2026-09-23", "kind": "reversal", "amount": "100.00", "reverses": "E-002", "source": "demo:devolucao-002"},
+    {"id": "E-007", "obligation_id": "R-002", "date": "2026-10-01", "kind": "settlement", "amount": "400.00", "source": "demo:comprovante-007-posterior-ao-corte"}
+  ]
+}

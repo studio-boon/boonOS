@@ -1,15 +1,7 @@
-# boonOS — compatibilidade com Claude Code
+# boonOS 2.1 (beta) — entrada para Claude Code
 
-O contexto canônico deste sistema não vive neste arquivo. Antes de trabalhar, leia:
+Leia e siga `AGENTS.md`, o contrato comum de trabalho deste sistema. Depois leia os arquivos de contexto ali indicados: `CONTEXTO.md`, `PERFIL.yaml`, `SKILLSET.md` e `ONBOARDING.md` em `01. SISTEMA`, e voz e estilo quando pertinente.
 
-1. 01. SISTEMA/CONTEXTO.md
-2. 01. SISTEMA/PERFIL.yaml
-3. 01. SISTEMA/SKILLSET.md
-4. 01. SISTEMA/ONBOARDING.md
-5. 02. MEMORIA/voz-e-estilo.md quando a tarefa for de escrita
+As skills locais estão em `.claude/skills`, espelho de `.agents/skills`. Para configurar ou retomar, use a skill local `init`; o pedido “use a skill local init” identifica o fluxo sem depender da interpretação de `/init` pelo aplicativo.
 
-As regras de operação, segurança e estrutura estão em AGENTS.md. Siga-as também aqui.
-
-As skills compatíveis ficam em .claude/skills. Elas devem continuar idênticas às versões canônicas em .agents/skills.
-
-Se o onboarding estiver incompleto, use /init no Claude Code. Não reescreva o contexto da pessoa sem mostrar um resumo e obter aprovação.
+O contexto da pessoa vive nos arquivos de `01. SISTEMA`, não neste contrato. Preserve personalizações e autorizações vigentes. Onboarding incompleto não bloqueia uma missão que já tenha contexto suficiente.

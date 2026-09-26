@@ -1,11 +1,7 @@
-# 03. DOCS
+# Documentos e fontes
 
-Documentos recebidos, fontes de estudo, briefings e materiais que podem ser preservados como registro.
+Guarde fontes recebidas que possam ser preservadas aqui e índices dos materiais que vivem em outro lugar. Registre origem, data, versão e relação com o projeto. Fontes já existentes no projeto não precisam de outra cópia nesta pasta.
 
-Ao estudar uma fonte, mantenha aqui o original e registre em 02. MEMORIA apenas a síntese que você validou e quer usar de novo.
+Ao estudar, mantenha a referência original e registre em `02. MEMORIA` apenas a síntese útil e confirmada.
 
-## Documentos confidenciais
-
-Contratos, dados de clientes, documentos fiscais e qualquer material confidencial não devem ser adicionados a esta pasta versionada. Se for realmente necessário guardá-los no disco do projeto, use 03. DOCS/_PRIVADO/, que já é ignorada pelo Git.
-
-Arquivo ignorado não substitui um cofre seguro. Não guarde senhas, tokens ou dados bancários em texto simples.
+Documentos confidenciais completos, extratos e materiais fiscais devem ficar em armazenamento com acesso adequado. Se houver autorização para usar uma pasta local `98. PRIVADO`, confira que ela está ignorada e não rastreada antes de adicionar conteúdo. Ignore não é cofre nem remove versões antigas do Git. Use referências permitidas no índice e não copie credenciais.

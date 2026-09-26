@@ -1,30 +1,70 @@
-# Perfil seguro para leitura das skills. Preencha pelo $init ou manualmente.
-# Não coloque senhas, tokens, dados bancários ou documentos fiscais aqui.
+# Contexto estruturado. O init registra somente informações confirmadas e autorizadas.
+schema_version: "2.1"
 system:
   name: "Meu Sistema"
   slug: "meu-sistema"
   locale: "pt-BR"
-  timezone: ""
+  timezone: null
 owner:
-  name: ""
-  work_mode: "solo"
+  name: null
+  work_mode: null
+  role: null
 operation:
-  purpose: ""
+  purpose: null
   source_of_truth: []
   approval_required_for:
     - "envio externo"
     - "publicação"
-    - "mudança financeira"
+    - "pagamento ou compra"
+    - "conexão de conta ou ativação de recorrência"
 priorities: []
 creative_profile:
-  track: "a_definir"
+  track: null
   goals: []
+  audiences: []
+  formats: []
+  references: []
+  quality_criteria: []
+  voice_source: null
+operational_profile:
+  activity: null
+  offers: []
+  audiences: []
+  workflow: []
+  roles: []
+  current_projects: []
+  bottlenecks: []
+  planning_rhythm: null
+  financial_source: null
+  currency: null
+  accounting_workflow: null
+tools:
+  preferred_agent: null
+  existing_tools: []
+  requested_integrations: []
+  verified_integrations: []
+permissions:
+  repository_visibility: null
+  confidential_source: null
+  local_work_scope: []
+  external_authorizations: []
+  checkpoint_scope: null
 skillset:
   active:
     - "init"
     - "overview"
     - "router"
-  available: []
+  catalog: "01. SISTEMA/CATALOGO.json"
 onboarding:
   status: "not_started"
+  pace: null
   completed_modules: []
+  pending_modules: []
+  unknowns: []
+  checkpoint_at: null
+  next_question: null
+  first_mission:
+    goal: null
+    source: null
+    success_criterion: null
+    status: "not_selected"

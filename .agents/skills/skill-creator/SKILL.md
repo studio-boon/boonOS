@@ -61,10 +61,10 @@ Depois escreva:
 
 Não codifique nomes de clientes, caminhos pessoais, preços, credenciais, voz privada ou fatos que possam mudar.
 
-Quando a skill estiver pronta, espelhe a mesma árvore em .claude/skills/[nome-da-skill]/. A versão em .agents é a canônica.
+Quando a skill estiver pronta, use `python3 scripts/sync_skills.py` para a prévia e `--apply` para espelhar dentro da autorização existente. Se houver edição conflitante no espelho, preserve os dois arquivos e resolva a diferença. Não use cópia com exclusão. A versão em `.agents` é a canônica; skills pessoais podem existir além do catálogo base.
 
 ## Teste
 
 Proponha dois prompts reais: um caso simples e um caso de borda. Rode ou simule os dois, e ajuste a skill somente com evidência do que faltou.
 
-Se scripts/check-skills.sh existir, execute-o depois de mudanças em skills.
+Execute `python3 scripts/check.py` depois de mudanças. Ele valida estrutura e paridade sem fixar uma quantidade de skills. Esse resultado não substitui os casos de uso. Para comparar comportamento, use `boon-avaliar-skills`; registre a origem e os testes em seu skillset local.

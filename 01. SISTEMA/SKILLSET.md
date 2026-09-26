@@ -1,38 +1,26 @@
-# Skillset do sistema
+# Skills prioritárias
 
-Status: template ainda não personalizado.
+Estado: template ainda não personalizado. As 40 skills do pacote estão disponíveis no [catálogo](CATALOGO.json); esta página registra apenas o que ajuda agora.
 
-As 20 skills do pacote estão disponíveis, mas o $init recomenda uma trilha para evitar que tudo pareça prioritário ao mesmo tempo. A recomendação pode mudar conforme o seu trabalho evolui.
+## Escolha pela situação
 
-## Base de todo perfil
-
-| Skill | Papel |
+| Situação | Primeiras capacidades possíveis |
 |---|---|
-| $init | entrevista, resumo e personalização segura |
-| $overview | painel objetivo do que está acontecendo |
-| $router | encontra o melhor caminho para um pedido |
-| $skill-creator | transforma um fluxo repetido em skill própria |
-| $grill-me | melhora uma ideia por perguntas e decisões |
+| Quero melhorar minha criação | `design`, `design-review`, `taste`, `copywriting` |
+| Trabalho com comunicação e conteúdo | `brand-storytelling`, `content-strategy`, `carrossel`, `post-social` |
+| Preciso apresentar ou mostrar meu trabalho | `presentation`, `portfolio-case-study`, `site-design` |
+| Preciso organizar uma operação | `boon-projetos`, `boon-rotina`, `boon-reunioes`, `boon-clientes` |
+| Preciso cuidar do comercial e do dinheiro | `boon-comercial`, `boon-propostas`, `boon-precificar`, `boon-financeiro` |
+| Quero aproveitar o que aprendo | `study-playbook`, `boon-memoria`, `boon-melhorar-sistema` |
 
-## Trilhas sugeridas
+Esses caminhos podem se misturar. O init recomenda poucas capacidades relacionadas à primeira missão e explica o que trazer para usá-las. Não é preciso ativar uma skill nesta lista antes de pedir sua ajuda.
 
-| Trilha | Skills mais usadas | Boa para |
+## Prioridades atuais
+
+| Skill | Motivo | Próximo uso |
 |---|---|---|
-| Criador em estudo | $study-playbook, $design, $taste, $design-review, $image-direction, $presentation | quem quer praticar repertório e decisões de criação |
-| Designer digital | $design, $design-review, $site-design, $interface-polish, $portfolio-case-study | produto, site, interface e portfolio |
-| Comunicação e marca | $writing-filter, $copywriting, $brand-storytelling, $content-strategy, $carrossel, $post-social | narrativa, texto e conteúdo |
-| Autor independente | mistura das três trilhas, começando por uma missão concreta | projeto pessoal ou pequeno estúdio |
+| `init` | entender a pessoa e sua situação | primeira conversa |
+| `overview` | retomar contexto com evidências | volta ao sistema |
+| `router` | encontrar o caminho de um pedido amplo | quando necessário |
 
-## Regra de personalização
-
-Uma skill fica ativa quando ajuda em uma prioridade real. Uma skill continua disponível quando é útil, mas não deve competir pela atenção agora.
-
-Depois do onboarding, registre abaixo as skills ativas e o motivo de cada uma.
-
-## Skills ativas
-
-| Skill | Por que está ativa | Próximo uso |
-|---|---|---|
-| $init | concluir a personalização | primeira conversa |
-| $overview | manter o contexto visível | revisão semanal |
-| $router | escolher o fluxo certo | quando o pedido estiver vago |
+Depois da entrevista, substituir as prioridades iniciais por motivos reais. As demais continuam disponíveis. Ferramentas conectadas e rotinas ativas têm registros próprios; estar nesta lista não prova conexão nem execução.

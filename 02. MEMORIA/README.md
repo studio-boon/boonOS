@@ -1,13 +1,9 @@
-# 02. MEMORIA
+# Memória
 
-Aqui fica o contexto que deve sobreviver entre conversas: aprendizados, referências, preferências e fatos que ainda fazem diferença.
+Aprendizados e preferências úteis para próximas sessões, com origem e escopo. Use para voz, critérios, repertório, colaboração e lições de trabalhos realizados.
 
-Use esta pasta para:
+Cada registro informa o que foi observado, de onde veio, a quem se aplica, quando foi confirmado e em que situação precisa de revisão. Separe proposta, inferência e aprendizado validado. Não misture contexto de uma pessoa ou cliente com outro.
 
-- voz, estilo e exemplos de escrita;
-- contexto de projetos importantes;
-- aprendizados de cursos, referências e experiências;
-- decisões que merecem contexto maior que uma nota de projeto;
-- preferências de colaboração que ajudam o sistema a trabalhar melhor.
+As decisões duráveis ficam em `01. SISTEMA/DECISOES.md`; contratos, fontes e resultados continuam em seus destinos próprios. A memória aponta para eles e registra o aprendizado, sem virar outra fonte de verdade.
 
-Não use como despejo de arquivos. A fonte original vai em 03. DOCS; a síntese que vale reusar pode entrar aqui.
+Uma revisão de entrega pode justificar atualizar a memória dentro da autorização dada. Repetir uma sugestão não a transforma em regra.

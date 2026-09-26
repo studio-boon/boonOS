@@ -1,0 +1,14 @@
+{
+  "title": "Pergunta de público no briefing fictício",
+  "evidence": ["06. GUIAS/03. EXEMPLOS/01. MELHORIA/feedback.md"],
+  "changes": [
+    {
+      "path": "06. GUIAS/03. EXEMPLOS/01. MELHORIA/checklist.md",
+      "content": "# Checklist de briefing fictício\n\n- Confirmar objetivo.\n- Confirmar público.\n- Confirmar formato.\n"
+    }
+  ],
+  "checks": [
+    {"type": "contains", "path": "06. GUIAS/03. EXEMPLOS/01. MELHORIA/checklist.md", "text": "Confirmar público."},
+    {"type": "contains", "path": "06. GUIAS/03. EXEMPLOS/01. MELHORIA/checklist.md", "text": "Confirmar formato."}
+  ]
+}

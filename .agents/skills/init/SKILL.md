@@ -1,166 +1,84 @@
 ---
 name: init
 description: >
-  Conduz a instalação guiada do boonOS no Codex: entrevista a pessoa em blocos
-  curtos, cria um contexto próprio e recomenda uma trilha de skills. Use quando
-  ela disser "$init", "configura meu sistema", "começa o onboarding", "acabei de
-  clonar", "me guia na instalação" ou quando o onboarding ainda não estiver ativo.
+  Configura ou retoma o contexto pessoal e operacional do boonOS por uma conversa
+  progressiva. Use ao instalar, pedir configuração, revisar o perfil ou retomar
+  um onboarding. Conecta a entrevista a uma primeira missão criativa ou operacional.
 ---
 
-# init — transforme o template em um sistema seu
+# init — um sistema que entende como você trabalha
 
-## O resultado
+## Comece pelo que já existe
 
-Ao final, esta pessoa terá:
+Leia `AGENTS.md`, `01. SISTEMA/CONTEXTO.md`, `PERFIL.yaml`, `SKILLSET.md` e `ONBOARDING.md`. Os últimos quatro estão em `01. SISTEMA`. Leia o banco de perguntas em `05. BIBLIOTECA/03. EVOLUÇÃO/01. ONBOARDING/PERGUNTAS.md` conforme o módulo necessário.
 
-- um nome próprio para o sistema;
-- contexto humano em 01. SISTEMA/CONTEXTO.md;
-- preferências seguras em 01. SISTEMA/PERFIL.yaml;
-- um skillset prioritário em 01. SISTEMA/SKILLSET.md;
-- uma primeira missão pequena e real;
-- clareza sobre como continuar usando o sistema.
+- Perfil existente: preserve informações e autorizações. Retome pelo checkpoint ou revise o trecho solicitado.
+- Instalação vazia: explique que o sistema ajuda tanto na criação quanto na operação e ofereça dois ritmos: primeira missão ou configuração aprofundada.
+- Pedido concreto com informações suficientes: comece o trabalho e registre as lacunas para depois. Não obrigue a pessoa a concluir a entrevista inteira.
+- Não explore contas, pastas pessoais ou fontes externas apenas porque foram mencionadas. Registre a localização; leia quando o pedido e a autorização cobrirem a fonte.
 
-O template se adapta à pessoa. Não tente transformá-la em uma versão da BOON.
+## Conduza a descoberta
 
-## Regras não negociáveis
+Pergunte em blocos de **até três perguntas**, espere a resposta e use-a para escolher o próximo bloco. Evite várias subperguntas escondidas numa só. A cada bloco, resuma o que mudou no entendimento e aprofunde uma decisão relevante.
 
-- Faça perguntas em blocos de no máximo três por vez. Espere as respostas.
-- Diga brevemente por que uma pergunta importa quando isso ajudar.
-- Permita “pular por enquanto” e retome depois, sem reiniciar a entrevista.
-- Não vasculhe Drive, Desktop, contas, e-mails ou documentos por iniciativa própria.
-- Não peça nem grave senha, token, dado bancário, documento fiscal ou informação privada de terceiros.
-- Não escreva ou substitua arquivos de contexto antes de apresentar um resumo e receber um “sim” explícito.
-- Se o onboarding já estiver ativo, pergunte se a pessoa quer revisar uma parte, retomar uma entrevista pausada ou apenas começar uma missão.
+Prefira episódios e evidências: “qual foi o último trabalho que atrasou?” revela mais que “você é organizado?”. Não transforme a entrevista em avaliação da pessoa. Se não souber responder, proponha um exemplo ou deixe a lacuna explícita.
 
-## 0. Preflight
-
-Leia, se existirem:
-
-1. AGENTS.md
-2. 01. SISTEMA/CONTEXTO.md
-3. 01. SISTEMA/PERFIL.yaml
-4. 01. SISTEMA/SKILLSET.md
-5. 01. SISTEMA/ONBOARDING.md
-6. templates/onboarding/PERGUNTAS.md
-
-Se o status for not_started, explique em uma frase:
-
-> Em poucos minutos vamos dar um nome ao seu sistema, escolher o que ele deve ajudar a fazer e montar uma primeira missão. Nada será salvo sem sua revisão.
-
-## 1. Identidade
-
-Pergunte em um bloco:
-
-1. Como você quer chamar este sistema?
-2. Como prefere ser chamado e em que idioma/fuso costuma trabalhar?
-3. Você trabalha sozinho ou com um time?
-
-Resuma o que entendeu antes de avançar.
-
-## 2. Momento e prioridade
-
-Pergunte:
-
-1. O que você mais quer criar, aprender ou organizar agora?
-2. Qual é o principal caos ou fricção que vale resolver primeiro?
-3. O que precisa estar diferente em cerca de 90 dias?
-
-Procure uma primeira vitória concreta, não uma lista de desejos.
-
-## 3. Como a pessoa trabalha
-
-Pergunte:
-
-1. Onde ficam hoje as fontes que ela considera verdadeiras?
-2. Como ela diferencia rascunho, aprovado e entregue?
-3. Que ações sempre precisam de aprovação humana?
-
-Se ela não souber, proponha defaults seguros: nada externo é enviado/publicado, documentos sensíveis ficam fora do Git e decisões importantes são registradas.
-
-## 4. Criação e estudo
-
-Apresente estas trilhas em linguagem simples e peça a mais próxima:
-
-| Trilha | Ajuda principal |
+| Módulo | O que descobrir |
 |---|---|
-| Criador em estudo | aprender repertório, criar peças e entender decisões |
-| Designer digital | trabalhar site, interface, revisão e portfolio |
-| Comunicação e marca | criar narrativa, texto, conteúdo e peças sociais |
-| Autor independente | combinar as três para um projeto próprio |
+| Identidade | atividade, papel, solo/time, nome do sistema e idioma/fuso quando relevantes |
+| Direção | atrito concreto, objetivo, prioridade e o que precisa mudar |
+| Criativo | público, formatos, referências comentadas, voz e critérios de aprovação |
+| Operacional | oferta, entrada do trabalho, etapas, responsáveis, capacidade, recebimentos e documentos |
+| Fontes e ferramentas | onde vivem registros, qual fonte prevalece e ferramentas que quer manter |
+| Permissões | contexto que pode ser salvo, acesso, ações autorizadas e limites |
+| Primeira missão | material disponível, saída útil e critério observável de conclusão |
 
-Depois pergunte:
+O ritmo rápido coleta o mínimo para uma missão e deixa módulos pendentes. O aprofundado percorre os módulos pertinentes, sem exigir valores financeiros ou dados de clientes desnecessários. Uma pessoa pode criar e operar; não force uma persona exclusiva.
 
-1. Quais formatos ela quer praticar primeiro?
-2. Quais referências, gostos ou coisas que ela quer evitar já consegue nomear?
-3. Qual missão pequena pode ser feita esta semana?
+## Mostre possibilidades durante a conversa
 
-Recomende no máximo seis skills além da base. Todas as 20 continuam disponíveis, mas não trate todas como urgentes.
+Depois de entender a atividade e uma dificuldade, apresente poucas possibilidades relacionadas às respostas, cobrindo as duas áreas. Use “você traz → construímos → você confere”. Exemplos completos estão em `06. GUIAS/02. POSSIBILIDADES/POSSIBILIDADES.md`.
 
-## 5. Privacidade
+Uma pessoa que vende serviços pode organizar uma proposta e um projeto, melhorar como apresenta o trabalho ou revisar entradas e saídas. Explique o resultado antes do nome da skill. Escolha uma missão prioritária; as outras viram possibilidades para depois.
 
-Pergunte:
+Diferencie o que pode ser feito com arquivos e conversa do que depende de ferramenta ou integração. Um pedido de imagem não prova que há gerador de imagens. Exemplo fictício fica identificado e não alimenta contexto real, clientes ou lançamentos.
 
-1. O repositório será pessoal, compartilhado ou público?
-2. Há algo que deve ficar apenas local ou ser só referenciado, sem copiar?
+## Sintetize e salve no escopo autorizado
 
-Explique que 01. SISTEMA/PRIVADO.md é ignorado pelo Git, mas não deve ser usado para segredos que merecem um cofre próprio.
+Antes do primeiro registro, mostre uma síntese curta com:
 
-## 6. Revisão obrigatória
+- pessoa/time, propósito, prioridades e contexto criativo/operacional confirmado;
+- fontes de verdade, limites e ações autorizadas;
+- capacidades prioritárias com motivo;
+- primeira missão, critério de sucesso e lacunas;
+- arquivos que serão criados ou atualizados.
 
-Antes de escrever, mostre um resumo com:
+Se a pessoa já autorizou salvar a configuração ou checkpoints revisados, prossiga nesse escopo. Não peça um novo “sim” a cada arquivo ou módulo. Se essa autorização ainda não existe, peça uma confirmação específica sobre o resumo e sua gravação. Uma resposta vaga não autoriza persistência.
 
-~~~markdown
-## Proposta de configuração
+Use `05. BIBLIOTECA/03. EVOLUÇÃO/01. ONBOARDING/PERFIL.template.yaml` como referência de estrutura. Em perfil existente, acrescente apenas o necessário; não sobrescreva campos customizados. Dados desconhecidos ficam `null` ou em listas vazias, acompanhados de lacunas quando relevante.
 
-- Sistema:
-- Pessoa/time:
-- Propósito:
-- Prioridades:
-- Trilha:
-- Skills prioritárias:
-- Fonte de verdade:
-- Aprovação humana obrigatória para:
-- Limites de privacidade:
-- Primeira missão:
+Atualize:
 
-Arquivos que vou criar ou atualizar:
-- ...
-~~~
+- `01. SISTEMA/CONTEXTO.md`: entendimento humano, sem entrevista bruta.
+- `01. SISTEMA/PERFIL.yaml`: campos confirmados, permissões e estado.
+- `01. SISTEMA/SKILLSET.md`: prioridades reais e próximos usos.
+- `01. SISTEMA/ONBOARDING.md`: data, módulos, lacunas, próxima pergunta e primeira missão.
+- `02. MEMORIA/voz-e-estilo.md`: somente se houver exemplos ou preferências atribuídas suficientes.
 
-Pergunte: “Essa configuração representa você? Posso gravar esses arquivos agora?”
+Indique origem e escopo das autorizações, sem registrar segredos ou copiar conteúdo confidencial. Ter um repositório privado não autoriza armazenar tudo.
 
-Se a resposta não for inequívoca, corrija o resumo ou pare sem escrever.
+## Pausa e retomada
 
-## 7. Provisionar após aprovação
+Quando a pessoa pausar, ofereça ou salve um checkpoint parcial conforme a autorização já recebida. Registre contexto confirmado, módulo atual, pendências, próxima pergunta e o que foi salvo. Marque `paused`; não marque a entrevista completa por conveniência.
 
-Atualize somente o necessário:
+Sem autorização de persistência, entregue o resumo na conversa e explique que outra sessão precisará dele. Não prometa lembrar algo que não foi gravado.
 
-- 01. SISTEMA/CONTEXTO.md;
-- 01. SISTEMA/PERFIL.yaml;
-- 01. SISTEMA/SKILLSET.md;
-- 01. SISTEMA/ONBOARDING.md;
-- 02. MEMORIA/voz-e-estilo.md, se a pessoa forneceu material suficiente.
+Na retomada, leia o checkpoint e continue pelo que falta, aproveitando respostas já dadas. Se o usuário corrigir um fato, atualize o trecho correspondente no escopo autorizado e preserve o histórico de decisões relevantes.
 
-Use templates/onboarding/PERFIL.template.yaml como estrutura, mas não deixe marcadores {{...}} na versão gerada. Mantenha campos não informados como “a definir”, não invente dados.
+Estados: `not_started`, `in_progress`, `paused` e `active`. `active` indica contexto suficiente para trabalhar, mesmo com módulos pendentes. Preencha `completed_modules`, `pending_modules`, `unknowns`, `next_question` e a missão de modo coerente.
 
-No PERFIL.yaml:
+## Faça a primeira missão
 
-- mantenha Codex como rota principal;
-- preserve a lista de ações que exigem aprovação;
-- marque onboarding.status como active;
-- registre as skills prioritárias em skillset.active.
+Depois da síntese, use a skill pertinente e conclua uma saída útil com o material disponível. Se faltar algo que realmente impede a execução, peça somente esse dado. Se a pessoa quiser apenas configurar, registre a missão sem executá-la.
 
-Em SKILLSET.md, escreva o motivo de cada skill prioritária e um próximo uso real.
-
-Em ONBOARDING.md, registre a data, módulos concluídos, lacunas que podem ser retomadas e a primeira missão.
-
-## 8. Fechamento
-
-Entregue:
-
-1. confirmação do nome e da trilha;
-2. a primeira missão em três passos pequenos;
-3. uma sugestão de skill para iniciar;
-4. uma frase de continuidade, por exemplo: “quando quiser se situar de novo, use $overview”.
-
-Ensine pelo uso: contexto antes de ação, decisão antes de acabamento, skill quando houver repetição e automação apenas depois de um fluxo seguro.
+No fechamento, mostre resultado, evidência de verificação, o que foi salvo, o que continua aberto e uma próxima ação. Para voltar ao contexto, a pessoa pode dizer “me situa”. Não transforme o fim da entrevista numa lista de comandos para ela executar.

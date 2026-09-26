@@ -1,13 +1,20 @@
-# Dados locais e privados
-01. SISTEMA/PRIVADO.md
-01. SISTEMA/*.local.yaml
-03. DOCS/_PRIVADO/
-
-# Segredos e arquivos de ambiente
+# Dados privados por nome; protege também instalações migradas.
+**/98. PRIVADO/
+**/_PRIVADO/
+**/_privado/
+**/PRIVADO.md
+**/*.local.yaml
+**/*.local.json
 .env
 .env.*
 !.env.example
-
-# Metadados locais
+# Estado de execução local; não é material do template.
+01. SISTEMA/01. EVOLUÇÃO/
+99. ARQUIVO/01. MIGRAÇÃO/
+.boonos-improve.lock
 .DS_Store
+__pycache__/
+*.py[cod]
+.venv/
 node_modules/
+# O contexto preenchido exige repositório privado ou exportação pela allowlist.
