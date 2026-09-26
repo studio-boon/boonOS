@@ -1,0 +1,29 @@
+name: Validate boonOS
+on:
+  push:
+    branches: [main, 'beta/**']
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  portable-core:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ['3.10', '3.13']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - run: git config core.autocrlf false
+      - run: git checkout-index --all --force
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python scripts/check.py --release
+      - run: python -m unittest discover -s tests -v
+      - run: python scripts/finance.py "06. GUIAS/03. EXEMPLOS/operacao.json" --as-of 2026-09-25
+      - run: python scripts/package.py package.zip
