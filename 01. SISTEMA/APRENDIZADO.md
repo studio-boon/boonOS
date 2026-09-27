@@ -2,7 +2,7 @@
 
 Criativo e operacional compartilham este ciclo: observar um caso, registrar a evidência, propor uma pequena mudança, aplicá-la dentro da autorização e avaliar o próximo uso. O sistema funciona por demanda, sem servidor ou agenda instalada.
 
-Use `boon-memoria` para uma preferência ou decisão durável, `boon-melhorar-sistema` para mudar um procedimento e `boon-avaliar-skills` para comparar sua utilidade. Ao terminar uma sessão, basta identificar uma correção que vale preservar. Se não houver, não crie uma melhoria artificial.
+Use `boon-memoria` para uma preferência ou decisão durável, `atualizar` para reconciliar o sistema com fontes atuais, `compactar-contexto` para deixar um checkpoint de retomada, `boon-melhorar-sistema` para mudar um procedimento e `boon-avaliar-skills` para comparar sua utilidade. Ao terminar uma sessão, basta identificar uma correção que vale preservar. Se não houver, não crie uma melhoria artificial.
 
 ## Evidência e maturidade
 

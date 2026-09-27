@@ -10,7 +10,8 @@ Leia, quando existirem:
 2. `01. SISTEMA/PERFIL.yaml`: preferências, permissões e estado estruturado.
 3. `01. SISTEMA/SKILLSET.md`: capacidades prioritárias.
 4. `01. SISTEMA/ONBOARDING.md`: checkpoint, lacunas e missão.
-5. `02. MEMORIA/voz-e-estilo.md`, quando a tarefa envolver comunicação.
+5. `01. SISTEMA/CONTINUIDADE.md`: estado curto da sessão anterior, quando houver.
+6. `02. MEMORIA/voz-e-estilo.md`, quando a tarefa envolver comunicação.
 
 Se o contexto não foi configurado, use a skill local `init` para obter o mínimo útil. Um onboarding incompleto não impede uma tarefa concreta com contexto suficiente. Em uma instalação já personalizada, retome a lacuna relevante; não reinicie a entrevista nem substitua o perfil.
 
@@ -51,7 +52,9 @@ Pastas humanas usam `NN. NOME`; pastas técnicas mantêm seus nomes. Dentro de u
 
 ## Skills, ferramentas e melhoria
 
-O pacote reúne 14 skills criativas, 14 operacionais e 12 compartilhadas. O catálogo descreve capacidades; a seleção em `SKILLSET.md` indica prioridades, não desinstala as demais. `.agents/skills` é a fonte de manutenção e `.claude/skills` seu espelho. Atualize ambas na mesma mudança e preserve extensões pessoais.
+O pacote reúne 14 skills criativas, 14 operacionais e 14 compartilhadas. O catálogo descreve capacidades; a seleção em `SKILLSET.md` indica prioridades, não desinstala as demais. `.agents/skills` é a fonte de manutenção e `.claude/skills` seu espelho. Atualize ambas na mesma mudança e preserve extensões pessoais.
+
+`atualizar` reconcilia o contexto salvo com as fontes atuais. `compactar-contexto` registra um checkpoint humano e portátil em `01. SISTEMA/CONTINUIDADE.md`. Nenhuma das duas substitui a compactação nativa da janela de contexto que um agente possa oferecer.
 
 Uma skill orienta o trabalho; uma ferramenta executa uma ação; uma integração exige configuração e teste. Não declare ferramentas, conectores ou schedulers ativos pela presença de instruções. O núcleo local não exige integração.
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "2.1.0-beta.1",
+  "version": "2.1.0-beta.3",
   "extensions": "Skills pessoais podem existir além desta lista; o checker não exige total fixo.",
   "skills": [
     {
@@ -536,6 +536,36 @@
       "maturity": "beta",
       "origin": "boonOS 2.1",
       "path": ".agents/skills/boon-memoria/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "atualizar",
+      "area": "sistema",
+      "label": "Atualização do contexto",
+      "summary": "Atualização do contexto: reconciliação com fontes, conflitos e próximos ajustes.",
+      "inputs": "Workspace, registros e data de corte",
+      "output": "Reconciliação com fontes, conflitos e próximos ajustes",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/atualizar/SKILL.md",
+      "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
+    },
+    {
+      "name": "compactar-contexto",
+      "area": "sistema",
+      "label": "Checkpoint de continuidade",
+      "summary": "Checkpoint de continuidade: estado curto, fontes e próximo passo.",
+      "inputs": "Trabalho atual, decisões, caminhos e limites",
+      "output": "Estado curto, fontes e próximo passo",
+      "dependencies": [
+        "Agente com acesso autorizado aos arquivos locais"
+      ],
+      "maturity": "beta",
+      "origin": "boonOS 2.1",
+      "path": ".agents/skills/compactar-contexto/SKILL.md",
       "validation": "Ver VALIDACAO.md; presença e teste estrutural não equivalem a uso continuado."
     },
     {

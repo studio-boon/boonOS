@@ -1,4 +1,4 @@
-# Mapa das 40 skills
+# Mapa das 42 skills
 
 As duas áreas compartilham a mesma base de contexto. As descrições abaixo dizem o que cada skill recebe e produz; a maturidade e as dependências ficam no [catálogo estruturado](<../../01. SISTEMA/CATALOGO.json>). Incluída no pacote não significa testada em todos os agentes, plataformas ou situações.
 
@@ -42,7 +42,7 @@ Peça pelo resultado em linguagem comum. O nome serve para localizar o processo 
 | `$boon-fornecedores` | necessidade, critérios e cotações | comparação e compromissos |
 | `$boon-documentos` | fontes recebidas e versões | índice, vigência e pendências |
 
-## Base compartilhada — 12
+## Base compartilhada — 14
 
 | Skill | O que trazer | Resultado principal |
 |---|---|---|
@@ -53,6 +53,8 @@ Peça pelo resultado em linguagem comum. O nome serve para localizar o processo 
 | `$study-playbook` | referência e objetivo de aprendizado | síntese atribuída e prática |
 | `$skill-creator` | processo reutilizável e casos | skill ou playbook com critérios |
 | `$boon-memoria` | aprendizado e origem | registro reconciliado por pessoa e escopo |
+| `$atualizar` | workspace, registros e data de corte | reconciliação com fontes, conflitos e próximos ajustes |
+| `$compactar-contexto` | trabalho atual, decisões, caminhos e limites | checkpoint curto para retomar em outro momento ou agente |
 | `$boon-melhorar-sistema` | fricção e evidência | proposta pequena, teste e histórico |
 | `$boon-avaliar-skills` | casos, versão e rubrica | comparação rastreável de comportamento |
 | `$boon-gerir-skills` | catálogo, versões e extensões | manutenção com personalizações preservadas |
@@ -66,5 +68,7 @@ Direção visual não comprova geração de imagem; roteiro não comprova export
 Contas registram fatos com fonte; financeiro calcula visões; conciliação compara registros; saúde operacional interpreta implicações; contabilidade organiza o conjunto documental. Pagamentos, envio de obrigações e validação oficial não são executados por uma análise local.
 
 Integrações e automações começam sem serviços externos ativos. Uma primeira missão pode funcionar só com os arquivos trazidos pela pessoa.
+
+`compactar-contexto` cria um registro portátil e legível. Ele não aciona nem substitui comandos ou rotinas nativas de compactação da janela de contexto do agente.
 
 A seleção prioritária fica em `01. SISTEMA/SKILLSET.md`. Para exemplos por intenção, leia [O que dá para fazer](POSSIBILIDADES.md).

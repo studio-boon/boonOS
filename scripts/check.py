@@ -39,7 +39,8 @@ def validate(root, release=False):
     required = ['README.md', 'AGENTS.md', 'CLAUDE.md', 'GEMINI.md', '00. COMECE-AQUI.md',
                 'boonos.json', '01. SISTEMA/CATALOGO.json', '01. SISTEMA/PERFIL.yaml',
                 '01. SISTEMA/CONTEXTO.md', '01. SISTEMA/ONBOARDING.md',
-                '01. SISTEMA/SKILLSET.md', '06. GUIAS/01. INSTALAÇÃO/INSTALAR.md']
+                '01. SISTEMA/CONTINUIDADE.md', '01. SISTEMA/SKILLSET.md',
+                '06. GUIAS/01. INSTALAÇÃO/INSTALAR.md']
     for item in required:
         if not (root/item).is_file():
             errors.append('Arquivo essencial ausente: '+item)

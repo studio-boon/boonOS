@@ -29,6 +29,8 @@ Leia `01. SISTEMA/SKILLSET.md` e o contexto pertinente. Consulte `01. SISTEMA/CA
 | cotação ou documentos | `boon-fornecedores` ou `boon-documentos` |
 | amadurecer uma ideia | `grill-me` |
 | estudar ou guardar aprendizado | `study-playbook` ou `boon-memoria` |
+| reconciliar arquivos, contexto e estado atual | `atualizar` |
+| pausar, trocar de chat ou deixar um checkpoint | `compactar-contexto` |
 | melhorar um processo do sistema | `boon-melhorar-sistema` |
 | criar, avaliar ou manter skill | `skill-creator`, `boon-avaliar-skills` ou `boon-gerir-skills` |
 | conectar ferramenta ou planejar recorrência | `boon-integracoes` ou `boon-automacoes` |
