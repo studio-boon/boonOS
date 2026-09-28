@@ -1,6 +1,6 @@
 # Validação do boonOS 2.1 beta
 
-Registro inicial: 25/09/2026. Esta beta tem validação técnica e exemplos fictícios. Não equivale a uso continuado por pessoas novas, contabilidade oficial ou integração externa ativa.
+Registro inicial: 25/09/2026. Atualização beta.3: 27/09/2026. Esta beta tem validação técnica e exemplos fictícios. Não equivale a uso continuado por pessoas novas, contabilidade oficial ou integração externa ativa.
 
 ## Como reproduzir
 
@@ -24,6 +24,7 @@ Em uma instalação personalizada, use `check.py` sem `--release`: a verificaç�
 - Migração exercitada com árvores Git do starter (`91b1002`) e da beta 2.0 (`982db29`), com verificação de origem inalterada e paridade no destino. Casos de colisão e customização também são testados.
 - Exportação cobre recusa de arquivo alterado e exclusão de dados não incluídos na allowlist.
 - O checker verifica arquivos essenciais, frontmatter, catálogo, links e espelhos; não reprova uma extensão pessoal válida por aumentar a quantidade.
+- Na beta.3, `atualizar` e `compactar-contexto` passaram na validação estrutural de skills nos dois espelhos. O checkpoint `01. SISTEMA/CONTINUIDADE.md` entrou na lista de arquivos essenciais; isso verifica a embalagem, não a qualidade de toda retomada real.
 - Avaliação conversacional com agentes em cópias isoladas: entrada sem contexto, três perguntas iniciais, checkpoint autorizado e pausa; uma nova sessão retomou o resumo, produziu plano semanal e uma hipótese criativa. O plano calculou 16h de demanda em 18h disponíveis e manteve o projeto dependente de referências como condicional. Nenhuma mensagem, conta externa ou envio foi executado. É uma simulação no ambiente Codex desta avaliação, não um teste independente no aplicativo Claude Code.
 - A revisão adversarial encontrou e corrigiu três casos: exclusão pessoal do Git após renomeação de raiz, colisão de caixa/Unicode com o manifesto de migração e alteração de bytes entre validação e exportação. Os casos viraram testes de regressão.
 

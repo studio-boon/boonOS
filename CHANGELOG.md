@@ -1,5 +1,11 @@
 # Histórico do boonOS
 
+## 2.1.0-beta.3
+
+- Skills `atualizar` e `compactar-contexto` adicionadas à base compartilhada.
+- Checkpoint portátil de continuidade separado da compactação nativa dos agentes.
+- Catálogo, roteamento, documentação, espelhos e manifesto de distribuição atualizados para 42 skills.
+
 ## 2.1.0-beta.2
 
 - Pré-requisitos explícitos e neutros: qualquer agente com acesso a arquivos locais, incluindo Codex, Claude Code e Gemini CLI.

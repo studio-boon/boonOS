@@ -7,7 +7,7 @@ Você precisa de **um agente de IA capaz de ler e trabalhar nos arquivos da past
 **Caminho mais simples, sem terminal:**
 
 1. Se o repositório estiver privado, aceite o convite do GitHub e entre na conta que recebeu acesso.
-2. Abra a [release boonOS 2.1](https://github.com/tchelove/boonOS/releases/tag/v2.1.0-beta.2). Em **Assets**, baixe `boonOS-2.1-beta.zip`.
+2. Abra a [release boonOS 2.1](https://github.com/tchelove/boonOS/releases/tag/v2.1.0-beta.3). Em **Assets**, baixe `boonOS-2.1-beta.zip`.
 3. Extraia o ZIP em uma pasta sua, por exemplo `Documentos/meu-sistema`. Você pode renomear a pasta.
 4. Abra a pasta extraída que contém `AGENTS.md`, `CLAUDE.md` e `boonos.json` — esses arquivos devem estar diretamente dentro dela.
 
@@ -20,7 +20,7 @@ git clone --branch beta/2.1 --single-branch https://github.com/tchelove/boonOS.g
 cd meu-sistema
 ~~~
 
-Clonar sem `--branch beta/2.1` segue a branch padrão do GitHub e pode trazer uma edição posterior. Confira `boonos.json`: esta edição usa a versão `2.1.0-beta.2`.
+Clonar sem `--branch beta/2.1` segue a branch padrão do GitHub e pode trazer uma edição posterior. Confira `boonos.json`: esta edição usa a versão `2.1.0-beta.3`.
 
 ## 2. Abra no seu agente
 
