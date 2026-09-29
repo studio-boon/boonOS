@@ -2,6 +2,16 @@
 
 Você precisa de **um agente de IA capaz de ler e trabalhar nos arquivos da pasta**, com acesso à sua conta nesse agente. Pode ser Codex, Claude Code, Gemini CLI ou outro com esse recurso. O boonOS não exige Claude Code nem conta Anthropic. Git é opcional para baixar o pacote. Ferramentas de imagem, apresentações, serviços externos e rotinas recorrentes são opcionais e dependem do ambiente.
 
+## Instalação conduzida pelo agente
+
+Quando a pessoa pedir para instalar a partir do link do repositório, conduza o processo inteiro com os recursos disponíveis no ambiente:
+
+1. Localize a Área de Trabalho da pessoa. Se ainda não existir, crie nela uma pasta `BOONOS`. Se a pasta já contiver arquivos, inspecione antes de alterar qualquer coisa. Se for uma instalação personalizada, siga [Atualizar](ATUALIZAR.md) em um destino novo.
+2. Obtenha a edição `v2.1.0-beta.3` pela release ou pela branch `beta/2.1`. Coloque `AGENTS.md`, `CLAUDE.md` e `boonos.json` diretamente em `BOONOS`, sem criar outra pasta dentro dela. Se faltar acesso ao GitHub, peça à pessoa que aceite o convite na conta autorizada.
+3. Confira a versão em `boonos.json`, execute a validação da seção 4 e abra a pasta no agente. Se o aplicativo não puder mudar a pasta da conversa atual, oriente a pessoa a abrir `BOONOS` nele. Então use a skill local `init` e comece pelo contexto e por uma situação real da pessoa.
+
+Se o agente não puder acessar arquivos ou executar os passos no computador, explique essa limitação e conduza a instalação manual abaixo. Não declare a instalação concluída antes de conferir os arquivos e a validação.
+
 ## 1. Escolha a edição certa
 
 **Caminho mais simples, sem terminal:**

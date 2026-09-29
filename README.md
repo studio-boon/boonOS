@@ -4,15 +4,13 @@ Um sistema pessoal de trabalho com IA: para criar, organizar a operação e apre
 
 O boonOS reúne contexto, projetos, memória e skills em uma pasta sua. Você conversa com o agente, traz uma situação real e constrói o sistema a partir dela. Ele pode receber outro nome, acompanhar um profissional independente ou ajudar um pequeno time.
 
-## Instale com o agente que você já usa
+## Instale com uma mensagem
 
-1. Crie uma pasta **vazia** chamada `meu-sistema` na Área de Trabalho.
-2. Abra essa pasta no Codex, Claude Code, Gemini CLI ou outro agente que possa trabalhar com arquivos locais. Se usa o CLI, entre na pasta antes de iniciar o agente.
-3. Cole esta mensagem:
+Abra o Codex, Claude Code, Gemini CLI ou outro agente que possa trabalhar com arquivos do seu computador. Cole esta linha:
 
-> Instale o boonOS 2.1 nesta pasta a partir de https://github.com/tchelove/boonOS (release `v2.1.0-beta.3`). Siga o guia `06. GUIAS/01. INSTALAÇÃO/INSTALAR.md` do pacote, deixe `AGENTS.md` e `boonos.json` diretamente nesta pasta e execute a validação indicada. Depois use a skill local `init` para me guiar pelo primeiro uso. Se faltar acesso ao GitHub ou a pasta não estiver vazia, me avise antes de alterar arquivos.
+> Instale o boonOS 2.1 para mim: https://github.com/tchelove/boonOS
 
-Se recebeu um convite para o repositório, aceite-o na conta GitHub convidada. Se já usa uma instalação personalizada, siga o [guia de atualização](<06. GUIAS/01. INSTALAÇÃO/ATUALIZAR.md>) em uma pasta nova para preservar seu contexto.
+O agente segue o [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>): cria a pasta `BOONOS` na sua Área de Trabalho, baixa a edição `v2.1.0-beta.3`, confere os arquivos e começa a configuração com você. Se o GitHub pedir acesso, aceite o convite na conta que o recebeu. Se você já tem uma instalação personalizada, o agente deve seguir o [guia de atualização](<06. GUIAS/01. INSTALAÇÃO/ATUALIZAR.md>) sem sobrescrever a pasta antiga.
 
 ## Duas áreas, um contexto
 
