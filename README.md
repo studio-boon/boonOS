@@ -4,6 +4,14 @@ Um sistema pessoal de trabalho com IA: para criar, organizar a operação e apre
 
 O boonOS reúne contexto, projetos, memória e skills em uma pasta sua. Você conversa com o agente, traz uma situação real e constrói o sistema a partir dela. Ele pode receber outro nome, acompanhar um profissional independente ou ajudar um pequeno time.
 
+## Instale com uma mensagem
+
+Abra o Codex, Claude Code, Gemini CLI ou outro agente que possa trabalhar com arquivos do seu computador. Cole esta linha:
+
+> Instale o boonOS 2.1 para mim: https://github.com/tchelove/boonOS
+
+O agente segue o [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>): cria a pasta `BOONOS` na sua Área de Trabalho, baixa a edição `v2.1.0-beta.3`, confere os arquivos e começa a configuração com você. Se o GitHub pedir acesso, aceite o convite na conta que o recebeu. Se você já tem uma instalação personalizada, o agente deve seguir o [guia de atualização](<06. GUIAS/01. INSTALAÇÃO/ATUALIZAR.md>) sem sobrescrever a pasta antiga.
+
 ## Duas áreas, um contexto
 
 | Área | Você pode pedir | O que recebe |
@@ -16,7 +24,7 @@ Um projeto tem o mesmo briefing, responsável e histórico nas duas áreas. O pa
 
 Uma skill orienta um processo. Gerar uma imagem, exportar slides ou conectar um serviço depende das ferramentas disponíveis no seu agente. O núcleo trabalha com conversa e arquivos locais; nenhuma conta externa ou rotina recorrente vem ativada.
 
-## Comece pela sua situação
+## Instalação manual e detalhes
 
 **Sem terminal:** baixe `boonOS-2.1-beta.zip` na [release 2.1](https://github.com/tchelove/boonOS/releases/tag/v2.1.0-beta.3), extraia e abra a pasta no seu agente. Se o repositório estiver privado, aceite primeiro o convite de acesso. O [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>) acompanha cada passo.
 
@@ -30,10 +38,6 @@ cd meu-sistema
 O requisito é **um agente de IA capaz de ler e trabalhar nos arquivos da pasta**, com acesso à sua conta nesse agente. Pode ser Codex, Claude Code, Gemini CLI ou outro agente com esse recurso. Você não precisa de uma conta Anthropic para usar o boonOS com outro fornecedor.
 
 Na linha de comando, execute `codex`, `claude` **ou** `gemini` dentro da pasta, conforme o agente instalado. Em um aplicativo que permita abrir uma pasta local, selecione `meu-sistema`. Um chat sem acesso à pasta exige fornecer os arquivos e salvar as saídas manualmente.
-
-Comece com esta mensagem:
-
-> Me guia na configuração deste sistema. Quero entender o que ele pode fazer e começar por um problema real meu. Use a skill local init.
 
 O onboarding oferece dois ritmos: **resolver uma primeira missão** ou **aprofundar a configuração**. Ele pergunta em blocos curtos, mostra possibilidades criativas e operacionais, confirma o que entendeu e registra apenas o contexto autorizado. Você pode pausar e retomar pelo resumo salvo.
 
