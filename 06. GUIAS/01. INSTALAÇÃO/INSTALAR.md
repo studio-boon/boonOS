@@ -1,32 +1,48 @@
 # Instalar o boonOS 2.1 (beta)
 
-Você precisa de **um agente de IA capaz de ler e trabalhar nos arquivos da pasta**, com acesso à sua conta nesse agente. Pode ser Codex, Claude Code, Gemini CLI ou outro com esse recurso. O boonOS não exige Claude Code nem conta Anthropic. Git é opcional para baixar o pacote. Ferramentas de imagem, apresentações, serviços externos e rotinas recorrentes são opcionais e dependem do ambiente.
+Você precisa de **um agente de IA capaz de trabalhar com arquivos locais**, instalado no computador, com sua conta conectada e acesso à internet. Codex e Claude Code são dois caminhos possíveis.
 
-## 1. Escolha a edição certa
+Para o uso no dia a dia, a BOON recomenda um plano pago do agente, como **ChatGPT Plus para o Codex** ou **Claude Pro para o Claude Code**. Preços, limites e formas de acesso são definidos pelos fornecedores e podem mudar. O boonOS não exige uma conta Anthropic para quem usa outro agente.
+
+## 1. Instale conversando com a IA
+
+1. Abra o Codex ou o agente que você escolheu no computador.
+2. Copie e cole esta mensagem:
+
+~~~text
+Instale o boonOS e me ajude a começar: https://github.com/studio-boon/boonOS
+~~~
+
+O agente deve baixar uma cópia e começar a configuração fazendo perguntas sobre você e seu trabalho. Responda no seu ritmo. Você não precisa digitar comandos para começar.
+
+Este caminho foi ensaiado no Codex em uma sessão nova no macOS. Outros agentes podem exigir que você escolha uma pasta ou conceda acesso à internet e aos arquivos; confira as solicitações do seu ambiente. Um chat sem acesso aos arquivos locais não consegue executar esse mesmo percurso.
+
+Se você já tem uma instalação personalizada, abra a pasta que já usa e peça para retomar. Para atualizar essa instalação, siga [Atualizar sem perder seu contexto](ATUALIZAR.md); não substitua a pasta inteira nem use `git pull` sobre ela.
+
+## 2. Se preferir, instale manualmente
 
 **Caminho mais simples, sem terminal:**
 
-1. Se o repositório estiver privado, aceite o convite do GitHub e entre na conta que recebeu acesso.
-2. Abra a [release boonOS 2.1](https://github.com/tchelove/boonOS/releases/tag/v2.1.0-beta.3). Em **Assets**, baixe `boonOS-2.1-beta.zip`.
-3. Extraia o ZIP em uma pasta sua, por exemplo `Documentos/meu-sistema`. Você pode renomear a pasta.
-4. Abra a pasta extraída que contém `AGENTS.md`, `CLAUDE.md` e `boonos.json` — esses arquivos devem estar diretamente dentro dela.
+1. Abra as [releases do boonOS](https://github.com/studio-boon/boonOS/releases) e escolha a edição que deseja.
+2. Em **Assets**, baixe `boonOS-2.1-beta.zip` e extraia em uma pasta sua, por exemplo `Documentos/meu-sistema`.
+3. Abra no agente a pasta extraída que contém `AGENTS.md`, `CLAUDE.md` e `boonos.json` diretamente dentro dela.
 
-Se preferir baixar o código pelo GitHub, abra a [branch beta/2.1](https://github.com/tchelove/boonOS/tree/beta/2.1) e use **Code → Download ZIP**. Extraia antes de usar. As pastas `.agents` e `.claude` podem estar ocultas na interface do sistema; mantenha-as no pacote.
+Outra opção é acessar o [repositório](https://github.com/studio-boon/boonOS), clicar em **Code → Download ZIP** e extrair o arquivo. Esse download acompanha a branch principal no momento do download; para escolher uma edição específica, use a release. Mantenha também as pastas `.agents` e `.claude`, que podem estar ocultas no computador.
 
-**Se já usa Git**, clone esta edição explicitamente:
+**Se já usa Git**, clone o repositório:
 
 ~~~bash
-git clone --branch beta/2.1 --single-branch https://github.com/tchelove/boonOS.git meu-sistema
+git clone https://github.com/studio-boon/boonOS.git meu-sistema
 cd meu-sistema
 ~~~
 
-Clonar sem `--branch beta/2.1` segue a branch padrão do GitHub e pode trazer uma edição posterior. Confira `boonos.json`: esta edição usa a versão `2.1.0-beta.3`.
+O clone sem branch específica acompanha a branch principal. Para conferir a edição obtida, abra `boonos.json`.
 
-## 2. Abra no seu agente
+## 3. Abra no seu agente
 
 Se ainda não tiver um agente instalado, escolha **um** caminho e conclua a instalação e o login da sua conta. Os requisitos e formas de acesso ficam nos guias oficiais:
 
-- **Codex:** [primeiros passos no aplicativo](https://learn.chatgpt.com/docs/quickstart) ou [Codex no terminal](https://learn.chatgpt.com/docs/codex/cli).
+- **Codex:** [baixe o aplicativo](https://chatgpt.com/download/), veja os [primeiros passos](https://learn.chatgpt.com/docs/quickstart) ou use o [Codex no terminal](https://learn.chatgpt.com/docs/codex/cli).
 - **Claude Code:** [instalação e primeira sessão](https://code.claude.com/docs/en/quickstart).
 - **Gemini CLI:** [instalação oficial](https://geminicli.com/docs/get-started/installation/).
 
@@ -41,21 +57,21 @@ Escolha apenas o agente que pretende usar. O boonOS é a pasta de contexto e pro
 
 A disponibilidade do aplicativo e seus requisitos dependem da plataforma e da versão instalada. A existência dos contratos neste pacote não declara teste real em cada combinação de Windows/macOS e agente.
 
-Na primeira conversa:
+Na primeira conversa depois de abrir a pasta, você pode dizer:
 
-> Use a skill local init deste workspace e me guie na configuração. Quero conhecer as possibilidades criativas e operacionais e começar por uma situação minha.
+> Me ajude a configurar este sistema e começar por uma situação real do meu trabalho.
 
-No Codex, `$init` é uma alternativa para selecionar a skill. Nos demais, use o pedido explícito acima: `/init` pode ter outro significado no aplicativo. Não é necessário editar YAML para começar.
+Se o agente precisar de uma indicação mais específica, peça para ler `AGENTS.md` e usar a skill local `init`. No Codex, `$init` é uma alternativa; `/init` pode ter outro significado em outros aplicativos. Não é necessário editar YAML para começar.
 
-## 3. Escolha o ritmo
+## 4. Escolha o ritmo
 
 **Primeira missão:** conte uma situação, traga o material mínimo e produza uma saída útil. O agente registra o contexto confirmado no escopo autorizado e deixa o restante para depois.
 
-**Configuração aprofundada:** explore identidade, criação, operação, fontes, ferramentas, critérios e limites em blocos de até três perguntas. Ao pausar, salve um resumo autorizado; a próxima sessão continua por ele.
+**Configuração aprofundada:** explore identidade, criação, operação, fontes, ferramentas, critérios e limites em blocos de até três perguntas. Ao pausar, salve um resumo autorizado; na próxima sessão, abra a mesma pasta e peça para retomar.
 
 Em ambos, o resultado é um sistema com o seu contexto e uma próxima ação clara. Leia [Comece aqui](<../../00. COMECE-AQUI.md>) e o [mapa de possibilidades](<../02. POSSIBILIDADES/POSSIBILIDADES.md>).
 
-## 4. Confira a leitura no seu ambiente
+## 5. Confira a leitura no seu ambiente
 
 Peça ao agente para informar o nome da versão, citar a prioridade de `01. SISTEMA/CONTEXTO.md` e dizer se existe um checkpoint. Num template vazio, ele deve reconhecer que ainda não há prioridade confirmada.
 
@@ -71,7 +87,7 @@ python3 scripts/check.py
 
 No Windows, use `py -3` no lugar de `python3` se esse for o comando disponível. O check estrutural não comprova qualidade das respostas nem funcionamento de integrações. Não é necessário executá-lo para cada conversa.
 
-## 5. Mantenha uma cópia sua
+## 6. Mantenha uma cópia sua
 
 Se for guardar contexto pessoal ou de negócio no GitHub, use um repositório seu e privado. Um clone do template ainda aponta para o repositório de origem; não envie seu contexto para lá. Configure o destino da sua cópia antes do primeiro push.
 

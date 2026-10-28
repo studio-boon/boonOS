@@ -1,6 +1,6 @@
 # Publicar uma edição do template
 
-Guia para quem mantém o pacote. Edição: **boonOS 2.1 (beta)**. Branch de distribuição: `beta/2.1`. Tag proposta: `v2.1.0-beta.3`. A identificação nos arquivos não prova publicação remota.
+Guia para quem mantém o pacote. Edição: **boonOS 2.1 (beta)**. Branch principal de distribuição: `main`. Tag desta edição: `v2.1.0-beta.4`. A identificação nos arquivos não prova publicação remota.
 
 ## Preparar o pacote
 
@@ -35,7 +35,7 @@ Use [o cenário de onboarding](<../03. EXEMPLOS/ONBOARDING.md>) como material br
 
 Depois da validação e dentro da autorização de publicação:
 
-1. Publique a branch `beta/2.1` e confira seu commit remoto.
+1. Publique a alteração na branch de distribuição escolhida e confira seu commit remoto.
 2. Crie a tag/release somente com a versão exata revisada e suas limitações.
 3. Teste o comando de clone do guia em uma pasta vazia; confirme `boonos.json`, catálogo e arquivos.
 4. Confira os links de distribuição e, se usar “Use this template”, qual versão ele realmente entrega.

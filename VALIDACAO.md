@@ -1,6 +1,12 @@
 # Validação do boonOS 2.1 beta
 
-Registro inicial: 25/09/2026. Atualização beta.3: 27/09/2026. Esta beta tem validação técnica e exemplos fictícios. Não equivale a uso continuado por pessoas novas, contabilidade oficial ou integração externa ativa.
+Registro inicial: 25/09/2026. Atualização beta.3: 27/09/2026. Revisão documental beta.4: 27/10/2026. Esta beta tem validação técnica e exemplos fictícios. Não equivale a uso continuado por pessoas novas, contabilidade oficial ou integração externa ativa.
+
+## Escopo da beta.4
+
+A beta.4 revisa a entrada, a instalação e a explicação de memória e continuidade. O contrato de consulta orienta verificar a fonte, o escopo e a vigência antes de usar uma informação. O pacote mantém as 42 skills e seus espelhos.
+
+As evidências históricas abaixo identificam seu próprio escopo e não devem ser confundidas com validação em todos os agentes e sistemas operacionais. Para conferir o resultado de uma revisão, use os comandos abaixo e consulte a execução correspondente no GitHub Actions.
 
 ## Como reproduzir
 
@@ -32,7 +38,7 @@ A contagem vigente de testes está na saída do comando e no GitHub Actions. Os 
 
 ## Compatibilidade e integração
 
-O workflow `.github/workflows/check.yml` está ativo. A primeira execução completa, no commit `36fb9cc`, passou nas seis combinações de Linux, macOS e Windows com Python 3.10 e 3.13: [resultado da matriz](https://github.com/tchelove/boonOS/actions/runs/36204735331). Cada combinação executou estrutura/hashes, suíte de testes, exemplo financeiro e exportação. Para a revisão que você estiver usando, confira também o commit exato em [GitHub Actions](https://github.com/tchelove/boonOS/actions). Consulte [manter CI](<06. GUIAS/01. INSTALAÇÃO/ATIVAR-CI.md>) ao configurar outra cópia.
+O workflow `.github/workflows/check.yml` está ativo. A primeira execução completa, no commit `36fb9cc`, passou nas seis combinações de Linux, macOS e Windows com Python 3.10 e 3.13: [resultado da matriz](https://github.com/studio-boon/boonOS/actions/runs/36204735331). Cada combinação executou estrutura/hashes, suíte de testes, exemplo financeiro e exportação. Para a revisão que você estiver usando, confira também o commit exato em [GitHub Actions](https://github.com/studio-boon/boonOS/actions). Consulte [manter CI](<06. GUIAS/01. INSTALAÇÃO/ATIVAR-CI.md>) ao configurar outra cópia.
 
 Os contratos de entrada para Codex, Claude Code e Gemini CLI estão incluídos. Gemini importa o contrato comum e usa a mesma árvore .agents/skills, conforme a documentação oficial; não foi executado um onboarding no aplicativo Gemini CLI nesta avaliação. Descoberta de skills, autenticação, geração de mídia e experiência do aplicativo dependem da versão e dos recursos instalados. Um teste do núcleo Python no Windows não comprova um onboarding completo no aplicativo Windows.
 

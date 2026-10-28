@@ -1,8 +1,38 @@
 # boonOS 2.1 (beta)
 
-Um sistema pessoal de trabalho com IA: para criar, organizar a operação e aprender com o que você faz.
+A versão de entrada do boonOS ajuda você a trabalhar melhor com IA: reúne o contexto do seu trabalho para criar, organizar projetos e continuar de onde parou.
+
+## Instale e comece
+
+No computador, abra o **Codex** ou o **Claude Code**, com sua conta conectada e acesso aos arquivos locais. Recomendamos um plano pago básico para trabalhar com mais disponibilidade: ChatGPT Plus para o Codex ou Claude Pro para o Claude Code. O valor varia conforme moeda, impostos e forma de cobrança.
+
+Copie e cole na conversa:
+
+~~~text
+Instale o boonOS e me ajude a começar: https://github.com/studio-boon/boonOS
+~~~
+
+O agente pode baixar uma cópia do boonOS e iniciar a configuração com perguntas sobre seu trabalho e o que você quer resolver. Você responde à conversa; não precisa saber comandos.
+
+Esse caminho foi verificado em uma sessão do Codex. A experiência e as permissões dependem do agente e do ambiente que você usa.
+
+Se preferir baixar a pasta por conta própria, use a instalação manual abaixo ou siga o [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>).
 
 O boonOS reúne contexto, projetos, memória e skills em uma pasta sua. Você conversa com o agente, traz uma situação real e constrói o sistema a partir dela. Ele pode receber outro nome, acompanhar um profissional independente ou ajudar um pequeno time.
+
+## Como funciona
+
+O boonOS é uma pasta de trabalho que o agente consulta enquanto ajuda você. Ao abrir uma conversa, ele usa o contexto e as fontes pertinentes para entender o pedido. Você acompanha o resultado e pode autorizar o registro de decisões e aprendizados para usar depois.
+
+```mermaid
+flowchart LR
+    A["Você traz uma tarefa"] --> B["O agente consulta o contexto pertinente"]
+    B --> C["Vocês trabalham e você revisa"]
+    C --> D["Você autoriza o que vale registrar"]
+    D --> E["Uma próxima conversa retoma o que foi salvo"]
+```
+
+A memória depende do que foi registrado e do acesso do agente à pasta. Um resumo ajuda a retomar, e as fontes continuam disponíveis para conferência. Entenda a diferença entre [memória e continuidade](<02. MEMORIA/README.md>).
 
 ## Duas áreas, um contexto
 
@@ -16,14 +46,17 @@ Um projeto tem o mesmo briefing, responsável e histórico nas duas áreas. O pa
 
 Uma skill orienta um processo. Gerar uma imagem, exportar slides ou conectar um serviço depende das ferramentas disponíveis no seu agente. O núcleo trabalha com conversa e arquivos locais; nenhuma conta externa ou rotina recorrente vem ativada.
 
-## Comece pela sua situação
+## Outras formas de instalar
 
-**Sem terminal:** baixe `boonOS-2.1-beta.zip` na [release 2.1](https://github.com/tchelove/boonOS/releases/tag/v2.1.0-beta.3), extraia e abra a pasta no seu agente. Se o repositório estiver privado, aceite primeiro o convite de acesso. O [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>) acompanha cada passo.
+<details>
+<summary>Baixar o ZIP ou usar Git</summary>
+
+**Sem terminal:** baixe `boonOS-2.1-beta.zip` na [release 2.1](https://github.com/studio-boon/boonOS/releases/tag/v2.1.0-beta.4), extraia e abra a pasta no seu agente. O [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>) acompanha cada passo.
 
 **Com Git instalado:** clone esta edição explicitamente:
 
 ~~~bash
-git clone --branch beta/2.1 --single-branch https://github.com/tchelove/boonOS.git meu-sistema
+git clone --branch v2.1.0-beta.4 --single-branch https://github.com/studio-boon/boonOS.git meu-sistema
 cd meu-sistema
 ~~~
 
@@ -38,6 +71,8 @@ Comece com esta mensagem:
 O onboarding oferece dois ritmos: **resolver uma primeira missão** ou **aprofundar a configuração**. Ele pergunta em blocos curtos, mostra possibilidades criativas e operacionais, confirma o que entendeu e registra apenas o contexto autorizado. Você pode pausar e retomar pelo resumo salvo.
 
 O contrato comum é `AGENTS.md`. Codex usa `.agents/skills`; Claude Code entra por `CLAUDE.md` e usa o espelho `.claude/skills`; Gemini CLI entra por `GEMINI.md` e pode descobrir a mesma árvore `.agents/skills`. Em outro agente, peça a leitura do contrato e da skill pelo caminho. A presença desses arquivos não comprova teste em toda versão ou sistema operacional. O [guia de instalação](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>) explica como conferir a leitura no seu ambiente.
+
+</details>
 
 ## Onde cada coisa fica
 
@@ -77,4 +112,4 @@ O agente respeita autorizações já dadas para a tarefa. Preparar uma proposta,
 - [Ferramentas e extensões](<06. GUIAS/02. POSSIBILIDADES/MODULOS-FUTUROS.md>): o que depende de configuração.
 - [Atualizar uma instalação](<06. GUIAS/01. INSTALAÇÃO/ATUALIZAR.md>): preservar contexto e personalizações.
 
-Para manter o pacote: [publicar uma versão](<06. GUIAS/01. INSTALAÇÃO/PUBLICAR.md>). Esta é a edição **2.1 beta**, identificada como `v2.1.0-beta.3`.
+Para manter o pacote: [publicar uma versão](<06. GUIAS/01. INSTALAÇÃO/PUBLICAR.md>). Esta é a edição **2.1 beta**, identificada como `v2.1.0-beta.4`.

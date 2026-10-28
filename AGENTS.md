@@ -15,6 +15,8 @@ Leia, quando existirem:
 
 Se o contexto não foi configurado, use a skill local `init` para obter o mínimo útil. Um onboarding incompleto não impede uma tarefa concreta com contexto suficiente. Em uma instalação já personalizada, retome a lacuna relevante; não reinicie a entrevista nem substitua o perfil.
 
+Para cada tarefa, consulte as fontes pertinentes ao projeto e ao escopo autorizado. Ao recuperar um registro, confira origem, data, período a que se refere e vigência; abra a fonte indicada quando necessário. Se faltar evidência ou houver conflito, mostre a lacuna em vez de completar a resposta por suposição.
+
 ## Como trabalhar
 
 - Entenda resultado esperado, destinatário, fontes, restrições e critério de conclusão. Pergunte apenas o que mudar uma decisão ou impedir a entrega.

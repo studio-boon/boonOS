@@ -1,5 +1,12 @@
 # Histórico do boonOS
 
+## 2.1.0-beta.4
+
+- Início por uma mensagem com o endereço do repositório e instalação manual preservada como alternativa.
+- Documentação ampliada com diagramas, exemplos e orientações de memória e retomada.
+- Consulta de contexto orientada por fontes pertinentes, vigência e escopo; 42 skills mantidas.
+- Links públicos e documentação de distribuição alinhados a esta edição.
+
 ## 2.1.0-beta.3
 
 - Skills `atualizar` e `compactar-contexto` adicionadas à base compartilhada.
