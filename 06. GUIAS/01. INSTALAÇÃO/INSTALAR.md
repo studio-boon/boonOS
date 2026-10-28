@@ -1,4 +1,4 @@
-# Instalar o boonOS 2.1 (beta)
+# Instalar o boonOS beta
 
 Você precisa de **um agente de IA capaz de trabalhar com arquivos locais**, instalado no computador, com sua conta conectada e acesso à internet. Codex e Claude Code são dois caminhos possíveis.
 
@@ -13,9 +13,9 @@ Para o uso no dia a dia, a BOON recomenda um plano pago do agente, como **ChatGP
 Instale o boonOS e me ajude a começar: https://github.com/studio-boon/boonOS
 ~~~
 
-O agente deve baixar uma cópia e começar a configuração fazendo perguntas sobre você e seu trabalho. Responda no seu ritmo. Você não precisa digitar comandos para começar.
+O agente deve baixar o ZIP oficial e extrair uma cópia em uma pasta nova, sem substituir arquivos que você já tenha. Depois, pode começar a configuração fazendo perguntas sobre você e seu trabalho. Responda no seu ritmo. Você não precisa digitar comandos para começar.
 
-Este caminho foi ensaiado no Codex em uma sessão nova no macOS. Outros agentes podem exigir que você escolha uma pasta ou conceda acesso à internet e aos arquivos; confira as solicitações do seu ambiente. Um chat sem acesso aos arquivos locais não consegue executar esse mesmo percurso.
+O agente pode pedir que você escolha uma pasta ou conceda acesso à internet e aos arquivos; confira as solicitações do seu ambiente. Um chat sem acesso aos arquivos locais não consegue executar esse mesmo percurso. A experiência pode variar entre agentes e sistemas operacionais.
 
 Se você já tem uma instalação personalizada, abra a pasta que já usa e peça para retomar. Para atualizar essa instalação, siga [Atualizar sem perder seu contexto](ATUALIZAR.md); não substitua a pasta inteira nem use `git pull` sobre ela.
 
@@ -23,13 +23,13 @@ Se você já tem uma instalação personalizada, abra a pasta que já usa e peç
 
 **Caminho mais simples, sem terminal:**
 
-1. Abra as [releases do boonOS](https://github.com/studio-boon/boonOS/releases) e escolha a edição que deseja.
-2. Em **Assets**, baixe `boonOS-2.1-beta.zip` e extraia em uma pasta sua, por exemplo `Documentos/meu-sistema`.
+1. Abra as [releases do boonOS](https://github.com/studio-boon/boonOS/releases/tag/v0.1.0-beta.1) e escolha o pacote da versão beta.
+2. Em **Assets**, baixe `boonOS-beta.zip` e extraia em uma pasta sua, por exemplo `Documentos/meu-sistema`.
 3. Abra no agente a pasta extraída que contém `AGENTS.md`, `CLAUDE.md` e `boonos.json` diretamente dentro dela.
 
 Outra opção é acessar o [repositório](https://github.com/studio-boon/boonOS), clicar em **Code → Download ZIP** e extrair o arquivo. Esse download acompanha a branch principal no momento do download; para escolher uma edição específica, use a release. Mantenha também as pastas `.agents` e `.claude`, que podem estar ocultas no computador.
 
-**Se já usa Git**, clone o repositório:
+**Se já usa Git**, você também pode clonar o repositório. Tenha cuidado: arquivos de perfil, contexto e continuidade são rastreados nesse clone. Eles não são publicados automaticamente, mas podem ser enviados se você fizer push para um repositório público. Uma regra no `.gitignore` não remove o rastreamento de arquivos já rastreados.
 
 ~~~bash
 git clone https://github.com/studio-boon/boonOS.git meu-sistema
@@ -87,10 +87,12 @@ python3 scripts/check.py
 
 No Windows, use `py -3` no lugar de `python3` se esse for o comando disponível. O check estrutural não comprova qualidade das respostas nem funcionamento de integrações. Não é necessário executá-lo para cada conversa.
 
-## 6. Mantenha uma cópia sua
+## 6. Cuide da sua pasta
 
-Se for guardar contexto pessoal ou de negócio no GitHub, use um repositório seu e privado. Um clone do template ainda aponta para o repositório de origem; não envie seu contexto para lá. Configure o destino da sua cópia antes do primeiro push.
+A cópia extraída do ZIP não inclui a pasta `.git` nem aponta para um repositório remoto. Isso reduz o risco de enviar seu contexto por um push sem perceber, mas não protege automaticamente o conteúdo do computador, dos serviços de nuvem ou das pessoas com acesso à pasta. O serviço de IA usado também pode processar as informações que você compartilhar; confira suas políticas e permissões.
+
+Se você usa Git e pretende guardar contexto pessoal ou de negócio no GitHub, avalie um repositório seu e privado. Um clone do template ainda aponta para o repositório de origem; não envie seu contexto para lá. Configure o destino da sua cópia antes do primeiro push e confira os arquivos rastreados.
 
 O botão “Use this template” só serve para esta edição quando a versão desejada estiver incluída na cópia gerada. Confira `boonos.json` depois de criar a cópia. Atualizar uma instalação personalizada exige [migração revisada](ATUALIZAR.md), não substituir a pasta inteira.
 
-Documentos confidenciais ficam em armazenamento com acesso adequado. Não coloque credenciais no perfil. Antes de usar um destino local ignorado, confirme a regra e o rastreamento no Git.
+Documentos confidenciais ficam em armazenamento com acesso adequado. Não coloque credenciais no perfil. Antes de usar um destino local ignorado, confirme a regra e o rastreamento no Git. Para uma instalação que já existe, preserve a pasta e seu histórico: não apague `.git` nem substitua a pasta automaticamente; faça backup e siga a [orientação de atualização](ATUALIZAR.md) quando precisar migrar.

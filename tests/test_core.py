@@ -72,7 +72,7 @@ class CoreTests(unittest.TestCase):
         output = self.root/'package.zip'
         pack.export(self.root, output)
         with zipfile.ZipFile(output) as z:
-            self.assertEqual(set(z.namelist()), {'boonOS-2.1/README.md', 'boonOS-2.1/distribution.json'})
+            self.assertEqual(set(z.namelist()), {'boonOS/README.md', 'boonOS/distribution.json'})
 
     def test_export_refuses_modified_template(self):
         self.manifest()
@@ -96,7 +96,7 @@ class CoreTests(unittest.TestCase):
         with patch.object(Path, 'read_bytes', changing_read):
             pack.export(self.root, self.root/'package.zip')
         with zipfile.ZipFile(self.root/'package.zip') as z:
-            self.assertEqual(z.read('boonOS-2.1/README.md'), b'template')
+            self.assertEqual(z.read('boonOS/README.md'), b'template')
         self.assertEqual(len(reads), 1)
 
     def test_export_refuses_traversal(self):

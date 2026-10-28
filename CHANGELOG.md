@@ -1,5 +1,12 @@
 # Histórico do boonOS
 
+## 0.1.0-beta.1 — nova base pública
+
+- Apresentação como boonOS Beta; começo de uma numeração documentada para as próximas builds. A numeração anterior é histórica e não mede maturidade.
+- README e diagrama renovados, instalação em pasta pessoal sem histórico Git como caminho recomendado e orientações de privacidade.
+- Termos de uso para o conteúdo da BOON e registro de material de terceiros; 42 skills preservadas.
+- Histórico anterior mantido abaixo. A troca de numeração não altera o esquema dos arquivos de perfil nem migra automaticamente instalações existentes.
+
 ## 2.1.0-beta.4
 
 - Início por uma mensagem com o endereço do repositório e instalação manual preservada como alternativa.

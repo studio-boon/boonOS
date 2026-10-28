@@ -42,11 +42,11 @@ def export(root, output):
     try:
         with zipfile.ZipFile(staged, 'w', zipfile.ZIP_DEFLATED) as archive:
             for rel, data in sorted(files):
-                info = zipfile.ZipInfo('boonOS-2.1/'+rel, (2026, 9, 25, 0, 0, 0))
+                info = zipfile.ZipInfo('boonOS/'+rel, (2026, 9, 25, 0, 0, 0))
                 info.compress_type = zipfile.ZIP_DEFLATED
                 info.external_attr = 0o100644 << 16
                 archive.writestr(info, data)
-            info = zipfile.ZipInfo('boonOS-2.1/distribution.json', (2026, 9, 25, 0, 0, 0))
+            info = zipfile.ZipInfo('boonOS/distribution.json', (2026, 9, 25, 0, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED
             info.external_attr = 0o100644 << 16
             archive.writestr(info, json.dumps(manifest, indent=2, ensure_ascii=False)+'\n')

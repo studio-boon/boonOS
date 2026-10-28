@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="1030" viewBox="0 0 640 1030" role="img" aria-labelledby="title desc">
+  <title id="title">Como o boonOS organiza seu trabalho com IA</title>
+  <desc id="desc">Você e seu agente trabalham a partir de uma pasta que reúne projetos, contexto, memória e skills.</desc>
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#00DCDE"/><stop offset=".5" stop-color="#FF2E9B"/><stop offset="1" stop-color="#FFE600"/></linearGradient>
+  </defs>
+  <rect width="640" height="1030" rx="24" fill="#17191B"/>
+  <rect x="36" y="35" width="568" height="4" rx="2" fill="url(#line)"/>
+  <text x="36" y="85" fill="#00DCDE" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="16" font-weight="700" letter-spacing="2">COMO FUNCIONA</text>
+  <text x="36" y="132" fill="#F1F0EB" font-family="Arial, sans-serif" font-size="35" font-weight="700">Sua IA, com o seu contexto.</text>
+  <rect x="154" y="173" width="332" height="65" rx="12" fill="#2A2D2F" stroke="#686C6E"/>
+  <text x="320" y="214" text-anchor="middle" fill="#F1F0EB" font-family="Arial, sans-serif" font-size="24" font-weight="700">Você + seu agente de IA</text>
+  <path d="M320 238 V272" stroke="#00DCDE" stroke-width="2.5" stroke-dasharray="5 6"/>
+  <rect x="48" y="272" width="544" height="125" rx="17" fill="#F1F0EB"/>
+  <text x="320" y="326" text-anchor="middle" fill="#17191B" font-family="Arial, sans-serif" font-size="30" font-weight="700">Sua pasta boonOS</text>
+  <text x="320" y="362" text-anchor="middle" fill="#4A4C4D" font-family="Arial, sans-serif" font-size="20">o agente consulta o que você organiza e salva</text>
+  <path d="M320 397 V429 H70 V899 M70 479 H96 M70 599 H96 M70 719 H96 M70 839 H96" fill="none" stroke="#808486" stroke-width="2" stroke-dasharray="5 6"/>
+  <rect x="96" y="429" width="496" height="100" rx="13" fill="#242729" stroke="#626769"/>
+  <rect x="96" y="549" width="496" height="100" rx="13" fill="#242729" stroke="#626769"/>
+  <rect x="96" y="669" width="496" height="100" rx="13" fill="#242729" stroke="#626769"/>
+  <rect x="96" y="789" width="496" height="100" rx="13" fill="#242729" stroke="#626769"/>
+  <text x="121" y="468" fill="#00DCDE" font-family="Arial, sans-serif" font-size="27" font-weight="700">Projetos</text>
+  <text x="121" y="502" fill="#C8C7C2" font-family="Arial, sans-serif" font-size="21">ideias, trabalhos e entregas</text>
+  <text x="121" y="588" fill="#FF79BD" font-family="Arial, sans-serif" font-size="27" font-weight="700">Contexto</text>
+  <text x="121" y="622" fill="#C8C7C2" font-family="Arial, sans-serif" font-size="21">seu negócio, decisões e jeito</text>
+  <text x="121" y="708" fill="#FFE600" font-family="Arial, sans-serif" font-size="27" font-weight="700">Memória</text>
+  <text x="121" y="742" fill="#C8C7C2" font-family="Arial, sans-serif" font-size="21">o que vale lembrar e retomar</text>
+  <text x="121" y="828" fill="#F1F0EB" font-family="Arial, sans-serif" font-size="27" font-weight="700">Skills</text>
+  <text x="121" y="862" fill="#C8C7C2" font-family="Arial, sans-serif" font-size="21">instruções para fazer e revisar</text>
+  <text x="36" y="970" fill="#A9ADAD" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="15">VOCÊ CONSTRÓI. O CONTEXTO FICA.</text>
+</svg>

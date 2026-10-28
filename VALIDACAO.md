@@ -1,4 +1,6 @@
-# Validação do boonOS 2.1 beta
+# Validação do boonOS Beta
+
+Os resultados abaixo são históricos, da linha anterior 2.1. Para uma nova edição, registre os ensaios do pacote específico e seus limites; não presuma que resultados de uma edição comprovam outra.
 
 Registro inicial: 25/09/2026. Atualização beta.3: 27/09/2026. Revisão documental beta.4: 27/10/2026. Esta beta tem validação técnica e exemplos fictícios. Não equivale a uso continuado por pessoas novas, contabilidade oficial ou integração externa ativa.
 

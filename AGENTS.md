@@ -1,4 +1,4 @@
-# boonOS 2.1 (beta) — contrato de trabalho
+# boonOS Beta — contrato de trabalho
 
 Esta é uma instância personalizável de um sistema pessoal ou de pequeno negócio. BOON é a origem do template; não presuma que seja a marca, voz, equipe ou operação da pessoa que o instalou.
 

@@ -1,4 +1,4 @@
-# boonOS 2.1 (beta) — entrada para Gemini CLI
+# boonOS Beta — entrada para Gemini CLI
 
 @./AGENTS.md
 

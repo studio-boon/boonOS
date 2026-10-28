@@ -8,10 +8,14 @@ Os fluxos novos foram escritos para este template a partir de requisitos de
 produto. Não carregam dados de clientes, preços, percentuais, credenciais,
 configurações de serviços ou cópias de skills privadas da operação de origem.
 
-Uma coletânea herdada de citações de entrevistas, sem fonte e licença de
-redistribuição documentadas no pacote, foi retirada das duas árvores de skills.
-Ela não era dependência do fluxo `brand-storytelling`. O histórico Git anterior
-continua sendo o registro do estado da versão antiga.
+Uma coletânea herdada de citações de entrevistas foi retirada das duas árvores
+de skills do pacote atual. Ela não era dependência do fluxo `brand-storytelling`.
+O histórico Git continua acessível. A comparação de 28/10/2026 identificou
+correspondência extensa, com cortes e adaptações, com o arquivo
+[guest-insights de Refound AI](https://github.com/RefoundAI/lenny-skills/blob/0123453c617e1114d3097380feffb09761ce824a/skills/brand-storytelling/references/guest-insights.md).
+A licença declarada para esse projeto, com seu aviso de copyright, está em
+[TERCEIROS.md](TERCEIROS.md). Isso não comprova direitos sobre as entrevistas
+citadas no material histórico; sua situação permanece em verificação.
 
 Os scripts usam apenas a biblioteca padrão do Python. Ferramentas de geração,
 edição, comunicação e armazenamento externo não vêm embutidas. Cada integração
