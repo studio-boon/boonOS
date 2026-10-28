@@ -2,6 +2,8 @@
 
 O histórico público contém uma versão antiga de `guest-insights.md`, removida das duas árvores de skills do pacote atual. Uma comparação encontrou correspondência extensa, com cortes e adaptações, com [Refound AI/lenny-skills](https://github.com/RefoundAI/lenny-skills/blob/0123453c617e1114d3097380feffb09761ce824a/skills/brand-storytelling/references/guest-insights.md). O repositório de origem declara a licença abaixo. A licença do projeto de origem não comprova, por si só, direitos sobre as entrevistas reproduzidas no material histórico; essa questão continua em verificação.
 
+A Refound esclarece em seu [README atual](https://github.com/RefoundAI/lenny-skills#license) que a licença MIT cobre a estrutura e organização das skills; o conteúdo subjacente das entrevistas pertence ao podcast e aos convidados. O aviso MIT abaixo não equivale a uma autorização para republicar essas falas.
+
 Os termos de uso do Studio BOON não revogam direitos concedidos pelos titulares de materiais de terceiros. A identificação acima não implica que todos os conteúdos e dependências tenham sido auditados integralmente.
 
 ## Licença declarada por Refound AI/lenny-skills

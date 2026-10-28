@@ -11,7 +11,7 @@ Você precisa de um computador e de uma IA que trabalhe com arquivos. Recomendam
 Abra o agente, copie e cole:
 
 ```text
-Instale o boonOS usando este ZIP e me ajude a começar: https://github.com/studio-boon/boonOS/archive/refs/heads/main.zip
+Instale o boonOS e me ajude a começar: https://github.com/studio-boon/boonOS/archive/main.zip
 ```
 
 A IA vai preparar uma cópia para você e começar uma conversa sobre seu trabalho. Você pode partir de uma tarefa real ou configurar o sistema com mais calma. Não precisa saber comandos: acompanhe as perguntas e as permissões que aparecerem.
@@ -21,7 +21,7 @@ A IA vai preparar uma cópia para você e começar uma conversa sobre seu trabal
 <details>
 <summary>Instruções para o agente que está instalando</summary>
 
-Para uma nova instalação, baixe o [ZIP da versão atual](https://github.com/studio-boon/boonOS/archive/refs/heads/main.zip) diretamente pelo endereço do prompt, extraia em uma pasta nova escolhida com a pessoa e preserve os arquivos e pastas ocultos, incluindo `.agents` e `.claude`. Use uma cópia sem `.git`. Não apague nem sobrescreva uma instalação existente. Abra a raiz extraída, leia `AGENTS.md` e use a skill local `init` para começar a configuração. Se a pessoa já tiver uma instalação personalizada, abra a pasta existente e retome o contexto salvo em vez de reiniciar.
+Para uma nova instalação, baixe o [ZIP da versão atual](https://github.com/studio-boon/boonOS/archive/main.zip) diretamente pelo endereço do prompt, extraia em uma pasta nova escolhida com a pessoa e preserve os arquivos e pastas ocultos, incluindo `.agents` e `.claude`. Use uma cópia sem `.git`. Não apague nem sobrescreva uma instalação existente. Abra a raiz extraída, leia `AGENTS.md` e use a skill local `init` para começar a configuração. Se a pessoa já tiver uma instalação personalizada, abra a pasta existente e retome o contexto salvo em vez de reiniciar.
 
 </details>
 
@@ -29,11 +29,16 @@ Para uma nova instalação, baixe o [ZIP da versão atual](https://github.com/st
 
 ## Como funciona
 
-![Diagrama: você e seu agente de IA acessam uma pasta boonOS que organiza projetos, contexto, memória e skills.](assets/boonos-como-funciona.svg)
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/boonos-como-funciona-mobile.svg">
+  <img src="assets/boonos-como-funciona.svg" width="100%" alt="Você e seu agente de IA trabalham em uma pasta boonOS com projetos, contexto, memória e skills; com sua orientação, o feedback também pode gerar melhorias no sistema.">
+</picture>
 
 A pasta reúne **seus projetos**, o **contexto** do seu trabalho, a **memória** que vocês registram e as **skills**, que orientam a IA em diferentes tarefas. Na próxima conversa, abra essa mesma pasta para o agente consultar o que já foi salvo.
 
-O boonOS não depende de você explicar tudo de novo a cada conversa. Mas a retomada depende do que foi registrado e do acesso do agente à pasta. Você confere o que será salvo e pode ajustar esse contexto ao longo do uso. [Entenda memória e continuidade](<02. MEMORIA/README.md>).
+O boonOS não depende de você explicar tudo de novo a cada conversa. A retomada depende do que foi registrado e do acesso do agente à pasta. Você confere o que será salvo e pode ajustar esse contexto ao longo do uso. [Entenda memória e continuidade](<02. MEMORIA/README.md>).
+
+Com o tempo, aprendizados e feedback podem virar ajustes em processos e instruções, dentro do que você autorizar. Depois, você pode avaliar se a mudança ajudou. [Veja como funciona a melhoria](<01. SISTEMA/APRENDIZADO.md>).
 
 ## O que dá pra fazer?
 

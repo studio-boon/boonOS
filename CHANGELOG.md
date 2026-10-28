@@ -1,5 +1,11 @@
 # Histórico do boonOS
 
+## 0.1.0-beta.3 — diagrama e instalação
+
+- Diagrama responsivo, com autoaprimoramento explicado como melhorias conduzidas com a pessoa.
+- Prompt usa o endereço mais curto do ZIP público da branch principal.
+- Registro de terceiros esclarece a diferença entre a licença da estrutura e os direitos sobre entrevistas.
+
 ## 0.1.0-beta.2 — instalação por ZIP direto
 
 - O prompt de instalação aponta diretamente para o ZIP da branch principal, evitando instruções antigas que podem aparecer em buscas.

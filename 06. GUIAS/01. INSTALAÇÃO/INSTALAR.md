@@ -10,7 +10,7 @@ Para o uso no dia a dia, a BOON recomenda um plano pago do agente, como **ChatGP
 2. Copie e cole esta mensagem:
 
 ~~~text
-Instale o boonOS usando este ZIP e me ajude a começar: https://github.com/studio-boon/boonOS/archive/refs/heads/main.zip
+Instale o boonOS e me ajude a começar: https://github.com/studio-boon/boonOS/archive/main.zip
 ~~~
 
 O agente deve baixar o ZIP oficial e extrair uma cópia em uma pasta nova, sem substituir arquivos que você já tenha. Depois, pode começar a configuração fazendo perguntas sobre você e seu trabalho. Responda no seu ritmo. Você não precisa digitar comandos para começar.
@@ -23,7 +23,7 @@ Se você já tem uma instalação personalizada, abra a pasta que já usa e peç
 
 **Caminho mais simples, sem terminal:**
 
-1. Abra as [releases do boonOS](https://github.com/studio-boon/boonOS/releases/tag/v0.1.0-beta.2) e escolha o pacote da versão beta.
+1. Abra as [releases do boonOS](https://github.com/studio-boon/boonOS/releases/tag/v0.1.0-beta.3) e escolha o pacote da versão beta.
 2. Em **Assets**, baixe `boonOS-beta.zip` e extraia em uma pasta sua, por exemplo `Documentos/meu-sistema`.
 3. Abra no agente a pasta extraída que contém `AGENTS.md`, `CLAUDE.md` e `boonos.json` diretamente dentro dela.
 
