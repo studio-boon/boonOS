@@ -11,7 +11,7 @@ Você precisa de um computador e de uma IA que trabalhe com arquivos. Recomendam
 Abra o agente, copie e cole:
 
 ```text
-Instale o boonOS pelo ZIP da branch principal. Extraia preservando os acentos, confira todos os arquivos e, se a verificação falhar, corrija antes de começar. Depois, me ajude a começar: https://github.com/studio-boon/boonOS
+Instale o boonOS pelo ZIP da branch principal. Extraia preservando os acentos, confira todos os arquivos e, se a verificação falhar, corrija antes de começar. Depois, informe o caminho completo da pasta, explique como reabri-la sem inventar comandos e me ajude a começar: https://github.com/studio-boon/boonOS
 ```
 
 A IA prepara uma cópia para você e começa uma conversa sobre seu trabalho. Você pode partir de uma tarefa real ou configurar o sistema com mais calma. Não precisa saber comandos: acompanhe as perguntas e as permissões que aparecerem.
@@ -23,7 +23,7 @@ A IA prepara uma cópia para você e começa uma conversa sobre seu trabalho. Vo
 
 Para uma nova instalação, baixe o [ZIP da versão atual](https://github.com/studio-boon/boonOS/archive/main.zip) da branch principal e extraia em uma pasta nova escolhida com a pessoa. O ZIP da branch contém uma pasta externa do repositório e, dentro dela, a pasta `boonOS/` com o sistema. Abra ou copie como pasta pessoal **essa pasta interna**, identificada por `AGENTS.md` e `boonos.json` diretamente dentro dela, e preserve os arquivos e pastas ocultos, incluindo `.agents` e `.claude`. Use uma cópia sem `.git` e não sobrescreva uma instalação existente.
 
-Para preservar os nomes com acentos, prefira a biblioteca `zipfile` do Python na extração, quando Python estiver disponível. Antes de anunciar que terminou, confira a integridade da cópia com `python3 scripts/check.py --release` na raiz interna do sistema. Se a extração ou o check falhar, não diga que a instalação está completa: refaça em uma pasta nova, verifique novamente e explique qualquer bloqueio. Só então leia `AGENTS.md` e use a skill local `init` para começar a configuração. Se a pessoa já tiver uma instalação personalizada, abra a pasta existente e retome o contexto salvo em vez de reiniciar.
+Para preservar os nomes com acentos, prefira a biblioteca `zipfile` do Python na extração, quando Python estiver disponível. Antes de anunciar que terminou, confira a integridade da cópia com `python3 scripts/check.py --release` na raiz interna do sistema. Se a extração ou o check falhar, não diga que a instalação está completa: refaça em uma pasta nova, verifique novamente e explique qualquer bloqueio. Informe o caminho completo da pasta pessoal criada e explique como reabri-la usando a interface disponível. Confira qualquer comando antes de sugeri-lo; se não souber, diga isso. No Claude Code pelo terminal, abra um terminal dentro da pasta e inicie com `claude`, sem acrescentar o caminho como argumento. Só então leia `AGENTS.md` e use a skill local `init` para começar a configuração. Se a pessoa já tiver uma instalação personalizada, abra a pasta existente e retome o contexto salvo em vez de reiniciar.
 
 </details>
 
