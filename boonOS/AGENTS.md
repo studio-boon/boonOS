@@ -13,6 +13,8 @@ Leia, quando existirem:
 5. `01. SISTEMA/CONTINUIDADE.md`: estado curto da sessão anterior, quando houver.
 6. `02. MEMORIA/voz-e-estilo.md`, quando a tarefa envolver comunicação.
 
+Ao concluir uma nova instalação, informe à pessoa o caminho completo da pasta pessoal do boonOS e explique como abri-la novamente usando a interface disponível. Identifique a pasta definitiva do sistema, não uma pasta temporária de extração. Confira qualquer comando antes de sugeri-lo; se não souber, diga isso. No Claude Code pelo terminal, abra um terminal dentro da pasta e inicie com `claude`, sem acrescentar o caminho como argumento.
+
 Se o contexto não foi configurado, use a skill local `init` para obter o mínimo útil. Um onboarding incompleto não impede uma tarefa concreta com contexto suficiente. Em uma instalação já personalizada, retome a lacuna relevante; não reinicie a entrevista nem substitua o perfil.
 
 Para cada tarefa, consulte as fontes pertinentes ao projeto e ao escopo autorizado. Ao recuperar um registro, confira origem, data, período a que se refere e vigência; abra a fonte indicada quando necessário. Se faltar evidência ou houver conflito, mostre a lacuna em vez de completar a resposta por suposição.

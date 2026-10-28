@@ -1,5 +1,10 @@
 # Histórico do boonOS
 
+## 0.1.0-beta.8 — encontrar a pasta
+
+- Instalação orienta mostrar o caminho completo da pasta e como abri-la novamente para retomar.
+- As 42 skills e o histórico permanecem preservados.
+
 ## 0.1.0-beta.7 — vitrine organizada
 
 - Repositório com apresentação na raiz e pacote de trabalho reunido na pasta `boonOS/`.

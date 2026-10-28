@@ -2,7 +2,7 @@
 
 O nome para quem chega é **boonOS Beta**. A partir desta base, cada pacote publicado recebe um identificador técnico para permitir diagnóstico, atualização e comparação de arquivos.
 
-A primeira build desta nova sequência foi `0.1.0-beta.1`; a atual é `0.1.0-beta.7`. Os números da linha anterior, como `2.1.0-beta.4`, foram usados durante a preparação e permanecem no histórico. Eles não indicam que a beta atual seja menos recente. Não escolha a edição apenas comparando esses números antigos com a nova sequência.
+A primeira build desta nova sequência foi `0.1.0-beta.1`; a atual é `0.1.0-beta.8`. Os números da linha anterior, como `2.1.0-beta.4`, foram usados durante a preparação e permanecem no histórico. Eles não indicam que a beta atual seja menos recente. Não escolha a edição apenas comparando esses números antigos com a nova sequência.
 
 ## Como evoluir
 
