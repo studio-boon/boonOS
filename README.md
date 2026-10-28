@@ -32,8 +32,8 @@ Para preservar os nomes com acentos, prefira a biblioteca `zipfile` do Python na
 ## Como funciona
 
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/boonos-como-funciona-mobile.svg">
-  <img src="assets/boonos-como-funciona.svg" width="100%" alt="Você e seu agente de IA trabalham em uma pasta boonOS com projetos, contexto, memória e skills; com sua orientação, o feedback também pode gerar melhorias no sistema.">
+  <source media="(max-width: 600px)" srcset=".github/assets/boonos-como-funciona-mobile.svg">
+  <img src=".github/assets/boonos-como-funciona.svg" width="100%" alt="Você e seu agente de IA trabalham em uma pasta boonOS com projetos, contexto, memória e skills; com sua orientação, o feedback também pode gerar melhorias no sistema.">
 </picture>
 
 Quando você trabalha com IA, muita coisa importante costuma ficar espalhada entre conversas: quem você é, como sua marca fala, o que já foi decidido e onde um projeto parou. O boonOS dá um lugar para guardar essas informações e organizar o trabalho.
@@ -54,20 +54,29 @@ Não precisa conhecer todos os termos para começar. Quando algo for novo, peça
 
 Traga uma ideia, um projeto ou um problema do seu dia a dia. Você pode conversar em linguagem comum e ir ajustando o resultado junto com a IA. Alguns pontos de partida:
 
-| Se você quer... | Experimente pedir... |
-|---|---|
-| Desenvolver uma ideia | “Quero tirar esse projeto do papel. Me ajuda a organizar o que preciso decidir e por onde começo.” |
-| Criar conteúdo | “Com o que você já sabe da minha marca, me ajuda a planejar e escrever um post sobre isso.” |
-| Revisar uma peça | “Olha essa apresentação e me diz o que está confuso, o que funciona e o que melhorar.” |
-| Fazer um site ou apresentação | “Organiza a mensagem e a estrutura. Depois me ajuda a construir com as ferramentas disponíveis.” |
-| Criar imagens ou vídeos | “Me ajuda a definir a ideia, as referências e a direção visual para esta peça.” |
-| Tirar uma ferramenta, app ou jogo do papel | “Me ajuda a organizar essa ideia e construir um protótipo com as ferramentas disponíveis.” |
-| Organizar projetos | “Me mostra o que está em andamento, o que falta e qual é o próximo passo.” |
-| Preparar uma proposta | “Usa esse briefing para montar uma proposta revisável e mostrar o que ainda preciso definir.” |
-| Entender preço ou caixa | “Organiza esses números, mostra suas premissas e me ajuda a comparar os cenários.” |
-| Aprender e melhorar | “O que podemos tirar dessa referência ou desse feedback para melhorar nosso jeito de trabalhar?” |
-| Repetir um processo | “Organiza esse jeito de trabalhar em um checklist que eu possa testar de novo.” |
-| Retomar depois | “Onde paramos nesse projeto? O que já foi decidido e o que falta fazer?” |
+- **Desenvolver uma ideia:** “Quero tirar esse projeto do papel. Me ajuda a organizar o que preciso decidir e por onde começo.”
+
+- **Criar conteúdo:** “Com o que você já sabe da minha marca, me ajuda a planejar e escrever um post sobre isso.”
+
+- **Revisar uma peça:** “Olha essa apresentação e me diz o que está confuso, o que funciona e o que melhorar.”
+
+- **Fazer um site ou apresentação:** “Organiza a mensagem e a estrutura. Depois me ajuda a construir com as ferramentas disponíveis.”
+
+- **Criar imagens ou vídeos:** “Me ajuda a definir a ideia, as referências e a direção visual para esta peça.”
+
+- **Tirar uma ferramenta, app ou jogo do papel:** “Me ajuda a organizar essa ideia e construir um protótipo com as ferramentas disponíveis.”
+
+- **Organizar projetos:** “Me mostra o que está em andamento, o que falta e qual é o próximo passo.”
+
+- **Preparar uma proposta:** “Usa esse briefing para montar uma proposta revisável e mostrar o que ainda preciso definir.”
+
+- **Entender preço ou caixa:** “Organiza esses números, mostra suas premissas e me ajuda a comparar os cenários.”
+
+- **Aprender e melhorar:** “O que podemos tirar dessa referência ou desse feedback para melhorar nosso jeito de trabalhar?”
+
+- **Repetir um processo:** “Organiza esse jeito de trabalhar em um checklist que eu possa testar de novo.”
+
+- **Retomar depois:** “Onde paramos nesse projeto? O que já foi decidido e o que falta fazer?”
 
 O boonOS orienta o agente com o contexto e as skills disponíveis. A criação de imagens ou vídeos, exportação de arquivos, publicação, conexão a serviços e execução de automações dependem das ferramentas, permissões e configurações do agente que você usa. As integrações não vêm conectadas, e tarefas recorrentes precisam ser configuradas.
 
@@ -80,66 +89,99 @@ O pacote reúne **42 skills**, divididas em criação, operação e uma base com
 <details>
 <summary><strong>Criação e comunicação · 14 skills</strong></summary>
 
-| Skill | Quando usar | Experimente pedir |
-|---|---|---|
-| `copywriting` | Escrever uma mensagem com objetivo, público e provas. | “Me ajuda a escrever o texto de lançamento.” |
-| `writing-filter` | Revisar clareza, ritmo e voz de um texto. | “Revisa esse texto sem perder meu jeito de falar.” |
-| `brand-storytelling` | Definir narrativa, promessa e evidências de uma marca ou projeto. | “Me ajuda a contar a história da minha marca.” |
-| `content-strategy` | Organizar temas, formatos e uma cadência possível para conteúdo. | “Monta uma linha de conteúdo que eu consiga manter.” |
-| `carrossel` | Estruturar a narrativa, a copy e a direção de um carrossel. | “Me ajuda a criar um carrossel sobre essa ideia.” |
-| `post-social` | Planejar uma peça social com mensagem e direção visual. | “Cria a ideia de um post para anunciar meu projeto.” |
-| `design` | Transformar briefing e referências em uma direção visual. | “Me ajuda a definir a direção visual dessa peça.” |
-| `design-review` | Identificar problemas de leitura e priorizar ajustes numa peça. | “O que posso melhorar nesse layout?” |
-| `taste` | Analisar referências e transformar gosto em critérios de escolha. | “Compara essas referências e me ajuda a escolher um caminho.” |
-| `image-direction` | Definir função, composição e briefing de uma imagem. | “Me ajuda a definir a imagem para essa campanha.” |
-| `presentation` | Organizar a história, a sequência e o plano visual de uma apresentação. | “Estrutura os slides para eu apresentar essa ideia.” |
-| `site-design` | Planejar conteúdo, seções e direção visual de um site. | “Me ajuda a estruturar a página do meu negócio.” |
-| `interface-polish` | Revisar detalhes, estados e interações de uma interface. | “Revisa os detalhes e estados dessa interface.” |
-| `portfolio-case-study` | Organizar um case com contexto, papel, decisões e resultados comprovados. | “Me ajuda a transformar esse projeto em um case.” |
+- **`copywriting`:** Escrever uma mensagem com objetivo, público e provas. Exemplo: “Me ajuda a escrever o texto de lançamento.”
+
+- **`writing-filter`:** Revisar clareza, ritmo e voz de um texto. Exemplo: “Revisa esse texto sem perder meu jeito de falar.”
+
+- **`brand-storytelling`:** Definir narrativa, promessa e evidências de uma marca ou projeto. Exemplo: “Me ajuda a contar a história da minha marca.”
+
+- **`content-strategy`:** Organizar temas, formatos e uma cadência possível para conteúdo. Exemplo: “Monta uma linha de conteúdo que eu consiga manter.”
+
+- **`carrossel`:** Estruturar a narrativa, a copy e a direção de um carrossel. Exemplo: “Me ajuda a criar um carrossel sobre essa ideia.”
+
+- **`post-social`:** Planejar uma peça social com mensagem e direção visual. Exemplo: “Cria a ideia de um post para anunciar meu projeto.”
+
+- **`design`:** Transformar briefing e referências em uma direção visual. Exemplo: “Me ajuda a definir a direção visual dessa peça.”
+
+- **`design-review`:** Identificar problemas de leitura e priorizar ajustes numa peça. Exemplo: “O que posso melhorar nesse layout?”
+
+- **`taste`:** Analisar referências e transformar gosto em critérios de escolha. Exemplo: “Compara essas referências e me ajuda a escolher um caminho.”
+
+- **`image-direction`:** Definir função, composição e briefing de uma imagem. Exemplo: “Me ajuda a definir a imagem para essa campanha.”
+
+- **`presentation`:** Organizar a história, a sequência e o plano visual de uma apresentação. Exemplo: “Estrutura os slides para eu apresentar essa ideia.”
+
+- **`site-design`:** Planejar conteúdo, seções e direção visual de um site. Exemplo: “Me ajuda a estruturar a página do meu negócio.”
+
+- **`interface-polish`:** Revisar detalhes, estados e interações de uma interface. Exemplo: “Revisa os detalhes e estados dessa interface.”
+
+- **`portfolio-case-study`:** Organizar um case com contexto, papel, decisões e resultados comprovados. Exemplo: “Me ajuda a transformar esse projeto em um case.”
 
 </details>
 
 <details>
 <summary><strong>Projetos e operação · 14 skills</strong></summary>
 
-| Skill | Quando usar | Experimente pedir |
-|---|---|---|
-| `boon-projetos` | Organizar entregas, responsabilidades, marcos e impedimentos. | “Organiza esse projeto e me mostra o próximo passo.” |
-| `boon-rotina` | Priorizar a semana considerando compromissos e capacidade. | “Me ajuda a planejar a semana com o tempo que tenho.” |
-| `boon-reunioes` | Extrair decisões, tarefas e pendências de notas ou transcrições fornecidas. | “Resume essa reunião e separa o que foi decidido.” |
-| `boon-clientes` | Organizar o contexto de um cliente e a passagem para o projeto. | “Organiza o início desse projeto de cliente.” |
-| `boon-comercial` | Entender uma oportunidade e definir o próximo passo comercial. | “Me ajuda a avaliar essa oportunidade.” |
-| `boon-propostas` | Estruturar uma proposta com escopo, responsabilidades e condições. | “Monta um rascunho de proposta com esse escopo.” |
-| `boon-precificar` | Calcular e comparar cenários de preço com premissas explícitas. | “Me ajuda a calcular quanto cobrar por esse projeto.” |
-| `boon-contas` | Registrar compromissos e pagamentos ou recebimentos confirmados. | “Organiza essas contas a pagar e receber.” |
-| `boon-financeiro` | Calcular uma visão gerencial de caixa, vencimentos e previsões. | “Me ajuda a entender o caixa com esses registros.” |
-| `boon-conciliar` | Comparar registros com um extrato fornecido e apontar divergências. | “Compara esse extrato com meus lançamentos.” |
-| `boon-contabilidade` | Organizar documentos, faltas e perguntas para revisão contábil. | “Prepara o material do mês para meu contador revisar.” |
-| `boon-saude-operacional` | Relacionar caixa, capacidade e compromissos a decisões de trabalho. | “Com esses dados, quais decisões merecem atenção?” |
-| `boon-fornecedores` | Comparar cotações e acompanhar o que foi combinado. | “Compara essas propostas de fornecedores.” |
-| `boon-documentos` | Organizar um índice de arquivos, versões e pendências. | “Me ajuda a encontrar a versão certa desses documentos.” |
+- **`boon-projetos`:** Organizar entregas, responsabilidades, marcos e impedimentos. Exemplo: “Organiza esse projeto e me mostra o próximo passo.”
+
+- **`boon-rotina`:** Priorizar a semana considerando compromissos e capacidade. Exemplo: “Me ajuda a planejar a semana com o tempo que tenho.”
+
+- **`boon-reunioes`:** Extrair decisões, tarefas e pendências de notas ou transcrições fornecidas. Exemplo: “Resume essa reunião e separa o que foi decidido.”
+
+- **`boon-clientes`:** Organizar o contexto de um cliente e a passagem para o projeto. Exemplo: “Organiza o início desse projeto de cliente.”
+
+- **`boon-comercial`:** Entender uma oportunidade e definir o próximo passo comercial. Exemplo: “Me ajuda a avaliar essa oportunidade.”
+
+- **`boon-propostas`:** Estruturar uma proposta com escopo, responsabilidades e condições. Exemplo: “Monta um rascunho de proposta com esse escopo.”
+
+- **`boon-precificar`:** Calcular e comparar cenários de preço com premissas explícitas. Exemplo: “Me ajuda a calcular quanto cobrar por esse projeto.”
+
+- **`boon-contas`:** Registrar compromissos e pagamentos ou recebimentos confirmados. Exemplo: “Organiza essas contas a pagar e receber.”
+
+- **`boon-financeiro`:** Calcular uma visão gerencial de caixa, vencimentos e previsões. Exemplo: “Me ajuda a entender o caixa com esses registros.”
+
+- **`boon-conciliar`:** Comparar registros com um extrato fornecido e apontar divergências. Exemplo: “Compara esse extrato com meus lançamentos.”
+
+- **`boon-contabilidade`:** Organizar documentos, faltas e perguntas para revisão contábil. Exemplo: “Prepara o material do mês para meu contador revisar.”
+
+- **`boon-saude-operacional`:** Relacionar caixa, capacidade e compromissos a decisões de trabalho. Exemplo: “Com esses dados, quais decisões merecem atenção?”
+
+- **`boon-fornecedores`:** Comparar cotações e acompanhar o que foi combinado. Exemplo: “Compara essas propostas de fornecedores.”
+
+- **`boon-documentos`:** Organizar um índice de arquivos, versões e pendências. Exemplo: “Me ajuda a encontrar a versão certa desses documentos.”
 
 </details>
 
 <details>
 <summary><strong>Contexto, memória e evolução · 14 skills</strong></summary>
 
-| Skill | Quando usar | Experimente pedir |
-|---|---|---|
-| `init` | Configurar seu contexto aos poucos ou retomar uma configuração pausada. | “Me ajuda a configurar o boonOS para meu trabalho.” |
-| `overview` | Ver um panorama do que está registrado e do próximo passo. | “Me dá uma visão geral do que está em andamento.” |
-| `router` | Encontrar um caminho para uma demanda ampla e começar o trabalho. | “Tenho essa ideia, por onde começamos?” |
-| `grill-me` | Fazer perguntas para esclarecer uma ideia ou decisão. | “Me ajuda a pensar melhor nessa decisão.” |
-| `study-playbook` | Transformar uma referência em princípios e uma prática. | “Estuda essa referência comigo e propõe um exercício.” |
-| `skill-creator` | Criar uma skill a partir de um processo reutilizável. | “Me ajuda a transformar esse processo em uma skill.” |
-| `boon-memoria` | Guardar uma preferência, decisão ou aprendizado com sua origem. | “Guarda esse aprendizado para eu retomar depois.” |
-| `atualizar` | Comparar o contexto salvo com as fontes atuais e apontar diferenças. | “Atualiza o contexto desse projeto com o que mudou.” |
-| `compactar-contexto` | Salvar um checkpoint legível para continuar depois. | “Deixa um resumo para retomarmos esse trabalho amanhã.” |
-| `boon-melhorar-sistema` | Propor e testar uma melhoria pequena a partir de um problema observado. | “Esse erro se repete. Como podemos ajustar o processo?” |
-| `boon-avaliar-skills` | Comparar o comportamento de uma skill em casos e critérios definidos. | “Vamos testar se essa skill está ajudando?” |
-| `boon-gerir-skills` | Conferir o conjunto de skills e preservar personalizações. | “Confere minhas skills e o que precisa de atenção.” |
-| `boon-integracoes` | Planejar ou configurar uma conexão necessária, conforme acesso e ferramentas. | “Quero conectar uma ferramenta a esse trabalho. O que preciso?” |
-| `boon-automacoes` | Planejar e testar uma rotina repetível antes de agendá-la. | “Me ajuda a desenhar uma rotina para repetir essa tarefa.” |
+- **`init`:** Configurar seu contexto aos poucos ou retomar uma configuração pausada. Exemplo: “Me ajuda a configurar o boonOS para meu trabalho.”
+
+- **`overview`:** Ver um panorama do que está registrado e do próximo passo. Exemplo: “Me dá uma visão geral do que está em andamento.”
+
+- **`router`:** Encontrar um caminho para uma demanda ampla e começar o trabalho. Exemplo: “Tenho essa ideia, por onde começamos?”
+
+- **`grill-me`:** Fazer perguntas para esclarecer uma ideia ou decisão. Exemplo: “Me ajuda a pensar melhor nessa decisão.”
+
+- **`study-playbook`:** Transformar uma referência em princípios e uma prática. Exemplo: “Estuda essa referência comigo e propõe um exercício.”
+
+- **`skill-creator`:** Criar uma skill a partir de um processo reutilizável. Exemplo: “Me ajuda a transformar esse processo em uma skill.”
+
+- **`boon-memoria`:** Guardar uma preferência, decisão ou aprendizado com sua origem. Exemplo: “Guarda esse aprendizado para eu retomar depois.”
+
+- **`atualizar`:** Comparar o contexto salvo com as fontes atuais e apontar diferenças. Exemplo: “Atualiza o contexto desse projeto com o que mudou.”
+
+- **`compactar-contexto`:** Salvar um checkpoint legível para continuar depois. Exemplo: “Deixa um resumo para retomarmos esse trabalho amanhã.”
+
+- **`boon-melhorar-sistema`:** Propor e testar uma melhoria pequena a partir de um problema observado. Exemplo: “Esse erro se repete. Como podemos ajustar o processo?”
+
+- **`boon-avaliar-skills`:** Comparar o comportamento de uma skill em casos e critérios definidos. Exemplo: “Vamos testar se essa skill está ajudando?”
+
+- **`boon-gerir-skills`:** Conferir o conjunto de skills e preservar personalizações. Exemplo: “Confere minhas skills e o que precisa de atenção.”
+
+- **`boon-integracoes`:** Planejar ou configurar uma conexão necessária, conforme acesso e ferramentas. Exemplo: “Quero conectar uma ferramenta a esse trabalho. O que preciso?”
+
+- **`boon-automacoes`:** Planejar e testar uma rotina repetível antes de agendá-la. Exemplo: “Me ajuda a desenhar uma rotina para repetir essa tarefa.”
 
 </details>
 
@@ -151,18 +193,25 @@ As skills orientam o trabalho: criar um arquivo específico, gerar imagens ou v�
 
 O boonOS é uma pasta no seu computador. Lá dentro, cada área tem um lugar para você e seu agente encontrarem o que precisam:
 
-| Pasta ou arquivo | Para que serve |
-|---|---|
-| [`00. TRABALHO/`](<00. TRABALHO/>) | Projetos, pesquisas e entregas em andamento. |
-| [`01. SISTEMA/`](<01. SISTEMA/>) | Contexto, perfil, decisões, catálogo e continuidade. |
-| [`02. MEMORIA/`](<02. MEMORIA/>) | Preferências, aprendizados e referências para consultar depois. |
-| [`03. DOCS/`](<03. DOCS/>) | Fontes recebidas e índices de documentos. |
-| [`04. GESTÃO/`](<04. GESTÃO/>) | Registros de comercial, financeiro, rotina, contabilidade e fornecedores. |
-| [`05. BIBLIOTECA/`](<05. BIBLIOTECA/>) | Modelos criativos, operacionais e de evolução. |
-| [`06. GUIAS/`](<06. GUIAS/>) | Instalação, possibilidades e exemplos de uso. |
-| [`99. ARQUIVO/`](<99. ARQUIVO/>) | Materiais encerrados com origem preservada. |
-| `AGENTS.md`, `CLAUDE.md` e `GEMINI.md` | Instruções de entrada para os agentes. |
-| `.agents/skills/` e `.claude/skills/` | As skills e seu espelho para os diferentes agentes. Essas pastas podem ficar ocultas no computador. |
+- [`00. TRABALHO/`](<00. TRABALHO/>): Projetos, pesquisas e entregas em andamento.
+
+- [`01. SISTEMA/`](<01. SISTEMA/>): Contexto, perfil, decisões, catálogo e continuidade.
+
+- [`02. MEMORIA/`](<02. MEMORIA/>): Preferências, aprendizados e referências para consultar depois.
+
+- [`03. DOCS/`](<03. DOCS/>): Fontes recebidas e índices de documentos.
+
+- [`04. GESTÃO/`](<04. GESTÃO/>): Registros de comercial, financeiro, rotina, contabilidade e fornecedores.
+
+- [`05. BIBLIOTECA/`](<05. BIBLIOTECA/>): Modelos criativos, operacionais e de evolução.
+
+- [`06. GUIAS/`](<06. GUIAS/>): Instalação, possibilidades e exemplos de uso.
+
+- [`99. ARQUIVO/`](<99. ARQUIVO/>): Materiais encerrados com origem preservada.
+
+- `AGENTS.md`, `CLAUDE.md` e `GEMINI.md`: Instruções de entrada para os agentes.
+
+- `.agents/skills/` e `.claude/skills/`: As skills e seu espelho para os diferentes agentes. Essas pastas podem ficar ocultas no computador.
 
 Você pode explorar e editar os arquivos, mas não precisa aprender essa estrutura inteira para começar. Conte ao agente o que quer fazer e peça que ele mostre onde guardou o trabalho.
 

@@ -1,5 +1,10 @@
 # Histórico do boonOS
 
+## 0.1.0-beta.6 — leitura e organização
+
+- O mapa de skills, os exemplos e o mapa de pastas usam listas legíveis também em celular.
+- Imagens da documentação agrupadas na pasta técnica existente, sem mudar as skills nem seus caminhos.
+
 ## 0.1.0-beta.5 — explorar e aprender
 
 - README ampliado com exemplos de uso, mapa das pastas e descrição das 42 skills.
