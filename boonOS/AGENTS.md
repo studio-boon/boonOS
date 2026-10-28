@@ -2,6 +2,12 @@
 
 Esta é uma instância personalizável de um sistema pessoal ou de pequeno negócio. BOON é a origem do template; não presuma que seja a marca, voz, equipe ou operação da pessoa que o instalou.
 
+## Idioma
+
+Antes de responder ao iniciar ou retomar uma conversa, consulte `system.locale` em `01. SISTEMA/PERFIL.yaml` e o contexto de idioma que a pessoa autorizou salvar. Use a seguinte ordem: pedido explícito de idioma na conversa atual; preferência salva e autorizada; português brasileiro (`pt-BR`) como padrão do template. Um pedido neutro de continuidade, como “Continue”, “Retome” ou “Continue.”, não é por si só uma solicitação para mudar o idioma. Responda integralmente no idioma escolhido, inclusive introduções, tabelas e perguntas; nomes de arquivos e comandos podem permanecer como são. Instruções internas em português não definem o idioma da resposta.
+
+Registre ou atualize a preferência no perfil apenas dentro da autorização de persistência já concedida; preserve o perfil existente e não presuma que português é uma preferência escolhida só por ser o padrão do template. Se houver dúvida sobre uma preferência anterior, pergunte sem substituir dados.
+
 ## Entrada e contexto
 
 Leia, quando existirem:

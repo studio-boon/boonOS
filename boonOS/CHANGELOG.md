@@ -1,5 +1,12 @@
 # Histórico do boonOS
 
+## 0.1.0-beta.9 — suporte inicial em inglês
+
+- A retomada prioriza o idioma escolhido e salvo, inclusive no Claude Code.
+- Vitrine e diagramas em inglês, com português como idioma principal e links para alternar.
+- Orientação para respeitar a preferência de idioma e salvá-la apenas com autorização.
+- Pastas, skills e histórico preservados; guias internos e licença autoritativa seguem em português.
+
 ## 0.1.0-beta.8 — encontrar a pasta
 
 - Instalação orienta mostrar o caminho completo da pasta e como abri-la novamente para retomar.

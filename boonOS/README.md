@@ -1,5 +1,7 @@
 # boonOS Beta
 
+**Português | [English](README.en.md)**
+
 Sua IA conhece a tarefa. O boonOS ajuda ela a conhecer **você, seu trabalho e o seu jeito de criar**.
 
 É um sistema que reúne contexto, memória e skills em uma pasta sua. Você configura aos poucos, trabalha em projetos reais e retoma com o que ficou salvo. Foi criado pela BOON a partir do jeito que usamos IA no estúdio.
