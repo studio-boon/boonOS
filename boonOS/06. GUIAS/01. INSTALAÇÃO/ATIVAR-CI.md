@@ -2,9 +2,9 @@
 
 Esta etapa é de manutenção do template. Não é necessária para instalar ou usar o boonOS.
 
-O workflow está ativo em `.github/workflows/check.yml` no repositório de origem. As seis combinações de Linux/macOS/Windows com Python 3.10/3.13 passaram na [primeira execução completa](https://github.com/studio-boon/boonOS/actions/runs/36204735331). Os 66 testes também passaram localmente em macOS/Python 3.14.4. [check.workflow.yml](check.workflow.yml) mantém uma cópia da configuração para referência.
+No repositório público, o workflow da vitrine fica em `.github/workflows/check.yml` na raiz e executa as verificações dentro da pasta `boonOS/`. As seis combinações de Linux/macOS/Windows com Python 3.10/3.13 passaram na [primeira execução completa](https://github.com/studio-boon/boonOS/actions/runs/36204735331). Os 66 testes também passaram localmente em macOS/Python 3.14.4. [check.workflow.yml](check.workflow.yml) é a variante independente para quando a própria pasta do sistema é a raiz de um repositório; não é uma cópia literal do workflow da vitrine.
 
-Se sua cópia não tiver o workflow, use estes passos com autorização para configurar CI e uma sessão/permissão apropriada:
+Se a pasta do seu sistema for a raiz de um repositório próprio e ainda não tiver workflow, use estes passos com autorização para configurar CI e uma sessão/permissão apropriada. No repositório público com o sistema aninhado em `boonOS/`, mantenha a variante da vitrine:
 
 1. Use a branch `main` ou uma branch de manutenção que contenha esta release completa.
 2. Copie `check.workflow.yml` deste diretório para `.github/workflows/check.yml`, preservando o conteúdo.

@@ -13,7 +13,7 @@ Para o uso no dia a dia, a BOON recomenda um plano pago do agente, como **ChatGP
 Instale o boonOS pelo ZIP da branch principal. Extraia preservando os acentos, confira todos os arquivos e, se a verificação falhar, corrija antes de começar. Depois, me ajude a começar: https://github.com/studio-boon/boonOS
 ~~~
 
-O agente deve baixar o ZIP da branch principal e extrair uma cópia em uma pasta nova, sem substituir arquivos que você já tenha. No macOS, alguns descompactadores podem falhar com acentos: o agente pode extrair com Python e verificar a integridade antes de anunciar que terminou. Se a verificação falhar, ele deve corrigir ou explicar o bloqueio. Depois, pode começar a configuração fazendo perguntas sobre você e seu trabalho. Responda no seu ritmo. Você não precisa digitar comandos para começar.
+O agente deve baixar o ZIP da branch principal e extrair uma cópia em uma pasta nova, sem substituir arquivos que você já tenha. O ZIP da branch tem uma pasta externa do repositório e, dentro dela, a pasta `boonOS/`: esta é a raiz do sistema, onde `AGENTS.md` e `boonos.json` ficam diretamente. Abra ou copie somente essa pasta interna como sua instalação pessoal. No macOS, alguns descompactadores podem falhar com acentos: o agente pode extrair com Python e verificar a integridade antes de anunciar que terminou. Se a verificação falhar, ele deve corrigir ou explicar o bloqueio. Depois, pode começar a configuração fazendo perguntas sobre você e seu trabalho. Responda no seu ritmo. Você não precisa digitar comandos para começar.
 
 O agente pode pedir que você escolha uma pasta ou conceda acesso à internet e aos arquivos; confira as solicitações do seu ambiente. Um chat sem acesso aos arquivos locais não consegue executar esse mesmo percurso. A experiência pode variar entre agentes e sistemas operacionais.
 
@@ -23,17 +23,17 @@ Se você já tem uma instalação personalizada, abra a pasta que já usa e peç
 
 **Caminho mais simples, sem terminal:**
 
-1. Abra as [releases do boonOS](https://github.com/studio-boon/boonOS/releases/tag/v0.1.0-beta.6) e escolha o pacote da versão beta.
+1. Abra as [releases do boonOS](https://github.com/studio-boon/boonOS/releases/tag/v0.1.0-beta.7) e escolha o pacote da versão beta.
 2. Em **Assets**, baixe `boonOS-beta.zip` e extraia em uma pasta sua, por exemplo `Documentos/meu-sistema`.
 3. Abra no agente a pasta extraída que contém `AGENTS.md`, `CLAUDE.md` e `boonos.json` diretamente dentro dela.
 
-Outra opção é acessar o [repositório](https://github.com/studio-boon/boonOS), clicar em **Code → Download ZIP** e extrair o arquivo. Esse download acompanha a branch principal no momento do download; para escolher uma edição específica, use a release. Mantenha também as pastas `.agents` e `.claude`, que podem estar ocultas no computador.
+Outra opção é acessar o [repositório](https://github.com/studio-boon/boonOS), clicar em **Code → Download ZIP** e extrair o arquivo. Esse download acompanha a branch principal e contém uma pasta externa do repositório: dentro dela, abra ou copie a pasta `boonOS/`, identificada por `AGENTS.md` e `boonos.json`. Para escolher uma edição específica, use a release, cujo ZIP já abre na pasta do sistema. Mantenha também `.agents` e `.claude`, que podem estar ocultas no computador.
 
 **Se já usa Git**, você também pode clonar o repositório. Tenha cuidado: arquivos de perfil, contexto e continuidade são rastreados nesse clone. Eles não são publicados automaticamente, mas podem ser enviados se você fizer push para um repositório público. Uma regra no `.gitignore` não remove o rastreamento de arquivos já rastreados.
 
 ~~~bash
 git clone https://github.com/studio-boon/boonOS.git meu-sistema
-cd meu-sistema
+cd meu-sistema/boonOS
 ~~~
 
 O clone sem branch específica acompanha a branch principal. Para conferir a edição obtida, abra `boonos.json`.

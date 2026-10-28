@@ -1,6 +1,10 @@
 # Publicar uma edição do template
 
-Guia para quem mantém o pacote. Edição: **boonOS Beta**. Branch principal de distribuição: `main`. Identificador técnico desta base: `0.1.0-beta.6`. A identificação nos arquivos não prova publicação remota.
+Guia para quem mantém o pacote. Edição: **boonOS Beta**. Branch principal de distribuição: `main`. Identificador técnico desta base: `0.1.0-beta.7`. A identificação nos arquivos não prova publicação remota.
+
+## Vitrine e pacote
+
+No repositório público, os arquivos editáveis do sistema ficam em `boonOS/`. O README e a licença dessa pasta são as fontes; na raiz do repositório, execute `python3 .github/sync_vitrine.py` para gerar as cópias de apresentação com os links ajustados. O workflow confere essa relação com `--check` para evitar versões divergentes. Na instalação pessoal aberta diretamente como pasta de trabalho, continue usando os arquivos locais; não é preciso gerar a vitrine.
 
 ## Preparar o pacote
 
