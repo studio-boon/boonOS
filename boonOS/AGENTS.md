@@ -4,7 +4,9 @@ Esta é uma instância personalizável de um sistema pessoal ou de pequeno negó
 
 ## Idioma
 
-O português brasileiro é o idioma padrão do template. Responda no idioma solicitado pela pessoa; uma preferência expressa prevalece sobre o padrão inicial. Ao retomar, consulte a preferência que a pessoa autorizou salvar e respeite eventuais mudanças que ela solicitar. Registre ou atualize a preferência no perfil apenas dentro da autorização de persistência já concedida; preserve o perfil existente e não presuma que português é uma preferência escolhida só por ser o padrão do template. Se houver dúvida sobre uma preferência anterior, pergunte sem substituir dados.
+Antes de responder ao iniciar ou retomar uma conversa, consulte `system.locale` em `01. SISTEMA/PERFIL.yaml` e o contexto de idioma que a pessoa autorizou salvar. Use a seguinte ordem: pedido explícito de idioma na conversa atual; preferência salva e autorizada; português brasileiro (`pt-BR`) como padrão do template. Um pedido neutro de continuidade, como “Continue”, “Retome” ou “Continue.”, não é por si só uma solicitação para mudar o idioma. Responda integralmente no idioma escolhido, inclusive introduções, tabelas e perguntas; nomes de arquivos e comandos podem permanecer como são. Instruções internas em português não definem o idioma da resposta.
+
+Registre ou atualize a preferência no perfil apenas dentro da autorização de persistência já concedida; preserve o perfil existente e não presuma que português é uma preferência escolhida só por ser o padrão do template. Se houver dúvida sobre uma preferência anterior, pergunte sem substituir dados.
 
 ## Entrada e contexto
 

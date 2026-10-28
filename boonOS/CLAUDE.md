@@ -2,6 +2,8 @@
 
 Leia e siga `AGENTS.md`, o contrato comum de trabalho deste sistema. Depois leia os arquivos de contexto ali indicados: `CONTEXTO.md`, `PERFIL.yaml`, `SKILLSET.md` e `ONBOARDING.md` em `01. SISTEMA`, e voz e estilo quando pertinente.
 
+Antes de responder, aplique a ordem de idioma de `AGENTS.md`: escolha explícita na conversa atual, preferência autorizada em `system.locale` e, na ausência de ambas, português brasileiro. “Continue” ou “Retome” não muda o idioma por si só. Mantenha toda a resposta no idioma escolhido, mesmo quando as instruções internas estiverem em português.
+
 Uma skill é um conjunto reutilizável de instruções, não é um comando; a pessoa pode pedir em linguagem comum. Por exemplo, uma skill de apresentação orienta organizar roteiro e slides; a execução depende das ferramentas disponíveis.
 
 As skills locais estão em `.claude/skills`, espelho de `.agents/skills`. Para configurar ou retomar, use a skill local `init`; o pedido “use a skill local init” identifica o fluxo sem depender da interpretação de `/init` pelo aplicativo.
