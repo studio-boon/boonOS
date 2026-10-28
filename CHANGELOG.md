@@ -1,5 +1,10 @@
 # Histórico do boonOS
 
+## 0.1.0-beta.4 — instalação conferida
+
+- A entrada aponta para o repositório e pede o ZIP da branch principal com verificação antes do início.
+- Orientações para o agente reforçam extração segura de nomes com acentos e checagem da distribuição antes de declarar a instalação concluída.
+
 ## 0.1.0-beta.3 — diagrama e instalação
 
 - Diagrama responsivo, com autoaprimoramento explicado como melhorias conduzidas com a pessoa.

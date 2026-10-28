@@ -11,7 +11,7 @@ Você precisa de um computador e de uma IA que trabalhe com arquivos. Recomendam
 Abra o agente, copie e cole:
 
 ```text
-Instale o boonOS e me ajude a começar: https://github.com/studio-boon/boonOS/archive/main.zip
+Instale o boonOS pelo ZIP da branch principal. Extraia preservando os acentos, confira todos os arquivos e, se a verificação falhar, corrija antes de começar. Depois, me ajude a começar: https://github.com/studio-boon/boonOS
 ```
 
 A IA vai preparar uma cópia para você e começar uma conversa sobre seu trabalho. Você pode partir de uma tarefa real ou configurar o sistema com mais calma. Não precisa saber comandos: acompanhe as perguntas e as permissões que aparecerem.
@@ -21,7 +21,9 @@ A IA vai preparar uma cópia para você e começar uma conversa sobre seu trabal
 <details>
 <summary>Instruções para o agente que está instalando</summary>
 
-Para uma nova instalação, baixe o [ZIP da versão atual](https://github.com/studio-boon/boonOS/archive/main.zip) diretamente pelo endereço do prompt, extraia em uma pasta nova escolhida com a pessoa e preserve os arquivos e pastas ocultos, incluindo `.agents` e `.claude`. Use uma cópia sem `.git`. Não apague nem sobrescreva uma instalação existente. Abra a raiz extraída, leia `AGENTS.md` e use a skill local `init` para começar a configuração. Se a pessoa já tiver uma instalação personalizada, abra a pasta existente e retome o contexto salvo em vez de reiniciar.
+Para uma nova instalação, baixe o [ZIP da versão atual](https://github.com/studio-boon/boonOS/archive/main.zip) da branch principal e extraia em uma pasta nova escolhida com a pessoa. Preserve os arquivos e pastas ocultos, incluindo `.agents` e `.claude`; use uma cópia sem `.git` e não sobrescreva uma instalação existente.
+
+Para preservar os nomes com acentos, prefira a biblioteca `zipfile` do Python na extração, quando Python estiver disponível. Antes de anunciar que terminou, confira a integridade da cópia com `python3 scripts/check.py --release` na raiz extraída. Se a extração ou o check falhar, não diga que a instalação está completa: refaça em uma pasta nova, verifique novamente e explique qualquer bloqueio. Só então leia `AGENTS.md` e use a skill local `init` para começar a configuração. Se a pessoa já tiver uma instalação personalizada, abra a pasta existente e retome o contexto salvo em vez de reiniciar.
 
 </details>
 
