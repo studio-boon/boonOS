@@ -1,5 +1,10 @@
 # Histórico do boonOS
 
+## 0.1.0-beta.2 — instalação por ZIP direto
+
+- O prompt de instalação aponta diretamente para o ZIP da branch principal, evitando instruções antigas que podem aparecer em buscas.
+- Guia de instalação e entrada atualizados para o mesmo caminho.
+
 ## 0.1.0-beta.1 — nova base pública
 
 - Apresentação como boonOS Beta; começo de uma numeração documentada para as próximas builds. A numeração anterior é histórica e não mede maturidade.

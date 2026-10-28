@@ -1,6 +1,6 @@
 # Publicar uma edição do template
 
-Guia para quem mantém o pacote. Edição: **boonOS Beta**. Branch principal de distribuição: `main`. Identificador técnico desta base: `0.1.0-beta.1`. A identificação nos arquivos não prova publicação remota.
+Guia para quem mantém o pacote. Edição: **boonOS Beta**. Branch principal de distribuição: `main`. Identificador técnico desta base: `0.1.0-beta.2`. A identificação nos arquivos não prova publicação remota.
 
 ## Preparar o pacote
 

@@ -11,7 +11,7 @@ Você precisa de um computador e de uma IA que trabalhe com arquivos. Recomendam
 Abra o agente, copie e cole:
 
 ```text
-Instale o boonOS e me ajude a começar: https://github.com/studio-boon/boonOS
+Instale o boonOS usando este ZIP e me ajude a começar: https://github.com/studio-boon/boonOS/archive/refs/heads/main.zip
 ```
 
 A IA vai preparar uma cópia para você e começar uma conversa sobre seu trabalho. Você pode partir de uma tarefa real ou configurar o sistema com mais calma. Não precisa saber comandos: acompanhe as perguntas e as permissões que aparecerem.
@@ -21,7 +21,7 @@ A IA vai preparar uma cópia para você e começar uma conversa sobre seu trabal
 <details>
 <summary>Instruções para o agente que está instalando</summary>
 
-Para uma nova instalação, baixe o ZIP oficial de distribuição na [página de releases](https://github.com/studio-boon/boonOS/releases/tag/v0.1.0-beta.1), extraia em uma pasta nova escolhida com a pessoa e preserve os arquivos e pastas ocultos, incluindo `.agents` e `.claude`. Use uma cópia sem `.git`. Não apague nem sobrescreva uma instalação existente. Abra a raiz extraída, leia `AGENTS.md` e use a skill local `init` para começar a configuração. Se a pessoa já tiver uma instalação personalizada, abra a pasta existente e retome o contexto salvo em vez de reiniciar.
+Para uma nova instalação, baixe o [ZIP da versão atual](https://github.com/studio-boon/boonOS/archive/refs/heads/main.zip) diretamente pelo endereço do prompt, extraia em uma pasta nova escolhida com a pessoa e preserve os arquivos e pastas ocultos, incluindo `.agents` e `.claude`. Use uma cópia sem `.git`. Não apague nem sobrescreva uma instalação existente. Abra a raiz extraída, leia `AGENTS.md` e use a skill local `init` para começar a configuração. Se a pessoa já tiver uma instalação personalizada, abra a pasta existente e retome o contexto salvo em vez de reiniciar.
 
 </details>
 
