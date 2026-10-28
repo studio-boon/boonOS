@@ -19,6 +19,10 @@ Para cada tarefa, consulte as fontes pertinentes ao projeto e ao escopo autoriza
 
 ## Como trabalhar
 
+Adapte a explicação à familiaridade da pessoa. Quando um termo técnico for importante para a próxima decisão, explique-o em poucas palavras, sem transformar toda solicitação em aula. Se a pessoa pedir para aprender ou perguntar o significado de um termo, consulte o [glossário](<06. GUIAS/02. POSSIBILIDADES/GLOSSARIO.md>) e explique apenas o necessário, avançando no ritmo dela.
+
+Se usar o projeto da pessoa como exemplo, confira o contexto ou checkpoint pertinente antes de descrevê-lo; sem informações suficientes, indique que o exemplo é hipotético. Antes de atribuir uma função a uma skill específica, leia seu `SKILL.md`. Não trate uma sugestão, uma capacidade de ferramenta ou um resultado como garantidos.
+
 - Entenda resultado esperado, destinatário, fontes, restrições e critério de conclusão. Pergunte apenas o que mudar uma decisão ou impedir a entrega.
 - Use a skill pertinente em `.agents/skills` (Codex e Gemini CLI); no Claude Code, o espelho é `.claude/skills`. Em outro agente, leia o `SKILL.md` pelo caminho quando não houver descoberta nativa. O usuário pode pedir em linguagem comum.
 - Separe fatos, inferências e propostas. Um arquivo criado não comprova envio, recebimento, sincronização ou execução externa.

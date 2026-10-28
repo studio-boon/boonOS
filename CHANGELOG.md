@@ -1,5 +1,11 @@
 # Histórico do boonOS
 
+## 0.1.0-beta.5 — explorar e aprender
+
+- README ampliado com exemplos de uso, mapa das pastas e descrição das 42 skills.
+- Glossário de IA adaptado do guia “IA no trabalho” e explicações contextualizadas para quem quiser aprender durante a tarefa.
+- Documentos de terceiros e versionamento agrupados em Histórico e transparência; instruções de agentes, skills e histórico preservados.
+
 ## 0.1.0-beta.4 — instalação conferida
 
 - A entrada aponta para o repositório e pede o ZIP da branch principal com verificação antes do início.

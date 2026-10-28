@@ -23,7 +23,7 @@ Se você já tem uma instalação personalizada, abra a pasta que já usa e peç
 
 **Caminho mais simples, sem terminal:**
 
-1. Abra as [releases do boonOS](https://github.com/studio-boon/boonOS/releases/tag/v0.1.0-beta.4) e escolha o pacote da versão beta.
+1. Abra as [releases do boonOS](https://github.com/studio-boon/boonOS/releases/tag/v0.1.0-beta.5) e escolha o pacote da versão beta.
 2. Em **Assets**, baixe `boonOS-beta.zip` e extraia em uma pasta sua, por exemplo `Documentos/meu-sistema`.
 3. Abra no agente a pasta extraída que contém `AGENTS.md`, `CLAUDE.md` e `boonos.json` diretamente dentro dela.
 

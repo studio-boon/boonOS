@@ -14,7 +14,7 @@ O histórico Git continua acessível. A comparação de 28/10/2026 identificou
 correspondência extensa, com cortes e adaptações, com o arquivo
 [guest-insights de Refound AI](https://github.com/RefoundAI/lenny-skills/blob/0123453c617e1114d3097380feffb09761ce824a/skills/brand-storytelling/references/guest-insights.md).
 A licença declarada para esse projeto, com seu aviso de copyright, está em
-[TERCEIROS.md](TERCEIROS.md). Isso não comprova direitos sobre as entrevistas
+[TERCEIROS.md](<06. GUIAS/04. HISTÓRICO E TRANSPARÊNCIA/TERCEIROS.md>). Isso não comprova direitos sobre as entrevistas
 citadas no material histórico; sua situação permanece em verificação.
 
 Os scripts usam apenas a biblioteca padrão do Python. Ferramentas de geração,
