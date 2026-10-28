@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="820" viewBox="0 0 960 820" role="img" aria-labelledby="title desc">
+  <title id="title">How boonOS works</title>
+  <desc id="desc">You and your agent work in a folder that brings together projects, context, memory, and skills. With your guidance, feedback and lessons learned can lead to improvements.</desc>
+  <defs>
+    <linearGradient id="signature" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#00DCDE"/><stop offset=".48" stop-color="#FF4CA8"/><stop offset="1" stop-color="#FFE600"/></linearGradient>
+  </defs>
+  <rect width="960" height="820" rx="24" fill="#17191B"/>
+  <rect x="48" y="37" width="864" height="4" rx="2" fill="url(#signature)"/>
+  <g text-anchor="middle" font-family="Arial, Helvetica, sans-serif">
+    <text x="480" y="87" fill="#00DCDE" font-size="18" font-weight="700" letter-spacing="2.3">HOW IT WORKS</text>
+    <text x="480" y="135" fill="#F5F4EF" font-size="39" font-weight="700">Your AI, with your context.</text>
+    <rect x="280" y="165" width="400" height="64" rx="12" fill="#282B2D" stroke="#656A6C"/>
+    <text x="480" y="207" fill="#F5F4EF" font-size="27" font-weight="700">You + your AI agent</text>
+    <path d="M480 229 V257" stroke="#00DCDE" stroke-width="2" stroke-dasharray="5 5"/>
+    <rect x="100" y="257" width="760" height="115" rx="15" fill="#F1F0EB"/>
+    <text x="480" y="307" fill="#17191B" font-size="36" font-weight="700">Your boonOS folder</text>
+    <text x="480" y="344" fill="#46494A" font-size="26">the agent reads what you organize and save</text>
+    <path d="M480 372 V400 M262 400 H698 M262 400 V418 M698 400 V418" fill="none" stroke="#888D8E" stroke-width="2" stroke-dasharray="5 6"/>
+    <rect x="72" y="418" width="380" height="105" rx="12" fill="#242729" stroke="#626769"/>
+    <rect x="508" y="418" width="380" height="105" rx="12" fill="#242729" stroke="#626769"/>
+    <rect x="72" y="543" width="380" height="105" rx="12" fill="#242729" stroke="#626769"/>
+    <rect x="508" y="543" width="380" height="105" rx="12" fill="#242729" stroke="#626769"/>
+    <text x="262" y="461" fill="#00DCDE" font-size="31" font-weight="700">Projects</text>
+    <text x="262" y="496" fill="#D4D2CE" font-size="23">ideas, work, and deliverables</text>
+    <text x="698" y="461" fill="#FF79BD" font-size="31" font-weight="700">Context</text>
+    <text x="698" y="496" fill="#D4D2CE" font-size="23">your business, choices, and style</text>
+    <text x="262" y="586" fill="#FFE600" font-size="31" font-weight="700">Memory</text>
+    <text x="262" y="621" fill="#D4D2CE" font-size="23">what to remember and revisit</text>
+    <text x="698" y="586" fill="#F5F4EF" font-size="31" font-weight="700">Skills</text>
+    <text x="698" y="621" fill="#D4D2CE" font-size="23">instructions to create and review</text>
+    <path d="M262 523 V543 M698 523 V543 M262 648 V661 H698 V648 M480 661 V675" fill="none" stroke="#888D8E" stroke-width="2" stroke-dasharray="5 6"/>
+    <rect x="72" y="675" width="816" height="105" rx="12" fill="#26302F" stroke="#00DCDE" stroke-width="1.5"/>
+    <text x="480" y="718" fill="#00DCDE" font-size="31" font-weight="700">Continuous improvement</text>
+    <text x="480" y="753" fill="#F1F0EB" font-size="24">feedback leads to adjustments, with your guidance</text>
+  </g>
+</svg>

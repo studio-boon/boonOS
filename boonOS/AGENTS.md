@@ -2,6 +2,10 @@
 
 Esta é uma instância personalizável de um sistema pessoal ou de pequeno negócio. BOON é a origem do template; não presuma que seja a marca, voz, equipe ou operação da pessoa que o instalou.
 
+## Idioma
+
+O português brasileiro é o idioma padrão do template. Responda no idioma solicitado pela pessoa; uma preferência expressa prevalece sobre o padrão inicial. Ao retomar, consulte a preferência que a pessoa autorizou salvar e respeite eventuais mudanças que ela solicitar. Registre ou atualize a preferência no perfil apenas dentro da autorização de persistência já concedida; preserve o perfil existente e não presuma que português é uma preferência escolhida só por ser o padrão do template. Se houver dúvida sobre uma preferência anterior, pergunte sem substituir dados.
+
 ## Entrada e contexto
 
 Leia, quando existirem:
