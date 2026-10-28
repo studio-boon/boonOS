@@ -16,24 +16,24 @@ Instale o boonOS pelo ZIP da branch principal. Extraia preservando os acentos, c
 
 A IA prepara uma cópia para você e começa uma conversa sobre seu trabalho. Você pode partir de uma tarefa real ou configurar o sistema com mais calma. Não precisa saber comandos: acompanhe as perguntas e as permissões que aparecerem.
 
-**Já tem o boonOS?** Abra a pasta que você já usa e peça para retomar. Para atualizar sem perder seu contexto, siga o [guia de atualização](<06. GUIAS/01. INSTALAÇÃO/ATUALIZAR.md>).
+**Já tem o boonOS?** Abra a pasta que você já usa e peça para retomar. Para atualizar sem perder seu contexto, siga o [guia de atualização](<boonOS/06. GUIAS/01. INSTALAÇÃO/ATUALIZAR.md>).
 
 <details>
 <summary>Instruções para o agente que está instalando</summary>
 
-Para uma nova instalação, baixe o [ZIP da versão atual](https://github.com/studio-boon/boonOS/archive/main.zip) da branch principal e extraia em uma pasta nova escolhida com a pessoa. Preserve os arquivos e pastas ocultos, incluindo `.agents` e `.claude`; use uma cópia sem `.git` e não sobrescreva uma instalação existente.
+Para uma nova instalação, baixe o [ZIP da versão atual](https://github.com/studio-boon/boonOS/archive/main.zip) da branch principal e extraia em uma pasta nova escolhida com a pessoa. O ZIP da branch contém uma pasta externa do repositório e, dentro dela, a pasta `boonOS/` com o sistema. Abra ou copie como pasta pessoal **essa pasta interna**, identificada por `AGENTS.md` e `boonos.json` diretamente dentro dela, e preserve os arquivos e pastas ocultos, incluindo `.agents` e `.claude`. Use uma cópia sem `.git` e não sobrescreva uma instalação existente.
 
-Para preservar os nomes com acentos, prefira a biblioteca `zipfile` do Python na extração, quando Python estiver disponível. Antes de anunciar que terminou, confira a integridade da cópia com `python3 scripts/check.py --release` na raiz extraída. Se a extração ou o check falhar, não diga que a instalação está completa: refaça em uma pasta nova, verifique novamente e explique qualquer bloqueio. Só então leia `AGENTS.md` e use a skill local `init` para começar a configuração. Se a pessoa já tiver uma instalação personalizada, abra a pasta existente e retome o contexto salvo em vez de reiniciar.
+Para preservar os nomes com acentos, prefira a biblioteca `zipfile` do Python na extração, quando Python estiver disponível. Antes de anunciar que terminou, confira a integridade da cópia com `python3 scripts/check.py --release` na raiz interna do sistema. Se a extração ou o check falhar, não diga que a instalação está completa: refaça em uma pasta nova, verifique novamente e explique qualquer bloqueio. Só então leia `AGENTS.md` e use a skill local `init` para começar a configuração. Se a pessoa já tiver uma instalação personalizada, abra a pasta existente e retome o contexto salvo em vez de reiniciar.
 
 </details>
 
-[Prefere instalar manualmente? Veja o passo a passo.](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>)
+[Prefere instalar manualmente? Veja o passo a passo.](<boonOS/06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>)
 
 ## Como funciona
 
 <picture>
-  <source media="(max-width: 600px)" srcset=".github/assets/boonos-como-funciona-mobile.svg">
-  <img src=".github/assets/boonos-como-funciona.svg" width="100%" alt="Você e seu agente de IA trabalham em uma pasta boonOS com projetos, contexto, memória e skills; com sua orientação, o feedback também pode gerar melhorias no sistema.">
+  <source media="(max-width: 600px)" srcset="boonOS/.github/assets/boonos-como-funciona-mobile.svg">
+  <img src="boonOS/.github/assets/boonos-como-funciona.svg" width="100%" alt="Você e seu agente de IA trabalham em uma pasta boonOS com projetos, contexto, memória e skills; com sua orientação, o feedback também pode gerar melhorias no sistema.">
 </picture>
 
 Quando você trabalha com IA, muita coisa importante costuma ficar espalhada entre conversas: quem você é, como sua marca fala, o que já foi decidido e onde um projeto parou. O boonOS dá um lugar para guardar essas informações e organizar o trabalho.
@@ -44,11 +44,23 @@ Quando você trabalha com IA, muita coisa importante costuma ficar espalhada ent
 - **Skills:** instruções que orientam o agente em tarefas como criar, revisar e organizar.
 - **Autoaprimoramento:** feedback e aprendizados podem virar ajustes em processos e instruções, dentro do que você autorizar. Depois, você pode avaliar se a mudança ajudou.
 
-Você trabalha com a IA na sua pasta boonOS. Na próxima conversa, abre essa mesma pasta e pede para continuar. A retomada depende do que foi salvo e do acesso do agente aos arquivos. [Entenda memória e continuidade](<02. MEMORIA/README.md>) · [Veja como funciona a melhoria](<01. SISTEMA/APRENDIZADO.md>).
+Você trabalha com a IA na sua pasta boonOS. Na próxima conversa, abre essa mesma pasta e pede para continuar. A retomada depende do que foi salvo e do acesso do agente aos arquivos. [Entenda memória e continuidade](<boonOS/02. MEMORIA/README.md>) · [Veja como funciona a melhoria](<boonOS/01. SISTEMA/APRENDIZADO.md>).
+
+### Troque de IA. Leve seu contexto.
+
+Se quiser mudar de ferramenta, abra a mesma pasta no Codex, no Claude Code ou no Gemini CLI e continue o trabalho por lá. Quando o aplicativo permitir, você também pode trocar o modelo dentro do mesmo agente. Seus arquivos continuam disponíveis para você consultar, editar e levar junto.
+
+Antes de mudar, peça para salvar as decisões e o ponto em que parou. Na nova conversa, abra a pasta e peça ao agente que leia o contexto e retome. Ele só consegue recuperar o que foi salvo e está acessível; ferramentas, permissões e resultados podem variar entre ambientes.
+
+### Quando a IA errar, ensine seu jeito
+
+Uma resposta saiu genérica ou não seguiu seu critério? Mostre o que não funcionou, explique como prefere e peça para guardar a orientação. Por exemplo: **“Esse texto ficou genérico. Da próxima vez, comece pelo problema real do cliente e evite frases prontas. Guarde esse critério.”**
+
+Com a correção registrada e consultada numa próxima tarefa, o agente tem uma referência para evitar repetir o erro. Isso não retreina o modelo nem garante que ele nunca erre; você continua podendo revisar e ajustar o que foi salvo.
 
 ### Aprenda enquanto usa
 
-Não precisa conhecer todos os termos para começar. Quando algo for novo, peça: **“Me explica isso com um exemplo do meu trabalho.”** O agente pode explicar aos poucos, enquanto vocês fazem a tarefa. Para consultar quando quiser, abra o [glossário de IA no trabalho](<06. GUIAS/02. POSSIBILIDADES/GLOSSARIO.md>).
+Não precisa conhecer todos os termos para começar. Quando algo for novo, peça: **“Me explica isso com um exemplo do meu trabalho.”** O agente pode explicar aos poucos, enquanto vocês fazem a tarefa. Para consultar quando quiser, abra o [glossário de IA no trabalho](<boonOS/06. GUIAS/02. POSSIBILIDADES/GLOSSARIO.md>).
 
 ## O que dá para fazer?
 
@@ -187,27 +199,27 @@ O pacote reúne **42 skills**, divididas em criação, operação e uma base com
 
 As skills orientam o trabalho: criar um arquivo específico, gerar imagens ou vídeos, publicar, conectar serviços e agendar rotinas depende das ferramentas e permissões disponíveis. As integrações e automações não vêm conectadas por padrão. Para os cálculos locais do financeiro e alguns recursos de verificação e melhoria, é necessário Python 3.10 ou mais recente. As ferramentas financeiras são gerenciais; não movimentam dinheiro nem substituem a revisão de um profissional contábil.
 
-[Veja o mapa com entradas, saídas e mais detalhes](<06. GUIAS/02. POSSIBILIDADES/SKILLS.md>).
+[Veja o mapa com entradas, saídas e mais detalhes](<boonOS/06. GUIAS/02. POSSIBILIDADES/SKILLS.md>).
 
 ## Onde fica cada coisa?
 
 O boonOS é uma pasta no seu computador. Lá dentro, cada área tem um lugar para você e seu agente encontrarem o que precisam:
 
-- [`00. TRABALHO/`](<00. TRABALHO/>): Projetos, pesquisas e entregas em andamento.
+- [`00. TRABALHO/`](<boonOS/00. TRABALHO/>): Projetos, pesquisas e entregas em andamento.
 
-- [`01. SISTEMA/`](<01. SISTEMA/>): Contexto, perfil, decisões, catálogo e continuidade.
+- [`01. SISTEMA/`](<boonOS/01. SISTEMA/>): Contexto, perfil, decisões, catálogo e continuidade.
 
-- [`02. MEMORIA/`](<02. MEMORIA/>): Preferências, aprendizados e referências para consultar depois.
+- [`02. MEMORIA/`](<boonOS/02. MEMORIA/>): Preferências, aprendizados e referências para consultar depois.
 
-- [`03. DOCS/`](<03. DOCS/>): Fontes recebidas e índices de documentos.
+- [`03. DOCS/`](<boonOS/03. DOCS/>): Fontes recebidas e índices de documentos.
 
-- [`04. GESTÃO/`](<04. GESTÃO/>): Registros de comercial, financeiro, rotina, contabilidade e fornecedores.
+- [`04. GESTÃO/`](<boonOS/04. GESTÃO/>): Registros de comercial, financeiro, rotina, contabilidade e fornecedores.
 
-- [`05. BIBLIOTECA/`](<05. BIBLIOTECA/>): Modelos criativos, operacionais e de evolução.
+- [`05. BIBLIOTECA/`](<boonOS/05. BIBLIOTECA/>): Modelos criativos, operacionais e de evolução.
 
-- [`06. GUIAS/`](<06. GUIAS/>): Instalação, possibilidades e exemplos de uso.
+- [`06. GUIAS/`](<boonOS/06. GUIAS/>): Instalação, possibilidades e exemplos de uso.
 
-- [`99. ARQUIVO/`](<99. ARQUIVO/>): Materiais encerrados com origem preservada.
+- [`99. ARQUIVO/`](<boonOS/99. ARQUIVO/>): Materiais encerrados com origem preservada.
 
 - `AGENTS.md`, `CLAUDE.md` e `GEMINI.md`: Instruções de entrada para os agentes.
 
@@ -223,13 +235,13 @@ Se você usar Git, cuidado antes de enviar alterações: alguns arquivos de cont
 
 ## Continue explorando
 
-- [Comece aqui](<00. COMECE-AQUI.md>): da primeira conversa à primeira missão.
-- [O que dá para fazer](<06. GUIAS/02. POSSIBILIDADES/POSSIBILIDADES.md>): mais ideias de pedidos e resultados.
-- [Personalizar](<06. GUIAS/02. POSSIBILIDADES/PERSONALIZAR.md>): voz, operação e prioridades.
-- [Ferramentas e extensões](<06. GUIAS/02. POSSIBILIDADES/MODULOS-FUTUROS.md>): o que precisa de configuração adicional.
-- [Instalação e atualização](<06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>): alternativas e cuidados para sua cópia.
-- [Histórico e transparência](<06. GUIAS/04. HISTÓRICO E TRANSPARÊNCIA/README.md>): versões, validação, origem e direitos.
+- [Comece aqui](<boonOS/00. COMECE-AQUI.md>): da primeira conversa à primeira missão.
+- [O que dá para fazer](<boonOS/06. GUIAS/02. POSSIBILIDADES/POSSIBILIDADES.md>): mais ideias de pedidos e resultados.
+- [Personalizar](<boonOS/06. GUIAS/02. POSSIBILIDADES/PERSONALIZAR.md>): voz, operação e prioridades.
+- [Ferramentas e extensões](<boonOS/06. GUIAS/02. POSSIBILIDADES/MODULOS-FUTUROS.md>): o que precisa de configuração adicional.
+- [Instalação e atualização](<boonOS/06. GUIAS/01. INSTALAÇÃO/INSTALAR.md>): alternativas e cuidados para sua cópia.
+- [Histórico e transparência](<boonOS/06. GUIAS/04. HISTÓRICO E TRANSPARÊNCIA/README.md>): versões, validação, origem e direitos.
 
 O boonOS está em beta e segue evoluindo. Teste com um projeto seu, conte pra gente como foi e, se curtir, deixe uma estrela aqui no GitHub. Para acompanhar a comunidade e saber quando a primeira turma abrir, entre na lista em [boonos.tech](https://boonos.tech).
 
-Copyright © 2026 Studio BOON. Todos os direitos reservados. Consulte os [termos de uso](LICENSE.md).
+Copyright © 2026 Studio BOON. Todos os direitos reservados. Consulte os [termos de uso](boonOS/LICENSE.md).

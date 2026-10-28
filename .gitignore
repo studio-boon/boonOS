@@ -18,3 +18,8 @@ __pycache__/
 .venv/
 node_modules/
 # O contexto preenchido exige repositório privado ou exportação pela allowlist.
+
+# Caminhos do pacote quando mantido dentro do repositório.
+/boonOS/01. SISTEMA/01. EVOLUÇÃO/
+/boonOS/99. ARQUIVO/01. MIGRAÇÃO/
+/boonOS/.boonos-improve.lock

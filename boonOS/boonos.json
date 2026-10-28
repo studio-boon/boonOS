@@ -1,6 +1,6 @@
 {
   "name": "boonOS",
-  "version": "0.1.0-beta.6",
+  "version": "0.1.0-beta.7",
   "schema_version": 1,
   "catalog": "01. SISTEMA/CATALOGO.json",
   "canonical_skills": ".agents/skills",

@@ -26,7 +26,7 @@ Os documentos `demo:` são referências fictícias, não anexos existentes. O ca
 
 ## Execute o cálculo
 
-Da raiz do repositório:
+Da pasta do sistema boonOS, onde ficam `AGENTS.md` e `scripts/`:
 
 ```sh
 python3 scripts/finance.py "06. GUIAS/03. EXEMPLOS/operacao.json" --as-of 2026-09-25

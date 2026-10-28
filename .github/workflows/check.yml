@@ -23,7 +23,12 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
+      - run: python .github/sync_vitrine.py --check
       - run: python scripts/check.py --release
+        working-directory: boonOS
       - run: python -m unittest discover -s tests -v
+        working-directory: boonOS
       - run: python scripts/finance.py "06. GUIAS/03. EXEMPLOS/operacao.json" --as-of 2026-09-25
+        working-directory: boonOS
       - run: python scripts/package.py package.zip
+        working-directory: boonOS
